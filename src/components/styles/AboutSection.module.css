@@ -1,0 +1,100 @@
+.boxText {
+  position: sticky;
+  margin-bottom: 5em;
+  /* min-height: 100dvh; */
+  z-index: 9999;
+}
+
+.boxImageText {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: 5%;
+  z-index: 1;
+}
+
+.text_aboutme,
+.boxAvatar {
+  flex-basis: 400px;
+  flex-grow: 1;
+  display: grid;
+  place-content: center;
+}
+
+.aboutCenterme {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.btnVisitGit {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: #1b1b1b;
+  border: 1px solid transparent;
+}
+
+.btnVisitLink {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: #6262ff;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.btnVisitGit:hover {
+  background: #444444;
+  border: 1px solid #989898;
+}
+
+.btnVisitLink:hover {
+  border: 1px solid #8bc8e2;
+}
+
+.boxIconBtn,
+.textBtn {
+  display: grid;
+  place-content: center;
+}
+
+.titleSkills {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 90%;
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 700px) {
+  .boxText {
+    margin-bottom: none;
+  }
+
+  .titleAbout {
+    text-align: center;
+  }
+
+  .titleSkills {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .boxAvatar {
+    margin-top: 1em;
+  }
+}

@@ -1,0 +1,157 @@
+.container_code {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.headerCard,
+.techCard,
+.descCard {
+  margin-bottom: 1em;
+}
+
+.mode_work {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1em;
+}
+
+.textMode {
+  padding: 5px 10px;
+  background: #7f7f7f;
+  border-radius: 16px;
+  z-index: 1;
+  color: aliceblue;
+  font-weight: 100;
+}
+
+.descCard h3 {
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+.techCard h3 {
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+.container_card {
+  display: flex;
+  flex-direction: column;
+  background: #d4d4d4;
+  padding: 20px;
+  border-radius: 24px;
+}
+
+.carrousell_ls {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.typeText,
+.boxGithub {
+  display: grid;
+  place-content: center;
+}
+
+.iconHtml {
+  color: red;
+  transition: color 0.3s;
+}
+
+.iconHtml:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.iconCss {
+  color: blueviolet;
+  transition: color 0.3s;
+}
+
+.iconCss:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.iconjs {
+  color: yellow;
+  transition: color 0.3s;
+}
+
+.iconjs:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.iconts {
+  color: blue;
+  transition: color 0.3s;
+}
+
+.iconts:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.iconReact {
+  color: blueviolet;
+  transition: color 0.3s;
+}
+
+.iconReact:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.iconNext {
+  color: #000;
+  transition: color 0.3s;
+}
+
+.iconNext:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.iconMongo {
+  color: rgb(18, 177, 18);
+  transition: color 0.3s;
+}
+
+.iconMongo:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.iconGit {
+  color: red;
+  transition: color 0.3s;
+}
+
+.iconGit:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.iconGithub {
+  color: #ffffff;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.iconGithub:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.iconpy {
+  color: yellowgreen;
+  transition: color 0.3s;
+}
+
+.iconpy:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}

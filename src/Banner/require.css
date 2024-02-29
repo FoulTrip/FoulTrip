@@ -1,0 +1,21 @@
+.mainServicePerso {
+  padding: 60px 0px 60px 0px;
+  border: 1px solid #eaeaea;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 1em;
+}
+
+.mainServicePerso:hover {
+    border: 1px solid #9c9c9c;
+}
+
+.banner {
+  display: grid;
+  place-content: center;
+}
+
+.boxBtn {
+    display: grid;
+    place-content: center;
+}

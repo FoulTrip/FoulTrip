@@ -1,0 +1,137 @@
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.AboutProduct {
+  margin-bottom: 5em;
+  cursor: grab;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 20% cover 30%;
+  animation-fill-mode: both;
+}
+
+.iconSlide {
+  display: grid;
+  place-content: center;
+}
+
+.iconHtml {
+  color: red;
+  transition: color 0.3s;
+}
+
+.iconHtml:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.iconCss {
+  color: blueviolet;
+  transition: color 0.3s;
+}
+
+.iconCss:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.iconjs {
+  color: yellow;
+  transition: color 0.3s;
+}
+
+.iconjs:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.iconts {
+  color: blue;
+  transition: color 0.3s;
+}
+
+.iconts:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.iconReact {
+  color: blueviolet;
+  transition: color 0.3s;
+}
+
+.iconReact:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.iconNext {
+  color: #000;
+  transition: color 0.3s;
+}
+
+.iconNext:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.iconMongo {
+  color: rgb(18, 177, 18);
+  transition: color 0.3s;
+}
+
+.iconMongo:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.iconGit {
+  color: red;
+  transition: color 0.3s;
+}
+
+.iconGit:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.iconGithub {
+  color: #ffffff;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.iconGithub:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+.iconpy {
+  color: yellowgreen;
+  transition: color 0.3s;
+}
+
+.iconpy:hover {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1))
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+}
+
+@media screen and (max-width: 800px) {
+  .AboutProduct {
+    width: 100%;
+    margin-left: 0;
+  }
+}

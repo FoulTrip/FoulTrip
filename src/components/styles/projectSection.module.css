@@ -1,0 +1,23 @@
+.containerProjectsFree {
+  width: 90%;
+  margin-left: 5%;
+  position: sticky;
+  margin-bottom: 5em;
+}
+
+.titleProjects {
+  margin-bottom: 1em;
+}
+
+.container_Cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 10px;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 700px) {
+  .container-Cards {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
