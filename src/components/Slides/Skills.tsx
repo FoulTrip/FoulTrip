@@ -11,6 +11,7 @@ import { BiLogoTypescript, BiLogoMongodb } from "react-icons/bi";
 import { RiJavascriptFill } from "react-icons/ri";
 import { FaReact, FaGitAlt } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
+import { IoLogoDocker } from "react-icons/io5";
 
 function SlideComponent() {
   const isTabletOrMobile = useMediaQuery({ maxWidth: 800 });
@@ -76,6 +77,13 @@ function SlideComponent() {
         </SwiperSlide>
 
         <SwiperSlide className={styles.iconSlide}>
+          <IoLogoPython
+            size={isTabletOrMobile ? 100 : 120}
+            className={styles.iconpy}
+          />
+        </SwiperSlide>
+
+        <SwiperSlide className={styles.iconSlide}>
           <FaGitAlt
             size={isTabletOrMobile ? 100 : 120}
             className={styles.iconGit}
@@ -83,9 +91,9 @@ function SlideComponent() {
         </SwiperSlide>
 
         <SwiperSlide className={styles.iconSlide}>
-          <IoLogoPython
+          <IoLogoDocker
             size={isTabletOrMobile ? 100 : 120}
-            className={styles.iconpy}
+            className={styles.iconDocker}
           />
         </SwiperSlide>
       </Swiper>

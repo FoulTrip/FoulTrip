@@ -1,19 +1,22 @@
 import styles from "./styles/project01.module.css";
 
 import { IoLogoGithub } from "react-icons/io";
-import { MdHtml, MdCss } from "react-icons/md";
+import logoWebwhatsapp from "../../assets/whatsap-web-js.png";
 
-import { IoLogoReact } from "react-icons/io5";
 import { BiLogoTypescript } from "react-icons/bi";
+import { SiMongodb, SiPrisma } from "react-icons/si";
+import Image from "next/image";
+import { MdCss, MdHtml } from "react-icons/md";
+import { IoLogoReact } from "react-icons/io5";
 import { TbBrandNextjs, TbWorldShare } from "react-icons/tb";
 
-function Project02() {
+function Project04() {
   return (
     <>
       <div className={styles.container_card}>
         <div className={styles.headerCard}>
           <div className={styles.container_code}>
-            <h2 className={styles.typeText}>Landing Page</h2>
+            <h2 className={styles.typeText}>Ecommerce</h2>
             <div className={styles.boxGithub}>
               <div className={styles.centerIcon}>
                 <TbWorldShare className={styles.iconGithub} size={25} />
@@ -34,6 +37,15 @@ function Project02() {
               <IoLogoReact size={30} className={styles.iconReact} />
               <BiLogoTypescript size={30} className={styles.iconts} />
               <TbBrandNextjs size={30} className={styles.iconNextjs} />
+              <SiPrisma size={30} className={styles.iconPrisma} />
+              <SiMongodb size={30} className={styles.iconMongo} />
+              {/* <div style={{ display: "grid", placeContent: "center" }}>
+                <Image
+                  src={muxLogo}
+                  style={{ width: "40px", height: "auto" }}
+                  alt="logo"
+                />
+              </div> */}
             </div>
           </div>
         </div>
@@ -41,18 +53,19 @@ function Project02() {
         <div className={styles.descCard}>
           <h3>Description</h3>
           <p>
-            Landing page para presentar los modelos de cargo bikes disponibles
-            para la venta. La página incluye descripciones detalladas y visuales
-            atractivos de cada modelo. Además, incorporé un botón que redirige a
-            los usuarios a WhatsApp, facilitando la comunicación directa y
-            rápida con el equipo de ventas.
+            Sistema de comercio electrónico con Next.js, TypeScript, Prisma y
+            MongoDB. Estructura robusta y segura. Tipificación mejorada con
+            TypeScript, seguridad de contraseñas con bcrypt, operaciones de base
+            de datos con Prisma para MongoDB. Autenticación mediante tokens JWT.
+            Código organizado en módulos y clases. Documentación detallada para
+            operaciones de usuarios, tokens JWT, revisiones, calificaciones,
+            productos, pedidos y carritos. Modelo de datos en Prisma diseñado
+            para comercio electrónico en MongoDB.
           </p>
         </div>
-
-        <div className="visit"></div>
       </div>
     </>
   );
 }
 
-export default Project02;
+export default Project04;

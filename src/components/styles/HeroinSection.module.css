@@ -43,6 +43,8 @@
 /* basic */
 .MainBanner {
   margin-bottom: 30em;
+  width: 100%;
+  height: auto;
 }
 
 .sectionBanner {

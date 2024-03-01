@@ -18,11 +18,11 @@
 
 .textMode {
   padding: 5px 10px;
-  background: #7f7f7f;
+  /* background: #7f7f7f; */
   border-radius: 16px;
   z-index: 1;
-  color: aliceblue;
-  font-weight: 100;
+  color: rgb(77, 77, 77);
+  font-weight: 700;
 }
 
 .descCard h3 {
@@ -38,9 +38,15 @@
 .container_card {
   display: flex;
   flex-direction: column;
-  background: #d4d4d4;
+  background: #f7f7f7;
   padding: 20px;
   border-radius: 24px;
+  border: 1px solid transparent;
+}
+
+.container_card:hover {
+  border: 1px solid #dbdbdb;
+  background: #ededed;
 }
 
 .carrousell_ls {
@@ -49,10 +55,24 @@
   gap: 5px;
 }
 
-.typeText,
-.boxGithub {
+.typeText {
   display: grid;
   place-content: center;
+}
+
+.boxGithub {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.centerIcon {
+  display: grid;
+  place-content: center;
+}
+
+.typeText {
+  color: #7c7c7c;
 }
 
 .iconHtml {
@@ -136,7 +156,7 @@
 }
 
 .iconGithub {
-  color: #ffffff;
+  color: #c4c4c4;
   transition: color 0.3s;
   cursor: pointer;
 }

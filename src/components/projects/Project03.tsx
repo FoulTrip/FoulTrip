@@ -6,19 +6,22 @@ import logoWebwhatsapp from "../../assets/whatsap-web-js.png";
 import { BiLogoTypescript } from "react-icons/bi";
 import { SiMongodb } from "react-icons/si";
 import Image from "next/image";
+import { TbWorldShare } from "react-icons/tb";
 
 function Project03() {
   return (
     <>
       <div className={styles.container_card}>
         <div className={styles.headerCard}>
-          <div className={styles.mode_work}>
-            <p className={styles.textMode}>Personal Project</p>
-          </div>
           <div className={styles.container_code}>
-            <p className={styles.typeText}>Bot Whatsapp</p>
+            <h2 className={styles.typeText}>Bot Whatsapp</h2>
             <div className={styles.boxGithub}>
-              <IoLogoGithub className={styles.iconGithub} size={25} />
+              <div className={styles.centerIcon}>
+                <TbWorldShare className={styles.iconGithub} size={25} />
+              </div>
+              <div className={styles.centerIcon}>
+                <IoLogoGithub className={styles.iconGithub} size={25} />
+              </div>
             </div>
           </div>
         </div>

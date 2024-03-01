@@ -2,6 +2,7 @@ import styles from "./styles/projectSection.module.css";
 import Project01 from "./projects/Project01";
 import Project02 from "./projects/Project02";
 import Project03 from "./projects/Project03";
+import Project04 from "./projects/Project04";
 
 function ProjectsSection() {
   return (
@@ -12,6 +13,7 @@ function ProjectsSection() {
           <Project01 />
           <Project02 />
           <Project03 />
+          <Project04 />
         </div>
       </div>
     </>

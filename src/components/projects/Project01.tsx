@@ -2,24 +2,30 @@ import styles from "./styles/project01.module.css";
 
 import { IoLogoGithub } from "react-icons/io";
 import { MdHtml, MdCss } from "react-icons/md";
+import { TbWorldShare } from "react-icons/tb";
 
 import { IoLogoReact } from "react-icons/io5";
 import { BiLogoTypescript } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiPrisma, SiMongodb } from "react-icons/si";
+import Image from "next/image";
+
+import muxLogo from "@/assets/muxIcon.png";
 
 function Project01() {
   return (
     <>
       <div className={styles.container_card}>
         <div className={styles.headerCard}>
-          <div className={styles.mode_work}>
-            <p className={styles.textMode}>Freelancer</p>
-          </div>
           <div className={styles.container_code}>
-            <p className={styles.typeText}>Aplicacion Web Full-Stack</p>
+            <h2 className={styles.typeText}>Aplicacion Web Full-Stack</h2>
             <div className={styles.boxGithub}>
-              <IoLogoGithub className={styles.iconGithub} size={25} />
+              <div className={styles.centerIcon}>
+                <TbWorldShare className={styles.iconGithub} size={25} />
+              </div>
+              <div className={styles.centerIcon}>
+                <IoLogoGithub className={styles.iconGithub} size={25} />
+              </div>
             </div>
           </div>
         </div>
@@ -35,13 +41,20 @@ function Project01() {
               <TbBrandNextjs size={30} className={styles.iconNextjs} />
               <SiPrisma size={30} className={styles.iconPrisma} />
               <SiMongodb size={30} className={styles.iconMongo} />
+              <div style={{ display: "grid", placeContent: "center" }}>
+                <Image
+                  src={muxLogo}
+                  style={{ width: "40px", height: "auto" }}
+                  alt="logo"
+                />
+              </div>
             </div>
           </div>
         </div>
 
         <div className={styles.descCard}>
           <h3>Description</h3>
-          <p>
+          <p className={styles.textCard}>
             TodoEnBici es una plataforma interactiva que permite a los usuarios
             interactuar con un cicloviajero en tiempo real. Implementé un
             sistema de seguimiento de ruta en vivo, un módulo de transmisión en
