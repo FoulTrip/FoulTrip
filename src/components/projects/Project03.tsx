@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./styles/project01.module.css";
 
 import { IoLogoGithub } from "react-icons/io";
@@ -7,20 +9,38 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { SiMongodb } from "react-icons/si";
 import Image from "next/image";
 import { TbWorldShare } from "react-icons/tb";
+import { useRouter } from "next/navigation";
 
 function Project03() {
+  const router = useRouter();
   return (
     <>
       <div className={styles.container_card}>
+        <div className={styles.statusProject}>
+          <div className={styles.centerStatusPj}>
+            <div className={styles.pointBox}>
+              <div></div>
+            </div>
+            <p>In constant development</p>
+          </div>
+        </div>
         <div className={styles.headerCard}>
           <div className={styles.container_code}>
             <h2 className={styles.typeText}>Bot Whatsapp</h2>
             <div className={styles.boxGithub}>
-              <div className={styles.centerIcon}>
+              {/* <div className={styles.centerIcon}>
                 <TbWorldShare className={styles.iconGithub} size={25} />
-              </div>
+              </div> */}
               <div className={styles.centerIcon}>
-                <IoLogoGithub className={styles.iconGithub} size={25} />
+                <IoLogoGithub
+                  className={styles.iconGithub}
+                  size={25}
+                  onClick={() =>
+                    router.push(
+                      "https://github.com/FoulTrip/whatsapp_automatitization"
+                    )
+                  }
+                />
               </div>
             </div>
           </div>
@@ -50,14 +70,13 @@ function Project03() {
         <div className={styles.descCard}>
           <h3>Description</h3>
           <p>
-            Utilizando la biblioteca whatsapp-web.js. Este bot automatiza el
-            envío de mensajes a los clientes, lo que permite a las empresas
-            mejorar su eficiencia y rapidez en la comunicación. El bot puede ser
-            programado para enviar mensajes personalizados basados en distintos
-            gatillos o eventos, lo que facilita la interacción con los clientes
-            y mejora la experiencia del usuario. en este muestro como se puede
-            configurar tanto en el backend como para usarlo tambien en el
-            frontend utilizando websockets
+            Using the whatsapp-web.js library. This bot automates the sending of
+            messages to customers, allowing companies to improve their
+            efficiency and speed of communication. The bot can be programmed to
+            send personalized messages based on different triggers or events,
+            which facilitates interaction with customers and improves the user
+            experience. In this I show how it can be configured both in the
+            backend and to use it also in the frontend using websockets.
           </p>
         </div>
       </div>

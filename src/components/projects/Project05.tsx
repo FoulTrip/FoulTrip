@@ -1,54 +1,46 @@
-"use client";
+"use client"
 
 import styles from "./styles/project01.module.css";
 
-import { IoLogoGithub } from "react-icons/io";
-import { MdHtml, MdCss } from "react-icons/md";
-import { TbWorldShare } from "react-icons/tb";
+import { IoIosCog, IoLogoGithub } from "react-icons/io";
+import logoWebwhatsapp from "../../assets/whatsap-web-js.png";
 
-import { IoLogoReact } from "react-icons/io5";
 import { BiLogoTypescript } from "react-icons/bi";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiPrisma, SiMongodb } from "react-icons/si";
+import { SiMongodb, SiPrisma } from "react-icons/si";
 import Image from "next/image";
-
-import muxLogo from "@/assets/muxIcon.png";
+import { MdCss, MdHtml } from "react-icons/md";
+import { IoLogoReact } from "react-icons/io5";
+import { TbBrandNextjs, TbWorldShare } from "react-icons/tb";
 import { useRouter } from "next/navigation";
 
-function Project01() {
+function Project05() {
+
   const router = useRouter();
+  
   return (
     <>
       <div className={styles.container_card}>
         <div className={styles.statusProject}>
           <div className={styles.centerStatusPj}>
             <div className={styles.pointBox}>
-              <div></div>
+              <IoIosCog size={15} />
             </div>
-            <p>In constant development</p>
+            <p>In development</p>
           </div>
         </div>
         <div className={styles.headerCard}>
           <div className={styles.container_code}>
-            <h2 className={styles.typeText}>Aplicacion Web Full-Stack</h2>
+            <h2 className={styles.typeText}>Aplicacion B2B</h2>
             <div className={styles.boxGithub}>
               <div className={styles.centerIcon}>
                 <TbWorldShare
                   className={styles.iconGithub}
                   size={25}
-                  onClick={() => router.push("https://todoenbici.vercel.app/")}
+                  onClick={() => router.push("https://tripcode.vercel.app/")}
                 />
               </div>
               <div className={styles.centerIcon}>
-                <IoLogoGithub
-                  className={styles.iconGithub}
-                  size={25}
-                  onClick={() =>
-                    router.push(
-                      "https://github.com/FoulTrip/frontend_todoenbici"
-                    )
-                  }
-                />
+                <IoLogoGithub className={styles.iconGithub} size={25}  onClick={() => router.push("https://github.com/FoulTrip/TripCode")} />
               </div>
             </div>
           </div>
@@ -65,36 +57,32 @@ function Project01() {
               <TbBrandNextjs size={30} className={styles.iconNextjs} />
               <SiPrisma size={30} className={styles.iconPrisma} />
               <SiMongodb size={30} className={styles.iconMongo} />
-              <div style={{ display: "grid", placeContent: "center" }}>
+              {/* <div style={{ display: "grid", placeContent: "center" }}>
                 <Image
                   src={muxLogo}
                   style={{ width: "40px", height: "auto" }}
                   alt="logo"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
 
         <div className={styles.descCard}>
           <h3>Description</h3>
-          <p className={styles.textCard}>
-            TodoEnBici es una plataforma interactiva que permite a los usuarios
-            interactuar con un cicloviajero en tiempo real. Implementé un
-            sistema de seguimiento de ruta en vivo, un módulo de transmisión en
-            vivo, un sistema de streaming para que los usuarios y el
-            cicloviajero interactuen mediante comentarios y mas en el video
-            streaming, tambien un reproductor de música para promocionar
-            artistas emergentes. Todo esto se logró manteniendo las mejores
-            prácticas de desarrollo y asegurando una experiencia de usuario
-            fluida y atractiva
+          <p>
+            B2B platform that simplifies the development of software, websites
+            and applications. From the customer's request, our project managers
+            agree on requirements in customized meetings. They then create
+            projects on GitHub, assigning up to two developers per project,
+            visible on their individual dashboards. A comprehensive solution
+            that optimizes communication and project management, increasing
+            efficiency and customer satisfaction.
           </p>
         </div>
-
-        <div className="visit"></div>
       </div>
     </>
   );
 }
 
-export default Project01;
+export default Project05;
