@@ -1,0 +1,34 @@
+{
+    "temas": [
+        {
+            "id": 1,
+            "titulo": "Introducción a la Ciberseguridad",
+            "descripcion": "Conceptos básicos sobre ciberseguridad, amenazas comunes y mejores prácticas.",
+            "categoria": "ciberseguridad"
+        },
+        {
+            "id": 2,
+            "titulo": "Desarrollo Web con HTML, CSS y JavaScript",
+            "descripcion": "Aprende a crear sitios web desde cero utilizando tecnologías front-end.",
+            "categoria": "programming"
+        },
+        {
+            "id": 3,
+            "titulo": "Seguridad en Aplicaciones Web",
+            "descripcion": "Cómo proteger aplicaciones web contra ataques como inyección SQL y cross-site scripting (XSS).",
+            "categoria": "ciberseguridad"
+        },
+        {
+            "id": 4,
+            "titulo": "Python para Principiantes",
+            "descripcion": "Una introducción al lenguaje de programación Python y sus aplicaciones.",
+            "categoria": "programming"
+        },
+        {
+            "id": 5,
+            "titulo": "Criptografía Básica",
+            "descripcion": "Principios de cifrado y descifrado para proteger datos sensibles.",
+            "categoria": "ciberseguridad"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+.containerTopics {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.boxBlog {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.boxComing {
+  /* display: grid;
+  place-content: center; */
+  margin-top: 3em;
+}
+
+.baseCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.boxInfoBnts {
+    display: grid;
+    place-content: center;
+    padding: 10px;
+}
+
+.boxLengh {
+    width: 5%;
+    display: grid;
+    place-content: center;
+    padding: 10px;
+}
+
+.boxInfo {
+    width: 85%;
+    padding: 10px;
+}
+
+.listOpcs {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}

@@ -5,3 +5,7 @@
   color-scheme: light;
   margin: 0;
 }
+
+body::-webkit-scrollbar {
+  scrollbar-width: .2px;
+}
