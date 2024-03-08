@@ -20,6 +20,11 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 5px;
+    cursor: pointer;
+}
+
+.baseCard:hover {
+    scale: 1.01;
 }
 
 .boxInfoBnts {
@@ -36,12 +41,6 @@
 }
 
 .boxInfo {
-    width: 85%;
+    width: 95%;
     padding: 10px;
-}
-
-.listOpcs {
-    display: flex;
-    flex-direction: column;
-    width: 10%;
 }

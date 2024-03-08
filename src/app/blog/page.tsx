@@ -56,19 +56,17 @@ function Blog() {
                   : null)}
               >
                 <p>
-                  {topic.categoria == "ciberseguridad" ? <MdSecurity /> : null}
-                  {topic.categoria == "programming" ? <RxCode /> : null}
+                  {topic.categoria == "ciberseguridad" ? (
+                    <MdSecurity size={20} />
+                  ) : null}
+                  {topic.categoria == "programming" ? (
+                    <RxCode size={20} />
+                  ) : null}
                 </p>
               </div>
               <div className={styles.boxInfo}>
                 <h3 className={styles.title}>{topic.titulo}</h3>
                 <p className={styles.desc}>{topic.descripcion}</p>
-              </div>
-              <div className={styles.boxInfoBnts}>
-                <div className={styles.listOpcs}>
-                  <p>PP</p>
-                  <p>PDF</p>
-                </div>
               </div>
             </div>
           ))}
