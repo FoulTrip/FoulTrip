@@ -112,3 +112,33 @@
   display: flex;
   width: 100%;
 }
+
+.boxPdf {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.centerBoxPdf {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.centerBoxPdf p {
+  display: grid;
+  place-content: center;
+}
+
+.centerBoxPdf button {
+  padding: 5px 10px;
+  background: red;
+  color: #fff;
+  border: 1px solid #9d9d9d;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.centerBoxPdf button:hover {
+  background: #ff2222;
+}
