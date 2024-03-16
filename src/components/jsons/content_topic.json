@@ -1,0 +1,88 @@
+[
+    {
+        "id": "1",
+        "topicId": "1",
+        "content": {
+            "Intro": {
+                "title": "Desarrollo Web con TypeScript y Next.js en 2024",
+                "subText": "Trabajar en una aplicación web moderna impulsada por React es emocionante, pero a veces nos encontramos con desafíos. Dos de los problemas más comunes son: ",
+                "characteristics": [
+                    {
+                        "title": "Tiempo de carga",
+                        "description": "Cuando todo el contenido se renderiza en el lado del cliente, la página puede tardar en ser visible para el usuario. Antes de mostrar el contenido, se debe cargar todo el JavaScript y ejecutar la aplicación para determinar qué mostrar en la página."
+                    },
+                    {
+                        "title": "SEO y contenido",
+                        "description": "Si estás construyendo un sitio web público, el SEO es crucial. Los motores de búsqueda están mejorando en la ejecución e indexación de aplicaciones JavaScript, pero es aún mejor si podemos enviarles el contenido en lugar de esperar a que lo descubran."
+                    }
+                ],
+                "finalText": "La solución a estos problemas es el renderizado del lado del servidor (SSR), también conocido como pre-renderizado estático. Y aquí es donde entra en juego Next.js."
+            },
+            "nextjs": {
+                "imagenIntro": "@/assets/nextjs-logo.jpeg",
+                "description": "Next.js es un framework inspirado en React que hace que el SSR sea sencillo y poderoso. Pero no se limita solo a eso. Sus características clave incluyen:",
+                "characteristics": [
+                    {
+                        "title": "Server-Side Rendering (SSR)",
+                        "description": "Next.js permite renderizar contenido en el servidor antes de enviarlo al cliente. Esto mejora la velocidad de carga y la experiencia del usuario."
+                    },
+                    {
+                        "title": "Enrutamiento dinámico",
+                        "description": "Puedes crear rutas personalizadas basadas en parámetros. Por ejemplo, /productos/[id] podría representar una página de detalles de producto con un ID específico."
+                    },
+                    {
+                        "title": "API Routes",
+                        "description": "Next.js facilita la creación de endpoints de API dentro de tu aplicación. Puedes definir rutas como /api/usuarios para manejar solicitudes y respuestas de datos."
+                    },
+                    {
+                        "title": "Soporte para TypeScript",
+                        "description": "Next.js se integra perfectamente con TypeScript. Puedes escribir tu código en TypeScript directamente, lo que mejora la seguridad y la legibilidad."
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "id": "2",
+        "topicId": "2",
+        "content": {
+            "Intro": {
+                "title": "Bun como runtime del backend",
+                "subText": "Trabajar en una aplicación web moderna impulsada por React es emocionante, pero a veces nos encontramos con desafíos. Dos de los problemas más comunes son: ",
+                "characteristics": [
+                    {
+                        "title": "Tiempo de carga",
+                        "description": "Cuando todo el contenido se renderiza en el lado del cliente, la página puede tardar en ser visible para el usuario. Antes de mostrar el contenido, se debe cargar todo el JavaScript y ejecutar la aplicación para determinar qué mostrar en la página."
+                    },
+                    {
+                        "title": "SEO y contenido",
+                        "description": "Si estás construyendo un sitio web público, el SEO es crucial. Los motores de búsqueda están mejorando en la ejecución e indexación de aplicaciones JavaScript, pero es aún mejor si podemos enviarles el contenido en lugar de esperar a que lo descubran."
+                    }
+                ],
+                "finalText": "La solución a estos problemas es el renderizado del lado del servidor (SSR), también conocido como pre-renderizado estático. Y aquí es donde entra en juego Next.js."
+            },
+            "nextjs": {
+                "imagenIntro": "@/assets/nextjs-logo.jpeg",
+                "description": "Next.js es un framework inspirado en React que hace que el SSR sea sencillo y poderoso. Pero no se limita solo a eso. Sus características clave incluyen:",
+                "characteristics": [
+                    {
+                        "title": "Server-Side Rendering (SSR)",
+                        "description": "Next.js permite renderizar contenido en el servidor antes de enviarlo al cliente. Esto mejora la velocidad de carga y la experiencia del usuario."
+                    },
+                    {
+                        "title": "Enrutamiento dinámico",
+                        "description": "Puedes crear rutas personalizadas basadas en parámetros. Por ejemplo, /productos/[id] podría representar una página de detalles de producto con un ID específico."
+                    },
+                    {
+                        "title": "API Routes",
+                        "description": "Next.js facilita la creación de endpoints de API dentro de tu aplicación. Puedes definir rutas como /api/usuarios para manejar solicitudes y respuestas de datos."
+                    },
+                    {
+                        "title": "Soporte para TypeScript",
+                        "description": "Next.js se integra perfectamente con TypeScript. Puedes escribir tu código en TypeScript directamente, lo que mejora la seguridad y la legibilidad."
+                    }
+                ]
+            }
+        }
+    }
+]

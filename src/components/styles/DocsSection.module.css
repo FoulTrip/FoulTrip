@@ -1,8 +1,16 @@
 .DocSection {
   position: sticky;
+  /* display: flex;
+  justify-content: flex-start; */
   display: grid;
   place-content: center;
   min-height: 50dvh;
+  background: #e2e2e2;
+  margin: 0 60px 1em;
+  padding: 20px;
+  border-radius: 16px;
+  border: 3px solid #000;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .centerDocsSection {
@@ -13,16 +21,25 @@
 .boxImg {
   display: grid;
   place-content: center;
+  flex-basis: 400px;
+  flex-grow: 1;
+}
+
+.ilustration {
+  filter: drop-shadow(2px 4px 6px #002);
 }
 
 .bocText {
   display: grid;
   place-content: center;
+  flex-basis: 400px;
+  flex-grow: 1;
 }
 
 .centereBoxText {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 /* .centereBoxText p {
@@ -36,11 +53,25 @@
 } */
 
 .btnVisit {
+  /* flex-grow: 1; */
   display: flex;
   flex-direction: row;
   gap: 5px;
   margin-top: 5px;
   cursor: pointer;
+}
+
+.boxInfo {
+  /* flex-basis: 400px;
+  flex-grow: 1; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.boxInfo h3 {
+  font-size: 32px;
+  color: #424242;
 }
 
 .btnVisit p {
@@ -49,12 +80,33 @@
 }
 
 .btnVisit p:hover {
-    margin-right: 3px;
-    transition: margin-right .3s;
+  margin-right: 3px;
+  transition: margin-right 0.3s;
 }
 
 .boxIconVisit {
   display: grid;
   place-content: center;
+}
 
+@media screen and (max-width: 700px) {
+  .DocSection {
+    background: transparent;
+    border: none;
+  }
+
+  .centerDocsSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .boxImg {
+    width: 100%;
+    height: auto;
+  }
+
+  .ilustration {
+    width: 100%;
+    height: auto;
+  }
 }

@@ -9,7 +9,7 @@ function ProjectsSection() {
   return (
     <>
       <div className={styles.containerProjectsFree}>
-        <h1 className={styles.titleProjects}>Projects</h1>
+        <h1 className={styles.titleProjects}>PROJECTS</h1>
         <div className={styles.container_Cards}>
           <Project01 />
           <Project02 />

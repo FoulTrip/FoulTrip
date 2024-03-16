@@ -7,6 +7,8 @@
 
 .titleProjects {
   margin-bottom: 1em;
+  font-size: 2em;
+  color: #424242;
 }
 
 .container_Cards {
@@ -17,7 +19,17 @@
 }
 
 @media screen and (max-width: 700px) {
+  .containerProjectsFree {
+    width: 80%;
+    margin-left: 5px;
+  }
+
   .container-Cards {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .titleProjects {
+    padding-left: 28px;
   }
 }

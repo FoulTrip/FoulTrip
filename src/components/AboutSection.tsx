@@ -14,7 +14,7 @@ function AboutSection() {
         <div className={styles.boxImageText}>
           <div className={styles.text_aboutme}>
             <div className={styles.aboutCenterme}>
-              <h1 className={styles.titleAbout}>About Me</h1>
+              <h1 className={styles.titleAbout}>ABOUT ME</h1>
               <p>
                 My passion lies in building end-to-end software solutions. My my
                 experience in front-end and back-end technologies allows me to
@@ -56,7 +56,7 @@ function AboutSection() {
         </div>
 
         <div className={styles.skillsContainer}>
-          <h1 className={styles.titleSkills}>Technologies</h1>
+          <h1 className={styles.titleSkills}>TECHNOLOGIES</h1>
           <SlideComponent />
         </div>
       </div>

@@ -7,6 +7,8 @@ import axios from "axios";
 
 import { MdSecurity } from "react-icons/md";
 import { RxCode } from "react-icons/rx";
+import { AiOutlineExpand } from "react-icons/ai";
+import { useRouter } from "next/navigation";
 
 interface topics {
   id: number;
@@ -17,12 +19,12 @@ interface topics {
 
 function Blog() {
   const [topics, setTopics] = useState<topics[] | null>(null);
+  const router = useRouter();
 
   useEffect(() => {
     const getTopics = async () => {
       const response = await axios.get("/api/topics");
       const data = response.data;
-      //   console.log(data);
       setTopics(data.temas);
     };
 
@@ -36,23 +38,26 @@ function Blog() {
         <h1 className={styles.boxComing}>Learning topics</h1>
         <div className={styles.containerTopics}>
           {topics?.map((topic) => (
-            <div
-              key={topic.id}
-              className={styles.baseCard}
-              {...(topic.categoria == "ciberseguridad"
-                ? { style: { border: "3px solid red", borderRadius: "10px" } }
-                : null)}
-              {...(topic.categoria == "programming"
-                ? { style: { border: "3px solid grey", borderRadius: "10px" } }
-                : null)}
-            >
+            <div key={topic.id} className={styles.baseCard}>
               <div
                 className={styles.boxLengh}
                 {...(topic.categoria == "ciberseguridad"
-                  ? { style: { background: "red", color: "yellow" } }
+                  ? {
+                      style: {
+                        background: "#FF9494",
+                        color: "yellow",
+                        borderRadius: "10px",
+                      },
+                    }
                   : null)}
                 {...(topic.categoria == "programming"
-                  ? { style: { background: "grey", color: "white" } }
+                  ? {
+                      style: {
+                        background: "#BDBDBD",
+                        color: "white",
+                        borderRadius: "10px",
+                      },
+                    }
                   : null)}
               >
                 <p>
@@ -67,6 +72,14 @@ function Blog() {
               <div className={styles.boxInfo}>
                 <h3 className={styles.title}>{topic.titulo}</h3>
                 <p className={styles.desc}>{topic.descripcion}</p>
+              </div>
+              <div className={styles.boxExpand}>
+                <div className={styles.btnCenter}>
+                  <AiOutlineExpand
+                    size={20}
+                    onClick={() => router.push(`/blog/${topic.id}`)}
+                  />
+                </div>
               </div>
             </div>
           ))}

@@ -2,33 +2,15 @@
     "temas": [
         {
             "id": 1,
-            "titulo": "Introducción a la Ciberseguridad",
-            "descripcion": "Conceptos básicos sobre ciberseguridad, amenazas comunes y mejores prácticas.",
-            "categoria": "ciberseguridad"
+            "titulo": "Desarrollo Web con TypeScript y Next.js en 2024",
+            "descripcion": "Combinación eficaz en el desarrollo web de 2024, mejorando la calidad de las aplicaciones.",
+            "categoria": "programming"
         },
         {
             "id": 2,
-            "titulo": "Desarrollo Web con HTML, CSS y JavaScript",
-            "descripcion": "Aprende a crear sitios web desde cero utilizando tecnologías front-end.",
+            "titulo": "Bun como runtime del backend",
+            "descripcion": "Bun emerge como un nuevo y rápido tiempo de ejecución de JavaScript.",
             "categoria": "programming"
-        },
-        {
-            "id": 3,
-            "titulo": "Seguridad en Aplicaciones Web",
-            "descripcion": "Cómo proteger aplicaciones web contra ataques como inyección SQL y cross-site scripting (XSS).",
-            "categoria": "ciberseguridad"
-        },
-        {
-            "id": 4,
-            "titulo": "Python para Principiantes",
-            "descripcion": "Una introducción al lenguaje de programación Python y sus aplicaciones.",
-            "categoria": "programming"
-        },
-        {
-            "id": 5,
-            "titulo": "Criptografía Básica",
-            "descripcion": "Principios de cifrado y descifrado para proteger datos sensibles.",
-            "categoria": "ciberseguridad"
         }
     ]
 }

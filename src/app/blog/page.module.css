@@ -13,6 +13,7 @@
   /* display: grid;
   place-content: center; */
   margin-top: 3em;
+  margin-bottom: 1em;
 }
 
 .baseCard {
@@ -21,10 +22,12 @@
     justify-content: space-between;
     gap: 5px;
     cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .baseCard:hover {
-    scale: 1.01;
+    background: #EFEFEF;
 }
 
 .boxInfoBnts {
@@ -43,4 +46,20 @@
 .boxInfo {
     width: 95%;
     padding: 10px;
+}
+
+.boxExpand {
+    display: grid;
+    place-content: center;
+}
+
+.btnCenter {
+    padding: 5px;
+    display: grid;
+    place-content: center;
+    border-radius: 10px;
+}
+
+.btnCenter:hover {
+    background: #ffff;
 }
