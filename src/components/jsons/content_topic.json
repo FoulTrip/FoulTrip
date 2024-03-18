@@ -5,7 +5,7 @@
         "content": {
             "Intro": {
                 "title": "Desarrollo Web con TypeScript y Next.js en 2024",
-                "subText": "Trabajar en una aplicación web moderna impulsada por React es emocionante, pero a veces nos encontramos con desafíos. Dos de los problemas más comunes son: ",
+                "subText": "¿Alguna vez te has preguntado cómo puedes hacer que tu desarrollo web sea más eficiente, escalable y menos propenso a errores? ¡La respuesta está aquí y ahora, en 2024, usando Next.js junto con TypeScript!",
                 "characteristics": [
                     {
                         "title": "Tiempo de carga",
@@ -18,8 +18,8 @@
                 ],
                 "finalText": "La solución a estos problemas es el renderizado del lado del servidor (SSR), también conocido como pre-renderizado estático. Y aquí es donde entra en juego Next.js."
             },
-            "nextjs": {
-                "imagenIntro": "@/assets/nextjs-logo.jpeg",
+            "explain": {
+                "imagenIntro": "/nextjs-logo.png",
                 "description": "Next.js es un framework inspirado en React que hace que el SSR sea sencillo y poderoso. Pero no se limita solo a eso. Sus características clave incluyen:",
                 "characteristics": [
                     {
@@ -48,38 +48,38 @@
         "content": {
             "Intro": {
                 "title": "Bun como runtime del backend",
-                "subText": "Trabajar en una aplicación web moderna impulsada por React es emocionante, pero a veces nos encontramos con desafíos. Dos de los problemas más comunes son: ",
+                "subText": "En el mundo del desarrollo web, la elección del entorno de ejecución del backend puede ser crucial para el rendimiento y la eficiencia de tu aplicación. Aquí es donde Bun muestra su fortaleza.",
                 "characteristics": [
                     {
-                        "title": "Tiempo de carga",
-                        "description": "Cuando todo el contenido se renderiza en el lado del cliente, la página puede tardar en ser visible para el usuario. Antes de mostrar el contenido, se debe cargar todo el JavaScript y ejecutar la aplicación para determinar qué mostrar en la página."
+                        "title": "Rendimiento",
+                        "description": "Bun ofrece un rendimiento excepcional, lo que permite a tu aplicación manejar más solicitudes por segundo con menos recursos."
                     },
                     {
-                        "title": "SEO y contenido",
-                        "description": "Si estás construyendo un sitio web público, el SEO es crucial. Los motores de búsqueda están mejorando en la ejecución e indexación de aplicaciones JavaScript, pero es aún mejor si podemos enviarles el contenido en lugar de esperar a que lo descubran."
+                        "title": "Eficiencia",
+                        "description": "Con Bun, puedes aprovechar la eficiencia de Go en tu backend, lo que resulta en un uso más eficiente de los recursos del servidor."
                     }
                 ],
-                "finalText": "La solución a estos problemas es el renderizado del lado del servidor (SSR), también conocido como pre-renderizado estático. Y aquí es donde entra en juego Next.js."
+                "finalText": "Si estás buscando un runtime de backend que sea rápido, eficiente y fácil de usar, Bun podría ser la solución perfecta para ti."
             },
-            "nextjs": {
-                "imagenIntro": "@/assets/nextjs-logo.jpeg",
-                "description": "Next.js es un framework inspirado en React que hace que el SSR sea sencillo y poderoso. Pero no se limita solo a eso. Sus características clave incluyen:",
+            "explain": {
+                "imagenIntro": "/bun-logo.png",
+                "description": "Bun es un runtime de backend que combina la eficiencia de Go con una API fácil de usar. Pero no se limita solo a eso. Sus características clave incluyen:",
                 "characteristics": [
                     {
-                        "title": "Server-Side Rendering (SSR)",
-                        "description": "Next.js permite renderizar contenido en el servidor antes de enviarlo al cliente. Esto mejora la velocidad de carga y la experiencia del usuario."
+                        "title": "Rápido y eficiente",
+                        "description": "Bun es conocido por su rendimiento y eficiencia, lo que te permite manejar más solicitudes con menos recursos."
                     },
                     {
-                        "title": "Enrutamiento dinámico",
-                        "description": "Puedes crear rutas personalizadas basadas en parámetros. Por ejemplo, /productos/[id] podría representar una página de detalles de producto con un ID específico."
+                        "title": "Fácil de usar",
+                        "description": "Bun ofrece una API intuitiva y fácil de usar, lo que facilita la construcción y el mantenimiento de tu backend."
                     },
                     {
-                        "title": "API Routes",
-                        "description": "Next.js facilita la creación de endpoints de API dentro de tu aplicación. Puedes definir rutas como /api/usuarios para manejar solicitudes y respuestas de datos."
+                        "title": "Flexible",
+                        "description": "Bun es altamente configurable, lo que te permite ajustar su comportamiento para adaptarse a tus necesidades específicas."
                     },
                     {
-                        "title": "Soporte para TypeScript",
-                        "description": "Next.js se integra perfectamente con TypeScript. Puedes escribir tu código en TypeScript directamente, lo que mejora la seguridad y la legibilidad."
+                        "title": "Soporte para múltiples bases de datos",
+                        "description": "Bun soporta múltiples bases de datos, lo que te permite elegir la que mejor se adapte a tus necesidades."
                     }
                 ]
             }

@@ -8,7 +8,7 @@ type Content = {
     }[];
     finalText: string;
   };
-  nextjs: {
+  explain: {
     imagenIntro: string;
     description: string;
     characteristics: {

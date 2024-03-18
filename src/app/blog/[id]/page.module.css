@@ -1,3 +1,84 @@
 .boxContent {
-    margin: 5em 30px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 7em;
+  margin-bottom: 5em;
+}
+
+.headerContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.textIntro {
+  flex-basis: 400px;
+  flex-grow: 1;
+}
+
+.headerContent p {
+  flex-basis: 400px;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.date {
+  display: grid;
+  place-content: center;
+  color: var(--white-500);
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.boxImageIntro {
+  flex-basis: 400px;
+  flex-grow: 1;
+  display: grid;
+  place-content: center;
+  /* padding: 20px; */
+  margin-top: 3em;
+  margin-bottom: 2em;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  padding: 40px;
+  border-radius: 1em;
+}
+
+.imgIntro {
+  width: 100%;
+  height: auto;
+}
+
+.chIntro {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.textIntro {
+  flex-basis: 400px;
+  flex-grow: 1;
+  /* padding: 20px; */
+}
+
+.nextXpline {
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+.nextExplineImg {
+  width: 10%;
+  height: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .nextExplineImg {
+    width: 30%;
+    height: auto;
+  }
 }
