@@ -1,9 +1,9 @@
-import { NextIntlClientProvider } from 'next-intl';  // Importa el proveedor de next-intl
+import { NextIntlClientProvider } from "next-intl";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "../globals.css";
 
-// Carga las fuentes personalizadas
+// Fuentes personalizadas
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -23,20 +23,20 @@ export const metadata: Metadata = {
 export default async function RootLayout({
   children,
   params,
-}: Readonly<{
+}: {
   children: React.ReactNode;
   params: { locale: string };
-}>) {
-  // Cargar los mensajes según el locale
+}) {
+  // Cargar mensajes de traducción
   const messages = await import(`../../texts/${params.locale}.json`);
 
   return (
-    <NextIntlClientProvider locale={params.locale} messages={messages.default}>
-      <html lang={params.locale || "en"}>
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <html lang={params.locale || "en"}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <NextIntlClientProvider locale={params.locale} messages={messages.default}>
           {children}
-        </body>
-      </html>
-    </NextIntlClientProvider>
+        </NextIntlClientProvider>
+      </body>
+    </html>
   );
 }
