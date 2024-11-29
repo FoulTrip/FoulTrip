@@ -1,0 +1,30 @@
+{
+    "navbar": {
+        "name": "David Vasquez",
+        "options": {
+            "01": "Home",
+            "02": "Experience",
+            "03": "Projects"
+        },
+        "lenguages": {
+            "en": "English",
+            "es": "Spanish"
+        }
+    },
+    "Landing": {
+        "HeroSection": {
+            "PartText": {
+                "name": "David Vasquez",
+                "profesion": "Full Stack Developer",
+                "resume": "Full Stack developer with strong experience in Next.js, React and TypeScript. Skilled in building engaging applications with JavaScript, Python. Proficient in using TypeScript, MongoDB, MySQL and Prisma for effective solutions. Experienced in deploying projects on Vercel and Google Cloud, with a solid understanding of cloud platforms and version control with GitHub. I am passionate about achieving project goals and delivering high quality results.",
+                "buttons": {
+                    "cv": "Download CV",
+                    "git": "Github"
+                }
+            },
+            "PartImage": {
+                "url": "https://avatars.githubusercontent.com/u/83887793?v=4"
+            }
+        }
+    }
+}
