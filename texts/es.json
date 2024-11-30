@@ -7,7 +7,7 @@
             "03": "Proyectos"
         },
         "lenguages": {
-            "en": "Ingles",
+            "en": "Inglés",
             "es": "Español"
         }
     },
@@ -15,7 +15,7 @@
         "HeroSection": {
             "PartText": {
                 "name": "David Vasquez",
-                "profesion": "Full Stack Developer",
+                "profesion": "Desarrollador Full Stack",
                 "resume": "Desarrollador Full Stack con fuerte experiencia en Next.js, React y TypeScript. Hábil en la construcción de aplicaciones atractivas con JavaScript, Python. Competente en el uso de TypeScript, MongoDB, MySQL y Prisma para soluciones efectivas. Experiencia en el despliegue de proyectos en Vercel y Google Cloud, con una sólida comprensión de las plataformas en la nube y el control de versiones con GitHub. Me apasiona alcanzar los objetivos del proyecto y entregar resultados de alta calidad.",
                 "experience": "4 años de experiencia",
                 "buttons": {
@@ -33,12 +33,12 @@
                 "id": "01",
                 "logo": "https://res.cloudinary.com/dvquomppa/image/upload/v1716227392/credito_ya/twwyldy5hmbwf1mppf6b.png",
                 "titleTypeWork": "Tipo de Trabajo",
-                "typeWork": "Freeancer",
+                "typeWork": "Freelancer",
                 "title": "Empresa",
                 "company": "Credito Ya",
                 "dateInit": "Fecha de Inicio",
                 "textDateInit": "Abril/23/2024",
-                "dateEnd": "Fecha de Finalizacion",
+                "dateEnd": "Fecha de Finalización",
                 "textDateEnd": "Agosto/15/2024",
                 "objectives": {
                     "0": "Desarrolle una solución de aplicación web completa, transformando el proceso de solicitud de préstamos en una experiencia totalmente digital.",
@@ -47,13 +47,13 @@
                 },
                 "technologies": {
                     "0": {
-                        "type": "Cloud Computing",
+                        "type": "Computación en la Nube",
                         "tecs": [
                             "Google Cloud"
                         ]
                     },
                     "1": {
-                        "type": "Database",
+                        "type": "Base de Datos",
                         "tecs": [
                             "MongoDB"
                         ]
@@ -74,7 +74,7 @@
                         ]
                     },
                     "4": {
-                        "type": "Hosting & Deployment",
+                        "type": "Alojamiento y Despliegue",
                         "tecs": [
                             "Vercel"
                         ]
@@ -88,8 +88,134 @@
                 },
                 "options": {
                     "0": "Objetivos",
-                    "1": "Tecnologias",
-                    "2": "Previsualizacion"
+                    "1": "Tecnologías",
+                    "2": "Previsualización"
+                }
+            },
+            "application02": {
+                "id": "02",
+                "logo": "https://res.cloudinary.com/dqwgqwske/image/upload/v1732918389/avatars_users_ebooks/kqqxfk3bjgyd1orfuodl.png",
+                "titleTypeWork": "Tipo de Trabajo",
+                "typeWork": "Freelancer",
+                "title": "Empresa",
+                "company": "Todo En Bicicleta",
+                "dateInit": "Fecha de Inicio",
+                "textDateInit": "Abril/23/2024",
+                "dateEnd": "Fecha de Finalización",
+                "textDateEnd": "Agosto/15/2024",
+                "objectives": {
+                    "0": "Desarrolle una solución de aplicación web completa, transformando el proceso de solicitud de préstamos en una experiencia totalmente digital.",
+                    "1": "Cree interfaces en tiempo real tanto para las solicitudes de los clientes como para las de los empleados, lo que permitió un seguimiento y una gestión fluidos de las solicitudes de préstamos.",
+                    "2": "Agilización de los flujos de trabajo de gestión y aprobación de préstamos, mejorando la eficiencia y transparencia generales del proceso de préstamo."
+                },
+                "technologies": {
+                    "0": {
+                        "type": "Computación en la Nube",
+                        "tecs": [
+                            "Google Cloud"
+                        ]
+                    },
+                    "1": {
+                        "type": "Base de Datos",
+                        "tecs": [
+                            "MongoDB"
+                        ]
+                    },
+                    "2": {
+                        "type": "Backend",
+                        "tecs": [
+                            "Next.js",
+                            "Prisma",
+                            "TypeScript"
+                        ]
+                    },
+                    "3": {
+                        "type": "Frontend",
+                        "tecs": [
+                            "React",
+                            "CSS"
+                        ]
+                    },
+                    "4": {
+                        "type": "Alojamiento y Despliegue",
+                        "tecs": [
+                            "Vercel"
+                        ]
+                    },
+                    "5": {
+                        "type": "Multimedia",
+                        "tecs": [
+                            "Cloudinary"
+                        ]
+                    }
+                },
+                "options": {
+                    "0": "Objetivos",
+                    "1": "Tecnologías",
+                    "2": "Previsualización"
+                }
+            },
+            "application03": {
+                "id": "03",
+                "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1732945154/TripCode/Logos/cggalummkorqburvelfo.png",
+                "titleTypeWork": "Tipo de Trabajo",
+                "typeWork": "Freelancer",
+                "title": "Empresa",
+                "company": "Smart Talent",
+                "dateInit": "Fecha de Inicio",
+                "textDateInit": "Abril/23/2024",
+                "dateEnd": "Fecha de Finalización",
+                "textDateEnd": "Agosto/15/2024",
+                "objectives": {
+                    "0": "Desarrolle una solución de aplicación web completa, transformando el proceso de solicitud de préstamos en una experiencia totalmente digital.",
+                    "1": "Cree interfaces en tiempo real tanto para las solicitudes de los clientes como para las de los empleados, lo que permitió un seguimiento y una gestión fluidos de las solicitudes de préstamos.",
+                    "2": "Agilización de los flujos de trabajo de gestión y aprobación de préstamos, mejorando la eficiencia y transparencia generales del proceso de préstamo."
+                },
+                "technologies": {
+                    "0": {
+                        "type": "Computación en la Nube",
+                        "tecs": [
+                            "Google Cloud"
+                        ]
+                    },
+                    "1": {
+                        "type": "Base de Datos",
+                        "tecs": [
+                            "MongoDB"
+                        ]
+                    },
+                    "2": {
+                        "type": "Backend",
+                        "tecs": [
+                            "Next.js",
+                            "Prisma",
+                            "TypeScript"
+                        ]
+                    },
+                    "3": {
+                        "type": "Frontend",
+                        "tecs": [
+                            "React",
+                            "CSS"
+                        ]
+                    },
+                    "4": {
+                        "type": "Alojamiento y Despliegue",
+                        "tecs": [
+                            "Vercel"
+                        ]
+                    },
+                    "5": {
+                        "type": "Multimedia",
+                        "tecs": [
+                            "Cloudinary"
+                        ]
+                    }
+                },
+                "options": {
+                    "0": "Objetivos",
+                    "1": "Tecnologías",
+                    "2": "Previsualización"
                 }
             }
         }

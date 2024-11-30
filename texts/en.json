@@ -17,6 +17,7 @@
                 "name": "David Vasquez",
                 "profesion": "Full Stack Developer",
                 "resume": "Full Stack developer with strong experience in Next.js, React and TypeScript. Skilled in building engaging applications with JavaScript, Python. Proficient in using TypeScript, MongoDB, MySQL and Prisma for effective solutions. Experienced in deploying projects on Vercel and Google Cloud, with a solid understanding of cloud platforms and version control with GitHub. I am passionate about achieving project goals and delivering high quality results.",
+                "experience": "4 years of experience",
                 "buttons": {
                     "cv": "Download CV",
                     "git": "Github"
@@ -24,6 +25,198 @@
             },
             "PartImage": {
                 "url": "https://avatars.githubusercontent.com/u/83887793?v=4"
+            }
+        },
+        "Experience": {
+            "title": "Experience",
+            "application01": {
+                "id": "01",
+                "logo": "https://res.cloudinary.com/dvquomppa/image/upload/v1716227392/credito_ya/twwyldy5hmbwf1mppf6b.png",
+                "titleTypeWork": "Type of Work",
+                "typeWork": "Freelancer",
+                "title": "Company",
+                "company": "Credito Ya",
+                "dateInit": "Start Date",
+                "textDateInit": "April/23/2024",
+                "dateEnd": "End Date",
+                "textDateEnd": "August/15/2024",
+                "objectives": {
+                    "0": "Developed a complete web application solution, transforming the loan application process into a fully digital experience.",
+                    "1": "Created real-time interfaces for both customer and employee applications, allowing smooth tracking and management of loan requests.",
+                    "2": "Streamlined loan management and approval workflows, improving overall efficiency and transparency in the loan process."
+                },
+                "technologies": {
+                    "0": {
+                        "type": "Cloud Computing",
+                        "tecs": [
+                            "Google Cloud"
+                        ]
+                    },
+                    "1": {
+                        "type": "Database",
+                        "tecs": [
+                            "MongoDB"
+                        ]
+                    },
+                    "2": {
+                        "type": "Backend",
+                        "tecs": [
+                            "Next.js",
+                            "Prisma",
+                            "TypeScript"
+                        ]
+                    },
+                    "3": {
+                        "type": "Frontend",
+                        "tecs": [
+                            "React",
+                            "CSS"
+                        ]
+                    },
+                    "4": {
+                        "type": "Hosting & Deployment",
+                        "tecs": [
+                            "Vercel"
+                        ]
+                    },
+                    "5": {
+                        "type": "Multimedia",
+                        "tecs": [
+                            "Cloudinary"
+                        ]
+                    }
+                },
+                "options": {
+                    "0": "Objectives",
+                    "1": "Technologies",
+                    "2": "Preview"
+                }
+            },
+            "application02": {
+                "id": "02",
+                "logo": "https://res.cloudinary.com/dqwgqwske/image/upload/v1732918389/avatars_users_ebooks/kqqxfk3bjgyd1orfuodl.png",
+                "titleTypeWork": "Type of Work",
+                "typeWork": "Freelancer",
+                "title": "Company",
+                "company": "Todo En Bicicleta",
+                "dateInit": "Start Date",
+                "textDateInit": "April/23/2024",
+                "dateEnd": "End Date",
+                "textDateEnd": "August/15/2024",
+                "objectives": {
+                    "0": "Developed a complete web application solution, transforming the loan application process into a fully digital experience.",
+                    "1": "Created real-time interfaces for both customer and employee applications, allowing smooth tracking and management of loan requests.",
+                    "2": "Streamlined loan management and approval workflows, improving overall efficiency and transparency in the loan process."
+                },
+                "technologies": {
+                    "0": {
+                        "type": "Cloud Computing",
+                        "tecs": [
+                            "Google Cloud"
+                        ]
+                    },
+                    "1": {
+                        "type": "Database",
+                        "tecs": [
+                            "MongoDB"
+                        ]
+                    },
+                    "2": {
+                        "type": "Backend",
+                        "tecs": [
+                            "Next.js",
+                            "Prisma",
+                            "TypeScript"
+                        ]
+                    },
+                    "3": {
+                        "type": "Frontend",
+                        "tecs": [
+                            "React",
+                            "CSS"
+                        ]
+                    },
+                    "4": {
+                        "type": "Hosting & Deployment",
+                        "tecs": [
+                            "Vercel"
+                        ]
+                    },
+                    "5": {
+                        "type": "Multimedia",
+                        "tecs": [
+                            "Cloudinary"
+                        ]
+                    }
+                },
+                "options": {
+                    "0": "Objectives",
+                    "1": "Technologies",
+                    "2": "Preview"
+                }
+            },
+            "application03": {
+                "id": "03",
+                "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1732945154/TripCode/Logos/cggalummkorqburvelfo.png",
+                "titleTypeWork": "Type of Work",
+                "typeWork": "Freelancer",
+                "title": "Company",
+                "company": "Smart Talent",
+                "dateInit": "Start Date",
+                "textDateInit": "April/23/2024",
+                "dateEnd": "End Date",
+                "textDateEnd": "August/15/2024",
+                "objectives": {
+                    "0": "Developed a complete web application solution, transforming the loan application process into a fully digital experience.",
+                    "1": "Created real-time interfaces for both customer and employee applications, allowing smooth tracking and management of loan requests.",
+                    "2": "Streamlined loan management and approval workflows, improving overall efficiency and transparency in the loan process."
+                },
+                "technologies": {
+                    "0": {
+                        "type": "Cloud Computing",
+                        "tecs": [
+                            "Google Cloud"
+                        ]
+                    },
+                    "1": {
+                        "type": "Database",
+                        "tecs": [
+                            "MongoDB"
+                        ]
+                    },
+                    "2": {
+                        "type": "Backend",
+                        "tecs": [
+                            "Next.js",
+                            "Prisma",
+                            "TypeScript"
+                        ]
+                    },
+                    "3": {
+                        "type": "Frontend",
+                        "tecs": [
+                            "React",
+                            "CSS"
+                        ]
+                    },
+                    "4": {
+                        "type": "Hosting & Deployment",
+                        "tecs": [
+                            "Vercel"
+                        ]
+                    },
+                    "5": {
+                        "type": "Multimedia",
+                        "tecs": [
+                            "Cloudinary"
+                        ]
+                    }
+                },
+                "options": {
+                    "0": "Objectives",
+                    "1": "Technologies",
+                    "2": "Preview"
+                }
             }
         }
     }

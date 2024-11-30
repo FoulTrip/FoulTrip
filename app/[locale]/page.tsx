@@ -1,19 +1,18 @@
-import Experience from "@/components/landing/HeroSection/Experience";
+import Experience from "@/components/landing/Experience/Experience";
 import HeroSection from "@/components/landing/HeroSection/Hero";
-import NavBar from "@/components/NavBar"
+import NavBar from "@/components/NavBar";
+import { getLocale } from "next-intl/server";
 
-export default function Home({ params }: { params: { locale: string } }) {
-  // Asegúrate de que `params.locale` sea un valor válido de LenType
-  const currentLocale = params.locale as "es" | "en"; // Asegúrate de que es "es" o "en"
+export default async function Home() {
+  const locale = await getLocale();
 
   return (
     <>
       <main className="max-w-screen-lg mx-auto px-6 py-3">
-        <NavBar currentLocale={currentLocale} />
+        <NavBar currentLocale={locale as "es" | "en"} />
         <HeroSection />
         <Experience />
       </main>
-
     </>
   );
 }

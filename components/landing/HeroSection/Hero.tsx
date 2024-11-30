@@ -7,7 +7,7 @@ function HeroSection() {
     const t = useTranslations("Landing")
     return (
         <>
-            <div className="mt-32 flex flex-wrap-reverse">
+            <div className="mt-40 flex flex-wrap-reverse">
                 <div className="basis-[400px] grow">
                     <h1 className="text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-blue-800">{t('HeroSection.PartText.name')}</h1>
                     <p className="font-thin mt-1 text-2xl text-gray-900">{t('HeroSection.PartText.profesion')}</p>
@@ -35,7 +35,7 @@ function HeroSection() {
                     </div>
                 </div>
 
-                <div className="basis-[400px] grow flex justify-start md:grid md:place-content-center">
+                <div className="basis-[400px] grow flex justify-start md:flex md:justify-end">
                     <Image width={300} height={300} src={"https://avatars.githubusercontent.com/u/83887793?v=4"} alt="avatar" />
                 </div>
             </div>

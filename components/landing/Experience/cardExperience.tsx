@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
-import { TbCircleChevronDown, TbTarget } from "react-icons/tb";
+import { TbBriefcase, TbBuilding, TbCircleChevronDown, TbCode, TbDeviceDesktop, TbTarget } from "react-icons/tb";
 
 interface Technology {
     type: string;
@@ -107,8 +107,8 @@ function Experience({ applicationKey }: ExperienceProps) {
     };
 
     return (
-        <div className="flex flex-row gap-10 mt-8 rounded-md p-5">
-            <div>
+        <div className="flex flex-row gap-10 mt-8 pb-7 p-5 bg-gray-100 border-b border-gray-300">
+            <div className="w-[180px]">
                 <div className="flex flex-col">
                     <Image
                         src={application.logo}
@@ -118,12 +118,26 @@ function Experience({ applicationKey }: ExperienceProps) {
                         height={50}
                     />
                     <div className="mt-3 flex gap-2 flex-col">
-                        <div>
-                            <h3 className="text-sm text-gray-600 font-semibold">{application.title}</h3>
+                        <div className="flex flex-col gap-1">
+                            <div className="flex justify-start">
+                                <div className="flex flex-row gap-1">
+                                    <div className="grid place-content-center">
+                                        <TbBuilding className="text-gray-500" size={16} />
+                                    </div>
+                                    <h3 className="text-sm text-gray-500 font-semibold grid place-content-center">{application.title}</h3>
+                                </div>
+                            </div>
                             <p className="text-lg font-thin">{application.company}</p>
                         </div>
-                        <div>
-                            <h3 className="text-sm text-gray-600 font-semibold">{application.titleTypeWork}</h3>
+                        <div className="flex flex-col gap-1">
+                            <div className="flex justify-start">
+                                <div className="flex flex-row gap-1">
+                                    <div className="grid place-content-center">
+                                        <TbBriefcase className="text-gray-500" size={16} />
+                                    </div>
+                                    <h3 className="grid place-content-center text-sm text-gray-500 font-semibold">{application.titleTypeWork}</h3>
+                                </div>
+                            </div>
                             <p className="text-lg font-thin">{application.typeWork}</p>
                         </div>
                     </div>
@@ -132,32 +146,53 @@ function Experience({ applicationKey }: ExperienceProps) {
 
             {openOption.isOpen && (
                 <div className="flex flex-col">
-                    
-                    {/* Botón para regresar */}
-                    <div className="flex justify-start">
-                        <p
-                            onClick={handleBackList}
-                            className="cursor-pointer text-blue-500 underline"
-                        >
-                            Atrás
-                        </p>
-                    </div>
-
-                    {/* Título de la opción seleccionada */}
-                    <p className="text-xl font-semibold mb-4">{openOption.option}</p>
 
                     {/* Renderización condicional de contenido basado en la opción */}
-                    {openOption.option === "Objetivos" || openOption.option === "objectives" ? (
-                        <ul className="list-disc pl-6">
-                            {application.objectives.map((obj, index) => (
-                                <li key={index} className="mb-2">
-                                    {obj}
-                                </li>
-                            ))}
-                        </ul>
-                    ) : (
-                        <p>No hay información disponible para esta opción.</p>
+                    {openOption.isOpen && (
+                        <div className="flex flex-col">
+
+                            {/* Botón para regresar */}
+                            <div className="flex justify-start">
+                                <p
+                                    onClick={handleBackList}
+                                    className="cursor-pointer text-blue-500 underline"
+                                >
+                                    Atrás
+                                </p>
+                            </div>
+
+                            {/* Título de la opción seleccionada */}
+                            <p className="text-xl font-bold mb-4 mt-2 text-gray-600">{openOption.option}</p>
+
+                            {/* Renderización condicional de contenido basado en la opción */}
+                            {openOption.option === "Objetivos" || openOption.option === "Objectives" ? (
+                                <ul className="list-disc pl-6">
+                                    {application.objectives.map((obj, index) => (
+                                        <li key={index} className="mb-2 font-thin">
+                                            {obj}
+                                        </li>
+                                    ))}
+                                </ul>
+                            ) : openOption.option === "Tecnologías" || openOption.option === "Technologies" ? (
+                                <ul className="list-disc pl-6">
+                                    {application.technologies.map((tech, index) => (
+                                        <li key={index} className="mb-2">
+                                            <strong>{tech.type}:</strong> {tech.tecs.join(', ')}
+                                        </li>
+                                    ))}
+                                </ul>
+                            ) : openOption.option === "Previsualización" || openOption.option === "Preview" ? (
+                                <div className="preview-container">
+                                    {/* Aquí puedes agregar el contenido o la lógica para la previsualización */}
+                                    <p>Contenido de previsualización.</p>
+                                    {/* O una imagen, un componente, etc. */}
+                                </div>
+                            ) : (
+                                <p>No hay información disponible para esta opción.</p>
+                            )}
+                        </div>
                     )}
+
                 </div>
             )}
 
@@ -169,12 +204,21 @@ function Experience({ applicationKey }: ExperienceProps) {
                             <div
                                 key={index}
                                 onClick={() => handleToggleOption(option)}
-                                className="flex flex-row justify-between p-3 cursor-pointer shadow-md rounded-md"
+                                className="flex flex-row justify-between p-3 cursor-pointer hover:shadow-md hover:bg-gray-200 rounded-md hover:border-gray-300"
                             >
                                 <div className="flex justify-start">
                                     <div className="flex flex-row gap-2">
                                         <div className="grid place-content-center">
-                                            <TbTarget className="text-gray-500" size={20} />
+                                            {option == "Objetivos" || option == "Objectives" ? (
+                                                <TbTarget className="text-gray-500" size={20} />
+                                            ) : option === "Tecnologías" || option === "Technologies" ? (
+                                                <TbCode className="text-gray-500" size={20} />
+                                            ) : option === "Previsualización" || option === "Preview" ? (
+                                                <TbDeviceDesktop className="text-gray-500" size={20} />
+                                            ) : (
+                                                <></>
+                                            )}
+
                                         </div>
                                         <p className="text-lg font-bold text-gray-500">{option}</p>
                                     </div>

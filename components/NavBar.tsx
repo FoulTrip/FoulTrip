@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 type LenType = "es" | "en";
 
 const NavBar = ({ currentLocale }: { currentLocale: LenType }) => {
+      // Asegúrate de que params.locale tenga un valor válido
     const router = useRouter();
     const t = useTranslations("navbar");  // Cargar las traducciones para "navbar"
 
