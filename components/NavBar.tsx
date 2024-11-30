@@ -19,7 +19,7 @@ const NavBar = ({ currentLocale }: { currentLocale: LenType }) => {
     };
 
     return (
-        <nav className="flex items-center justify-between px-4 py-2 bg-gray-50">
+        <nav className="flex items-center justify-between px-4 py-2 bg-transparent">
             <h1 className="text-lg text-blue-600 font-bold">{t("name")}</h1>
             <div className="flex items-center">
                 {/* Menú (escondido en móviles) */}

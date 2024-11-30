@@ -107,7 +107,7 @@ function Experience({ applicationKey }: ExperienceProps) {
     };
 
     return (
-        <div className="flex md:flex-row flex-col md:gap-10 gap-2 mt-8 pb-7 p-5 bg-gray-50 border-b border-gray-300">
+        <div className="flex md:flex-row flex-col md:gap-10 gap-2 mt-8 pb-7 p-5 bg-white border-b border-gray-300">
             <div className="md:w-[180px]">
                 <div className="flex flex-col">
                     <Image
