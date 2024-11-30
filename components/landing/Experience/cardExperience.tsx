@@ -107,8 +107,8 @@ function Experience({ applicationKey }: ExperienceProps) {
     };
 
     return (
-        <div className="flex flex-row gap-10 mt-8 pb-7 p-5 bg-gray-100 border-b border-gray-300">
-            <div className="w-[180px]">
+        <div className="flex md:flex-row flex-col md:gap-10 gap-2 mt-8 pb-7 p-5 bg-gray-100 border-b border-gray-300">
+            <div className="md:w-[180px]">
                 <div className="flex flex-col">
                     <Image
                         src={application.logo}
@@ -117,7 +117,7 @@ function Experience({ applicationKey }: ExperienceProps) {
                         width={50}
                         height={50}
                     />
-                    <div className="mt-3 flex gap-2 flex-col">
+                    <div className="mt-3 flex-1 flex gap-5 md:flex-col flex-row">
                         <div className="flex flex-col gap-1">
                             <div className="flex justify-start">
                                 <div className="flex flex-row gap-1">
@@ -204,7 +204,7 @@ function Experience({ applicationKey }: ExperienceProps) {
                             <div
                                 key={index}
                                 onClick={() => handleToggleOption(option)}
-                                className="flex flex-row justify-between p-3 cursor-pointer hover:shadow-md hover:bg-gray-200 rounded-md hover:border-gray-300"
+                                className="flex flex-row justify-between p-3 cursor-pointer shadow-md bg-gray-200 rounded-md hover:border-gray-300"
                             >
                                 <div className="flex justify-start">
                                     <div className="flex flex-row gap-2">

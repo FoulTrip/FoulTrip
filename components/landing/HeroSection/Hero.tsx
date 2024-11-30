@@ -7,12 +7,12 @@ function HeroSection() {
     const t = useTranslations("Landing")
     return (
         <>
-            <div className="mt-40 flex flex-wrap-reverse">
+            <div className="mt-14 flex flex-wrap-reverse gap-2">
                 <div className="basis-[400px] grow">
                     <h1 className="text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-blue-800">{t('HeroSection.PartText.name')}</h1>
                     <p className="font-thin mt-1 text-2xl text-gray-900">{t('HeroSection.PartText.profesion')}</p>
 
-                    <p className="text-sm mt-8 font-extralight text-gray-600">{t('HeroSection.PartText.resume')}</p>
+                    <p className="text-sm mt-5 mb-5 font-light text-gray-600">{t('HeroSection.PartText.resume')}</p>
 
                     <div className="mt-3 flex flex-row justify-start gap-3">
                         <button className="p-2 border border-blue-200 bg-blue-100 hover:bg-blue-200 hover:shadow-lg rounded-md">
