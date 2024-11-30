@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
-import { TbBriefcase, TbBuilding, TbCircleChevronDown, TbCode, TbDeviceDesktop, TbTarget } from "react-icons/tb";
+import { TbArrowNarrowLeft, TbBriefcase, TbBuilding, TbCircleChevronDown, TbCode, TbDeviceDesktop, TbTarget } from "react-icons/tb";
 
 interface Technology {
     type: string;
@@ -108,7 +108,7 @@ function Experience({ applicationKey }: ExperienceProps) {
 
     return (
         <div className="flex md:flex-row flex-col md:gap-10 gap-2 mt-8 pb-7 p-5 bg-white border-b border-gray-300">
-            <div className="md:w-[180px]">
+            <div className="md:w-[220px]">
                 <div className="flex flex-col">
                     <Image
                         src={application.logo}
@@ -127,7 +127,7 @@ function Experience({ applicationKey }: ExperienceProps) {
                                     <h3 className="text-sm text-gray-500 font-semibold grid place-content-center">{application.title}</h3>
                                 </div>
                             </div>
-                            <p className="text-lg font-thin">{application.company}</p>
+                            <p className="text-lg font-extralight text-gray-800">{application.company}</p>
                         </div>
                         <div className="flex flex-col gap-1">
                             <div className="flex justify-start">
@@ -152,13 +152,17 @@ function Experience({ applicationKey }: ExperienceProps) {
                         <div className="flex flex-col">
 
                             {/* Botón para regresar */}
-                            <div className="flex justify-start">
-                                <p
-                                    onClick={handleBackList}
-                                    className="cursor-pointer text-blue-500 underline"
-                                >
-                                    Atrás
-                                </p>
+                            <div className="flex justify-start mt-2 mb-2">
+                                <div className="flex flex-row bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-md gap-1" onClick={handleBackList}>
+                                    <div className="grid place-content-center">
+                                        <TbArrowNarrowLeft className="text-gray-500" />
+                                    </div>
+                                    <p
+                                        className="cursor-pointer text-gray-500"
+                                    >
+                                        Atrás
+                                    </p>
+                                </div>
                             </div>
 
                             {/* Título de la opción seleccionada */}
@@ -204,7 +208,7 @@ function Experience({ applicationKey }: ExperienceProps) {
                             <div
                                 key={index}
                                 onClick={() => handleToggleOption(option)}
-                                className="flex flex-row justify-between p-3 cursor-pointer shadow-md bg-gray-200 rounded-md hover:border-gray-300"
+                                className="flex flex-row justify-between p-3 cursor-pointer hover:shadow-md bg-gray-100 rounded-md hover:bg-gray-200"
                             >
                                 <div className="flex justify-start">
                                     <div className="flex flex-row gap-2">

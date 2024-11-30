@@ -12,6 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        garet: ['var(--font-garet-book)', 'sans-serif']
+      }
     },
   },
   plugins: [],

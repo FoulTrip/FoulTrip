@@ -100,13 +100,13 @@
                 "title": "Company",
                 "company": "Todo En Bicicleta",
                 "dateInit": "Start Date",
-                "textDateInit": "April/23/2024",
+                "textDateInit": "December/27/2023",
                 "dateEnd": "End Date",
-                "textDateEnd": "August/15/2024",
+                "textDateEnd": "Noviembre/13/2024",
                 "objectives": {
-                    "0": "Developed a complete web application solution, transforming the loan application process into a fully digital experience.",
-                    "1": "Created real-time interfaces for both customer and employee applications, allowing smooth tracking and management of loan requests.",
-                    "2": "Streamlined loan management and approval workflows, improving overall efficiency and transparency in the loan process."
+                    "0": "Developed a travel application with real-time location tracking and routing, allowing users to monitor and follow the traveler's journey live.",
+                    "1": "Implement a customized streaming zone where users can interact with the traveler live, manage interactions and receive real-time feedback.",
+                    "2": "A detailed profile of the traveler is designed, with biography and a specific section to view the ebooks written by the traveler, with secure access restricted to those who have purchased the books through PayPal"
                 },
                 "technologies": {
                     "0": {
@@ -163,19 +163,19 @@
                 "title": "Company",
                 "company": "Smart Talent",
                 "dateInit": "Start Date",
-                "textDateInit": "April/23/2024",
+                "textDateInit": "May/28/2024",
                 "dateEnd": "End Date",
-                "textDateEnd": "August/15/2024",
+                "textDateEnd": "julio/12/2024",
                 "objectives": {
-                    "0": "Developed a complete web application solution, transforming the loan application process into a fully digital experience.",
-                    "1": "Created real-time interfaces for both customer and employee applications, allowing smooth tracking and management of loan requests.",
-                    "2": "Streamlined loan management and approval workflows, improving overall efficiency and transparency in the loan process."
+                    "0": "Developed a comprehensive feedback management system for Smart Ranks, centralizing user feedback in an organized manner.",
+                    "1": "Implemented features for users to submit feedback, track its progress, and receive real-time updates, enhancing communication between users and system administrators",
+                    "2": "Streamlined the feedback process, ensuring efficient and systematic handling of all submissions."
                 },
                 "technologies": {
                     "0": {
                         "type": "Cloud Computing",
                         "tecs": [
-                            "Google Cloud"
+                            ""
                         ]
                     },
                     "1": {
@@ -187,28 +187,27 @@
                     "2": {
                         "type": "Backend",
                         "tecs": [
-                            "Next.js",
-                            "Prisma",
-                            "TypeScript"
+                            "Node.js",
+                            "JavaScript"
                         ]
                     },
                     "3": {
                         "type": "Frontend",
                         "tecs": [
-                            "React",
+                            "HTML",
                             "CSS"
                         ]
                     },
                     "4": {
                         "type": "Hosting & Deployment",
                         "tecs": [
-                            "Vercel"
+                            ""
                         ]
                     },
                     "5": {
                         "type": "Multimedia",
                         "tecs": [
-                            "Cloudinary"
+                            ""
                         ]
                     }
                 },

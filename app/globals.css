@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    font-family: var(--font-garet-book), sans-serif; /* Fallback a sans-serif */
+}
