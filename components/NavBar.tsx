@@ -50,10 +50,10 @@ const NavBar = ({ currentLocale }: { currentLocale: LenType }) => {
 
             {/* Menú desplegable (móvil) */}
             {menuOpen && (
-                <div className="absolute top-full right-4 mt-2 bg-white shadow-md p-4 flex flex-col gap-2 rounded md:hidden">
-                    <p>{t("options.01")}</p>
-                    <p>{t("options.02")}</p>
-                    <p>{t("options.03")}</p>
+                <div className="absolute top-16 right-10 mt-2 bg-gray-200 shadow-md p-4 flex flex-col gap-2 rounded md:hidden">
+                    <p className="hover:bg-gray-300 px-2 py-2 rounded text-gray-600">{t("options.01")}</p>
+                    <p className="hover:bg-gray-300 px-2 py-2 rounded text-gray-600">{t("options.02")}</p>
+                    <p className="hover:bg-gray-300 px-2 py-2 rounded text-gray-600">{t("options.03")}</p>
                 </div>
             )}
         </nav>
