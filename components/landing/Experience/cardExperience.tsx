@@ -6,6 +6,9 @@ import { useState } from "react";
 import { TbArrowNarrowLeft, TbBriefcase, TbBuilding, TbCircleChevronDown, TbCode, TbDeviceDesktop, TbTarget } from "react-icons/tb";
 import Technologies from "./Tecnologies";
 import PagePreview from "./Preview";
+import { IoLogoGithub } from "react-icons/io5";
+import { PiGlobe } from "react-icons/pi";
+import { useRouter } from "next/navigation";
 
 interface Technology {
     type: string;
@@ -16,7 +19,7 @@ interface Application {
     id: string;
     logo: string;
     titleTypeWork: string;
-    typeWork: string;
+    position: string;
     title: string;
     company: string;
     dateInit: string;
@@ -27,6 +30,7 @@ interface Application {
     technologies: Technology[];
     options: string[];
     urlPage: string
+    gitUrl: string
 }
 
 interface ExperienceProps {
@@ -40,6 +44,7 @@ interface OptionPropType {
 
 function Experience({ applicationKey }: ExperienceProps) {
     const t = useTranslations("Landing");
+    const router = useRouter()
 
     const [openOption, setOpenOption] = useState<OptionPropType>({ option: null, isOpen: false })
 
@@ -64,7 +69,7 @@ function Experience({ applicationKey }: ExperienceProps) {
         id: t(`${applicationKey}.id`),
         logo: t(`${applicationKey}.logo`),
         titleTypeWork: t(`${applicationKey}.titleTypeWork`),
-        typeWork: t(`${applicationKey}.typeWork`),
+        position: t(`${applicationKey}.position`),
         title: t(`${applicationKey}.title`),
         company: t(`${applicationKey}.company`),
         dateInit: t(`${applicationKey}.dateInit`),
@@ -107,7 +112,8 @@ function Experience({ applicationKey }: ExperienceProps) {
             t(`${applicationKey}.options.1`),
             t(`${applicationKey}.options.2`)
         ],
-        urlPage: t(`${applicationKey}.urlPage`)
+        urlPage: t(`${applicationKey}.urlPage`),
+        gitUrl: t(`${applicationKey}.gitUrl`)
     };
 
     return (
@@ -142,7 +148,7 @@ function Experience({ applicationKey }: ExperienceProps) {
                                     <h3 className="grid place-content-center text-sm text-gray-500 font-semibold">{application.titleTypeWork}</h3>
                                 </div>
                             </div>
-                            <p className="text-lg font-thin">{application.typeWork}</p>
+                            <p className="text-lg font-thin">{application.position}</p>
                         </div>
                     </div>
                 </div>
@@ -229,7 +235,27 @@ function Experience({ applicationKey }: ExperienceProps) {
                                 </div>
                             </div>
                         ))}
+                        <div className="flex flex-row justify-start gap-2">
 
+                            <div className="grid place-content-center p-2 hover:bg-gray-800 hover:shadow-md bg-gray-600 rounded-md cursor-pointer">
+                                <div className="flex flex-row gap-1">
+                                    <div className="grid place-content-center">
+                                        <IoLogoGithub className="text-white" size={20} />
+                                    </div>
+                                    <p onClick={() => router.push(application.gitUrl)} className="grid place-content-center text-white font-extrabold">Repositorio</p>
+                                </div>
+                            </div>
+
+                            <div className="grid place-content-center p-2 bg-gray-300 hover:shadow-md rounded-md cursor-pointer">
+                                <div className="flex flex-row gap-1">
+                                    <div className="grid place-content-center">
+                                        <PiGlobe className="text-gray-600" size={20} />
+                                    </div>
+                                    <p onClick={() => router.push(application.urlPage)} className="grid place-content-center text-gray-600 font-extrabold">Sitio Web</p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </>
             )}
