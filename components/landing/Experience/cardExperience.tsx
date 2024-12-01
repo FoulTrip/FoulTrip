@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 import { TbArrowNarrowLeft, TbBriefcase, TbBuilding, TbCircleChevronDown, TbCode, TbDeviceDesktop, TbTarget } from "react-icons/tb";
+import Technologies from "./Tecnologies";
 
 interface Technology {
     type: string;
@@ -178,12 +179,8 @@ function Experience({ applicationKey }: ExperienceProps) {
                                     ))}
                                 </ul>
                             ) : openOption.option === "Tecnologías" || openOption.option === "Technologies" ? (
-                                <ul className="list-disc pl-6">
-                                    {application.technologies.map((tech, index) => (
-                                        <li key={index} className="mb-2">
-                                            <strong>{tech.type}:</strong> {tech.tecs.join(', ')}
-                                        </li>
-                                    ))}
+                                <ul className="">
+                                    <Technologies technologies={application.technologies} />
                                 </ul>
                             ) : openOption.option === "Previsualización" || openOption.option === "Preview" ? (
                                 <div className="preview-container">

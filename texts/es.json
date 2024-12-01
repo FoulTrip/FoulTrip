@@ -139,7 +139,8 @@
                     "4": {
                         "type": "Alojamiento y Despliegue",
                         "tecs": [
-                            "Vercel"
+                            "Vercel",
+                            "Docker"
                         ]
                     },
                     "5": {

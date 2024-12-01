@@ -136,12 +136,13 @@
                             "CSS"
                         ]
                     },
-                    "4": {
-                        "type": "Hosting & Deployment",
-                        "tecs": [
-                            "Vercel"
-                        ]
-                    },
+                        "4": {
+                            "type": "Hosting & Deployment",
+                            "tecs": [
+                                "Vercel",
+                                "Docker"
+                            ]
+                        },
                     "5": {
                         "type": "Multimedia",
                         "tecs": [
@@ -174,9 +175,7 @@
                 "technologies": {
                     "0": {
                         "type": "Cloud Computing",
-                        "tecs": [
-                            ""
-                        ]
+                        "tecs": []
                     },
                     "1": {
                         "type": "Database",
@@ -200,15 +199,11 @@
                     },
                     "4": {
                         "type": "Hosting & Deployment",
-                        "tecs": [
-                            ""
-                        ]
+                        "tecs": []
                     },
                     "5": {
                         "type": "Multimedia",
-                        "tecs": [
-                            ""
-                        ]
+                        "tecs": []
                     }
                 },
                 "options": {
