@@ -90,7 +90,8 @@
                     "0": "Objectives",
                     "1": "Technologies",
                     "2": "Preview"
-                }
+                },
+                "urlPage": "https://creditoya.vercel.app/"
             },
             "application02": {
                 "id": "02",
@@ -154,7 +155,8 @@
                     "0": "Objectives",
                     "1": "Technologies",
                     "2": "Preview"
-                }
+                },
+                "urlPage": "https://todoenbici.vercel.app/"
             },
             "application03": {
                 "id": "03",
@@ -210,7 +212,8 @@
                     "0": "Objectives",
                     "1": "Technologies",
                     "2": "Preview"
-                }
+                },
+                "urlPage": ""
             }
         }
     }

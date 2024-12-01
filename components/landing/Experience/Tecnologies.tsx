@@ -85,7 +85,7 @@ const Technologies = ({ technologies }: TechnologiesProps) => {
   }
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4">
       {uniqueTechnologies.map((tec) => {
         const Icon = technologyIcons[tec];
 

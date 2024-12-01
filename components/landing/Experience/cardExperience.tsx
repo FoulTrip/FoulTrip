@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { TbArrowNarrowLeft, TbBriefcase, TbBuilding, TbCircleChevronDown, TbCode, TbDeviceDesktop, TbTarget } from "react-icons/tb";
 import Technologies from "./Tecnologies";
+import PagePreview from "./Preview";
 
 interface Technology {
     type: string;
@@ -25,6 +26,7 @@ interface Application {
     objectives: string[];
     technologies: Technology[];
     options: string[];
+    urlPage: string
 }
 
 interface ExperienceProps {
@@ -104,7 +106,8 @@ function Experience({ applicationKey }: ExperienceProps) {
             t(`${applicationKey}.options.0`),
             t(`${applicationKey}.options.1`),
             t(`${applicationKey}.options.2`)
-        ]
+        ],
+        urlPage: t(`${applicationKey}.urlPage`)
     };
 
     return (
@@ -146,7 +149,7 @@ function Experience({ applicationKey }: ExperienceProps) {
             </div>
 
             {openOption.isOpen && (
-                <div className="flex flex-col">
+                <div className="flex flex-col flex-1">
 
                     {/* Renderización condicional de contenido basado en la opción */}
                     {openOption.isOpen && (
@@ -183,11 +186,7 @@ function Experience({ applicationKey }: ExperienceProps) {
                                     <Technologies technologies={application.technologies} />
                                 </ul>
                             ) : openOption.option === "Previsualización" || openOption.option === "Preview" ? (
-                                <div className="preview-container">
-                                    {/* Aquí puedes agregar el contenido o la lógica para la previsualización */}
-                                    <p>Contenido de previsualización.</p>
-                                    {/* O una imagen, un componente, etc. */}
-                                </div>
+                                <PagePreview url={application.urlPage} />
                             ) : (
                                 <p>No hay información disponible para esta opción.</p>
                             )}

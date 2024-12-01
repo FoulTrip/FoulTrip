@@ -7,7 +7,7 @@ function HeroSection() {
     const t = useTranslations("Landing")
     return (
         <>
-            <div className="mt-14 md:mt-40 flex flex-wrap-reverse gap-2">
+            <div className="mt-14 md:mt-40 flex flex-wrap-reverse gap-5">
                 <div className="basis-[400px] grow">
                     <h1 className="text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-blue-800">{t('HeroSection.PartText.name')}</h1>
                     <p className="font-thin mt-1 text-2xl text-gray-800">{t('HeroSection.PartText.profesion')}</p>
