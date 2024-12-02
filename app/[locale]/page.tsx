@@ -10,7 +10,7 @@ export default async function Home() {
     <>
       <main className="max-w-screen-lg mx-auto px-6 py-3">
         <NavBar currentLocale={locale as "es" | "en"} />
-        <HeroSection />
+        <HeroSection  />
         <Experience />
       </main>
     </>

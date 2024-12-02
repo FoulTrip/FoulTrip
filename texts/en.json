@@ -25,6 +25,10 @@
             },
             "PartImage": {
                 "url": "https://avatars.githubusercontent.com/u/83887793?v=4"
+            },
+            "cvs": {
+                "cvEnTitle": "Cv in english",
+                "cvEsTitle": "Cv in Spanish"
             }
         },
         "Experience": {

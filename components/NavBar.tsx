@@ -24,8 +24,14 @@ const NavBar = ({ currentLocale }: { currentLocale: LenType }) => {
             <div className="flex items-center">
                 {/* Menú (escondido en móviles) */}
                 <div className="hidden md:flex flex-row gap-4">
-                    <p>{t("options.01")}</p>
-                    <p>{t("options.02")}</p>
+                    <p
+                        onClick={() => router.push(`#${t('option.01')}`)}
+                        className="cursor-pointer text-gray-600 hover:text-gray-800"
+                    >{t("options.01")}</p>
+                    <p
+                        className="cursor-pointer text-gray-600 hover:text-gray-800"
+                        onClick={() => router.push(`#${t('options.02')}`)}
+                    >{t("options.02")}</p>
                     {/* <p>{t("options.03")}</p> */}
                 </div>
 
@@ -51,9 +57,15 @@ const NavBar = ({ currentLocale }: { currentLocale: LenType }) => {
             {/* Menú desplegable (móvil) */}
             {menuOpen && (
                 <div className="absolute top-16 right-10 mt-2 bg-gray-200 shadow-md p-2 flex flex-col gap-2 rounded md:hidden">
-                    <p className="hover:bg-gray-300 px-2 py-2 rounded text-gray-600">{t("options.01")}</p>
-                    <p className="hover:bg-gray-300 px-2 py-2 rounded text-gray-600">{t("options.02")}</p>
-                    {/* <p className="hover:bg-gray-300 px-2 py-2 rounded text-gray-600">{t("options.03")}</p> */}
+                    <p
+                        onClick={() => router.push(`#${t('options.01')}`)}
+                        className="hover:bg-gray-300 px-2 py-2 rounded text-gray-600"
+                    >{t("options.01")}</p>
+
+                    <p
+                        onClick={() => router.push(`#${t('options.02')}`)}
+                        className="hover:bg-gray-300 px-2 py-2 rounded text-gray-600"
+                    >{t("options.02")}</p>
                 </div>
             )}
         </nav>
