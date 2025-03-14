@@ -1,5 +1,5 @@
 <h1>Hi 👋, I'm David Vasquez Mahecha</h1>
-<h3>Full-Stack developer from Colombia</h3>
+<h3>Full-Stack developer</h3>
 
 <h1>About me</h1>
 <p>As a software developer with years of experience, I have cultivated my skills through a combination of self-taught learning and hands-on experience. Specializing in React, my background has led me to continually explore new technologies to stay relevant in a constantly evolving market.</p>
