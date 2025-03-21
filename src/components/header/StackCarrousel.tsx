@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useEffect, useCallback } from "react";
+import React from "react";
 import Image from "next/image";
-import useEmblaCarousel from "embla-carousel-react";
+// import useEmblaCarousel from "embla-carousel-react";
 
 import svg1 from "@/assets/stacks/React.svg";
 import svg2 from "@/assets/stacks/docker.svg";
