@@ -7,7 +7,7 @@ import headerIlustration from "@/assets/ilustration/Code typing-pana.svg"
 function BaseHeader() {
     return (
         <>
-            <main className="min-h-dvh grid place-content-center w-[90%] ml-[5%] pt-10">
+            <main className="min-h-dvh grid place-content-center w-[90%] ml-[5%] mt-20 mb-20">
                 <div>
                     <div className="grid place-content-center">
                         <Image
