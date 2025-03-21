@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@import 'keen-slider/keen-slider.min.css';
+
+@layer utilities {
+  .animation-pause {
+    animation-play-state: paused;
+  }
+}

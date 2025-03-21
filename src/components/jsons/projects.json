@@ -1,0 +1,34 @@
+[
+    {
+        "name": "BlockScrum",
+        "slug": "Enfocado en el seguimiento de proyectos Scrum",
+        "description": "BlockScrum es una aplicación diseñada para la gestión ágil de proyectos mediante la metodología Scrum. Implementa un sistema de tableros interactivos con seguimiento en tiempo real de sprints, tareas y avances del equipo. Utiliza una arquitectura escalable con integración de APIs para la automatización de procesos, gestión de roles y análisis de métricas de rendimiento. Su diseño modular permite una fácil personalización y adaptación a distintos flujos de trabajo en entornos de desarrollo ágil",
+        "cover": "/backgrounds-projects/scrum_mosaic.jpg",
+        "uriDocs": "dwdwd",
+        "uriGithub": "dwdw"
+    },
+    {
+        "name": "TripCode Chain",
+        "slug": "Enfocado en el seguimiento de proyectos Scrum",
+        "description": "BlockScrum es una aplicación diseñada para la gestión ágil de proyectos mediante la metodología Scrum. Implementa un sistema de tableros interactivos con seguimiento en tiempo real de sprints, tareas y avances del equipo. Utiliza una arquitectura escalable con integración de APIs para la automatización de procesos, gestión de roles y análisis de métricas de rendimiento. Su diseño modular permite una fácil personalización y adaptación a distintos flujos de trabajo en entornos de desarrollo ágil",
+        "cover": "/backgrounds-projects/blocks_mosaic.jpg",
+        "uriDocs": "dwdwd",
+        "uriGithub": "dwdw"
+    },
+    {
+        "name": "ParfumCol",
+        "slug": "Enfocado en el seguimiento de proyectos Scrum",
+        "description": "BlockScrum es una aplicación diseñada para la gestión ágil de proyectos mediante la metodología Scrum. Implementa un sistema de tableros interactivos con seguimiento en tiempo real de sprints, tareas y avances del equipo. Utiliza una arquitectura escalable con integración de APIs para la automatización de procesos, gestión de roles y análisis de métricas de rendimiento. Su diseño modular permite una fácil personalización y adaptación a distintos flujos de trabajo en entornos de desarrollo ágil",
+        "cover": "/backgrounds-projects/blocks_mosaic.jpg",
+        "uriDocs": "dwdwd",
+        "uriGithub": "dwdw"
+    },
+    {
+        "name": "Inventory Management SaaS Descentralizado",
+        "slug": "Enfocado en el seguimiento de proyectos Scrum",
+        "description": "BlockScrum es una aplicación diseñada para la gestión ágil de proyectos mediante la metodología Scrum. Implementa un sistema de tableros interactivos con seguimiento en tiempo real de sprints, tareas y avances del equipo. Utiliza una arquitectura escalable con integración de APIs para la automatización de procesos, gestión de roles y análisis de métricas de rendimiento. Su diseño modular permite una fácil personalización y adaptación a distintos flujos de trabajo en entornos de desarrollo ágil",
+        "cover": "/backgrounds-projects/blocks_mosaic.jpg",
+        "uriDocs": "dwdwd",
+        "uriGithub": "dwdw"
+    }
+]

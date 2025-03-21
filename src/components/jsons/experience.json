@@ -1,0 +1,29 @@
+[
+    {
+        "position": "Lead Full Stack Developer",
+        "company": "Todo En Bicicleta",
+        "logo": "/logos/todo_en_bici.png",
+        "type": "Freelancer",
+        "initialDate": "Abr 2024",
+        "endDate": "Nov 2024",
+        "Description": "Desarrollé una aplicación de viajes con seguimiento de ubicación y rutas en tiempo real, permitiendo a los usuarios monitorear en directo el recorrido del viajero. Implementé una zona de streaming interactivo, donde los usuarios pueden conectarse en vivo con el viajero, gestionar interacciones y recibir comentarios en tiempo real. Además, diseñé un perfil detallado del viajero, con biografía y una sección exclusiva para visualizar sus ebooks. El acceso a estos libros está protegido y solo disponible para quienes los hayan adquirido mediante PayPal, garantizando seguridad y exclusividad"
+    },
+    {
+        "position": "Lead Full Stack Developer",
+        "company": "Credito Ya",
+        "logo": "/logos/credito_ya.png",
+        "type": "Freelancer",
+        "initialDate": "Abr 2024",
+        "endDate": "Nov 2024",
+        "Description": "Desarrollé una aplicación web integral que digitaliza por completo el proceso de solicitud de préstamos, ofreciendo una experiencia ágil y sin fricciones. Implementé interfaces en tiempo real tanto para clientes como para empleados, permitiendo un seguimiento y gestión eficientes de cada solicitud. Además, optimicé los flujos de trabajo de gestión y aprobación de préstamos, mejorando la eficiencia y transparencia en todo el proceso."
+    },
+    {
+        "position": "Backend Developer",
+        "company": "Smart Talent",
+        "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1732945154/TripCode/Logos/cggalummkorqburvelfo.png",
+        "type": "Freelancer",
+        "initialDate": "Abr 2024",
+        "endDate": "Nov 2024",
+        "Description": "Desarrollé una aplicación web integral que digitaliza por completo el proceso de solicitud de préstamos, ofreciendo una experiencia ágil y sin fricciones. Implementé interfaces en tiempo real tanto para clientes como para empleados, permitiendo un seguimiento y gestión eficientes de cada solicitud. Además, optimicé los flujos de trabajo de gestión y aprobación de préstamos, mejorando la eficiencia y transparencia en todo el proceso."
+    }
+]
