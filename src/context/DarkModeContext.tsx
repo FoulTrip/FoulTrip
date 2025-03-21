@@ -9,40 +9,42 @@ interface DarkModeContextType {
 
 const DarkModeContext = createContext<DarkModeContextType | undefined>(undefined);
 
-/**
- * Provider component to manage and provide dark mode state to the application.
- * Handles theme persistence using localStorage and applies the theme dynamically.
- */
 export function DarkModeProvider({ children }: { children: ReactNode }) {
+    // Estado con valor inicial fallback para SSR
     const [darkmode, setDarkmode] = useState(false);
+    // Estado para controlar si el componente está listo
+    const [isInitialized, setIsInitialized] = useState(false);
 
     useEffect(() => {
-        // Retrieve the saved theme from localStorage on app load
-        const savedTheme = localStorage.getItem("theme") || "dark"; // Default to "dark" if no theme is saved
-        setDarkmode(savedTheme === "dark");
-        applyTheme(savedTheme);
-    }, []);
+        // Código que solo se ejecuta en el cliente
+        const isDark = localStorage.getItem("theme") === "dark" ||
+            (!localStorage.getItem("theme") &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches);
 
-    /**
-     * Toggles the dark mode state and updates localStorage and the applied theme.
-     */
-    const changeDarkMode = () => {
-        setDarkmode(!darkmode);
-        // Guardar la preferencia en localStorage
-        localStorage.setItem("theme", !darkmode ? "dark" : "light");
-        applyTheme(!darkmode ? "dark" : "light");
-    };
+        setDarkmode(isDark);
 
-    /**
-     * Applies the specified theme to the document by adding or removing the "dark" class.
-     * @param theme - The theme to apply ("dark" or "light").
-     */
-    const applyTheme = (theme: string) => {
-        if (theme === "dark") {
+        if (isDark) {
             document.documentElement.classList.add("dark");
         } else {
             document.documentElement.classList.remove("dark");
         }
+
+        setIsInitialized(true);
+    }, []);
+
+    const changeDarkMode = () => {
+        const newDarkMode = !darkmode;
+        setDarkmode(newDarkMode);
+
+        if (newDarkMode) {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("theme", "dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("theme", "light");
+        }
+
+        console.log("Tema cambiado:", newDarkMode ? "oscuro" : "claro");
     };
 
     return (
@@ -52,10 +54,6 @@ export function DarkModeProvider({ children }: { children: ReactNode }) {
     );
 }
 
-/**
- * Custom hook to access the dark mode context.
- * Throws an error if used outside of a DarkModeProvider.
- */
 export function useDarkMode() {
     const context = useContext(DarkModeContext);
     if (context === undefined) {

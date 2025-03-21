@@ -15,16 +15,19 @@ import svg8 from "@/assets/stacks/nodejs.svg";
 import svg9 from "@/assets/stacks/python.svg";
 import svg10 from "@/assets/stacks/solidity.svg";
 import svg11 from "@/assets/stacks/typescript.svg";
+import { useTranslations } from "next-intl";
 
 const logos = [
     svg1, svg2, svg3, svg4, svg5, svg6, svg7, svg8, svg9, svg10, svg11,
 ];
 
 const LogoCarousel: React.FC = () => {
+    const t = useTranslations("BaseHeader");
+
     return (
         <div className="overflow-hidden w-full">
             <div className="grid place-content-center mb-5">
-                <p className="font-bold text-gray-600">Experience With</p>
+                <p className="font-bold text-gray-600">{t('titleSkills')}</p>
             </div>
             <div className="flex">
                 {logos.map((logo, index) => (

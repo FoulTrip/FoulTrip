@@ -1,1 +1,15 @@
-{}
+{
+    "Navbar": {
+        "about": "Sobre mí",
+        "projects": "Proyectos",
+        "skills": "Habilidades",
+        "contact": "Contacto"
+    },
+    "BaseHeader": {
+        "headline": "Construyendo negocios\nimpulsados por la innovación.",
+        "description": "Desarrollador Full Stack con experiencia en Next.js, React y TypeScript, especializado en crear aplicaciones web atractivas, funcionales y escalables. Experto en Python, MongoDB, MySQL y Prisma para soluciones backend robustas, y en desplegar proyectos en Vercel y Google Cloud. Apasionado por transformar ideas en productos innovadores, optimizando el rendimiento y la experiencia del usuario.",
+        "getInTouch": "Contáctame",
+        "downloadCV": "Descargar CV",
+        "titleSkills": "Experiencia con"
+    }
+}

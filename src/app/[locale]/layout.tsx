@@ -34,9 +34,9 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
-        <DarkModeProvider>
-          {children}
-        </DarkModeProvider>
+          <DarkModeProvider>
+            {children}
+          </DarkModeProvider>
         </NextIntlClientProvider>
       </body>
     </html>
