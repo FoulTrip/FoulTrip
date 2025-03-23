@@ -5,11 +5,7 @@ import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation';
 
-interface NavbarProps {
-    initialLanguage?: 'es' | 'en';
-}
-
-const Navbar: React.FC<NavbarProps> = ({ initialLanguage = 'es' }) => {
+function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
     const { darkmode, changeDarkMode } = useDarkMode();
