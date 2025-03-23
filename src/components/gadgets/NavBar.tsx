@@ -32,16 +32,16 @@ const Navbar: React.FC<NavbarProps> = ({ initialLanguage = 'es' }) => {
     };
 
     const links = [
-        { href: '#about', label: t('about') },
         { href: '#projects', label: t('projects') },
         { href: '#skills', label: t('skills') },
-        { href: '#contact', label: t('contact') }
+        { href: '#contact', label: t('contact') },
+        { href: '/blog', label: "Blog" }
     ];
 
     return (
-        <nav className={`fixed top-0 left-0 right-0 w-full z-[9999] transition-all duration-300 ${scrolled ? 'bg-white/70 dark:bg-gray-900/80 backdrop-blur-md py-3 shadow-md' : 'bg-transparent py-5'}`}>
+        <nav className={`fixed top-0 left-0 right-0 w-full z-[9999] transition-all duration-300 ${scrolled ? 'bg-white/70 dark:bg-gray-900/80 backdrop-blur-md py-3' : 'bg-transparent py-5'}`}>
             <div className="container mx-auto px-4 flex items-center justify-between">
-                <a href="#" className="text-xl font-bold text-gray-800 dark:text-white">Portfolio</a>
+                <a href="#" className="text-xl font-bold text-gray-800 dark:text-white">David Vasquez</a>
 
                 <div className="hidden md:flex items-center justify-center flex-1">
                     <div className="flex space-x-8">

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import LogoCarousel from "./StackCarrousel";
-import headerIlustration from "@/assets/ilustration/Code typing-pana.svg";
+import { FaGithubAlt } from "react-icons/fa6";
 
 function BaseHeader() {
     const t = useTranslations("BaseHeader");
@@ -11,13 +11,13 @@ function BaseHeader() {
     return (
         <main className="min-h-dvh grid place-content-center w-[90%] ml-[5%] mt-20 mb-20">
             <div>
-                <div className="grid place-content-center">
+                <div className="grid place-content-center mb-2">
                     <Image
-                        src={headerIlustration}
+                        src={"https://avatars.githubusercontent.com/u/83887793?v=4"}
                         alt="icon"
-                        width={300}
-                        height={300}
-                        className="drop-shadow-md"
+                        width={250}
+                        height={250}
+                        className="drop-shadow-md rounded-full"
                     />
                 </div>
                 <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
@@ -37,10 +37,15 @@ function BaseHeader() {
 
                 <div className="grid place-content-center">
                     <div className="flex flex-row gap-4">
-                        <div className="px-4 py-2 bg-gray-100 rounded-full grid place-content-center border border-gray-300 hover:border-gray-400">
-                            <p className="text-sm text-gray-700">{t("getInTouch")}</p>
+                        <div className="px-4 py-2 bg-gray-600 rounded-full grid place-content-center border border-gray-300 hover:border-gray-400 cursor-pointer">
+                            <div className="flex flex-row gap-2">
+                                <div className="grid place-content-center">
+                                    <FaGithubAlt className="drop-shadow-md text-white" />
+                                </div>
+                                <p className="text-sm text-gray-50">{t("getInTouch")}</p>
+                            </div>
                         </div>
-                        <div className="px-4 py-2 border border-gray-300 rounded-full grid place-content-center hover:border-gray-400">
+                        <div className="cursor-pointer px-4 py-2 border border-gray-300 rounded-full grid place-content-center hover:border-gray-400">
                             <p className="text-sm text-gray-700">{t("downloadCV")}</p>
                         </div>
                     </div>

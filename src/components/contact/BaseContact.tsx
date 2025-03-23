@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import headerIlustration from "@/assets/ilustration/Conversation-pana.svg";
 
 function BaseContact() {
     return (
@@ -8,11 +9,11 @@ function BaseContact() {
             <div className="fex flex-col">
                 <div className="grid place-content-center">
                     <Image
-                        src={"https://avatars.githubusercontent.com/u/83887793?v=4"}
+                        src={headerIlustration}
                         alt="Foto de perfil"
-                        width={200}
-                        height={200}
-                        className="drop-shadow-md rounded-full"
+                        width={330}
+                        height={330}
+                        className="drop-shadow-md"
                     />
                 </div>
                 <div className="mt-5 space-y-2">
@@ -27,7 +28,7 @@ function BaseContact() {
                                 <div className="grid place-content-center">
                                     <MdEmail className="text-white" size={20} />
                                 </div>
-                                <p className="text-white text-sm">E-mail</p>
+                                <p className="grid place-content-center text-white text-xs sm:text-sm">E-mail</p>
                             </div>
                         </div>
 
@@ -36,7 +37,7 @@ function BaseContact() {
                                 <div className="grid place-content-center">
                                     <FaLinkedin className="text-white" size={20} />
                                 </div>
-                                <p className="text-white text-sm">Linkedin</p>
+                                <p className="grid place-content-center text-white text-xs sm:text-sm">Linkedin</p>
                             </div>
                         </div>
 
@@ -45,7 +46,7 @@ function BaseContact() {
                                 <div className="grid place-content-center">
                                     <FaWhatsapp className="text-white" size={20} />
                                 </div>
-                                <p className="text-white text-sm">WhatsApp</p>
+                                <p className="grid place-content-center text-white text-xs sm:text-sm">WhatsApp</p>
                             </div>
                         </div>
                     </div>

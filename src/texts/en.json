@@ -1,6 +1,5 @@
 {
     "Navbar": {
-        "about": "About",
         "projects": "Projects",
         "skills": "Skills",
         "contact": "Contact"
@@ -8,7 +7,7 @@
     "BaseHeader": {
         "headline": "Building businesses\ndriven by innovation.",
         "description": "Full Stack Developer with experience in Next.js, React, and TypeScript, specializing in creating attractive, functional, and scalable web applications. Expert in Python, MongoDB, MySQL, and Prisma for robust backend solutions, and deploying projects on Vercel and Google Cloud. Passionate about transforming ideas into innovative products, optimizing performance, and user experience.",
-        "getInTouch": "Get in touch",
+        "getInTouch": "Github",
         "downloadCV": "Download CV",
         "titleSkills": "Experience with"
     }
