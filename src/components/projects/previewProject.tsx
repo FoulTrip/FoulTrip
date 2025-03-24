@@ -15,7 +15,7 @@ function PreviewProject({ project }: { project: Project }) {
                     height={500}
                 />
 
-                <p className="font-thin text-gray-600">{project.description}</p>
+                <p className="font-thin text-gray-600 dark:text-gray-500">{project.largeDescription}</p>
 
                 <p className="text-base font-bold text-gray-600">Tecnologias</p>
                 <ListStacks stacks={project.stack} />
