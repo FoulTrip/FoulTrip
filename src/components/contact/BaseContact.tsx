@@ -11,8 +11,8 @@ function BaseContact() {
                     <Image
                         src={headerIlustration}
                         alt="Foto de perfil"
-                        width={330}
-                        height={330}
+                        width={430}
+                        height={430}
                         className="drop-shadow-md"
                     />
                 </div>

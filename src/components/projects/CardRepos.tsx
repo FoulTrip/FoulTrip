@@ -12,15 +12,15 @@ function CardRepo({ repo }: { repo: Repository }) {
                     <div className="grid place-content-center p-3">
                         {repo.isPrivate
                             ? <GoRepoLocked
-                                className="text-gray-600 drop-shadow-md"
+                                className="text-gray-600 drop-shadow-md dark:text-gray-100"
                                 size={30} />
                             : <GoRepo
-                                className="text-gray-600 drop-shadow-md"
+                                className="text-gray-600 drop-shadow-md dark:text-gray-100"
                                 size={30} />
                         }
                     </div>
                     <div className="p-3">
-                        <p className="text-lg text-gray-600 font-extrabold">{repo.name}</p>
+                        <p className="text-lg text-gray-600 dark:text-gray-300 font-extrabold">{repo.name}</p>
                         <p className="text-xs text-gray-500">{repo.description}</p>
                     </div>
                 </div>
