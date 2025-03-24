@@ -4,7 +4,7 @@ function BaseProject() {
 
     return (
         <>
-            <main className="min-h-dvh w-[90%] ml-[5%] mb-20">
+            <main className="min-h-dvh px-[5%] pb-20 dark:bg-black">
                 <ListCarrousel isClose />
             </main>
         </>

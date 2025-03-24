@@ -9,7 +9,7 @@ function BaseHeader() {
     const t = useTranslations("BaseHeader");
 
     return (
-        <main className="min-h-dvh grid place-content-center w-[90%] ml-[5%] mt-20 mb-20">
+        <main className="min-h-dvh grid place-content-center dark:bg-black/90 w-[90%] ml-[5%] pt-24 pb-20">
             <div>
                 <div className="grid place-content-center mb-2">
                     <Image
@@ -31,22 +31,22 @@ function BaseHeader() {
                     </span>
                 </h1>
 
-                <p className="text-sm font-thin text-center mt-8 mb-8 text-gray-600">
+                <p className="text-sm font-thin text-center mt-8 mb-8 dark:text-white text-gray-600">
                     {t("description")}
                 </p>
 
                 <div className="grid place-content-center">
                     <div className="flex flex-row gap-4">
-                        <div className="px-4 py-2 bg-gray-600 rounded-full grid place-content-center border border-gray-300 hover:border-gray-400 cursor-pointer">
+                        <div className="px-4 py-2 dark:bg-white bg-gray-600 rounded-full grid place-content-center border border-gray-300 hover:border-gray-400 cursor-pointer">
                             <div className="flex flex-row gap-2">
                                 <div className="grid place-content-center">
-                                    <FaGithubAlt className="drop-shadow-md text-white" />
+                                    <FaGithubAlt className="drop-shadow-md text-white dark:text-gray-600" />
                                 </div>
-                                <p className="text-sm text-gray-50">{t("getInTouch")}</p>
+                                <p className="text-sm text-gray-50 dark:text-gray-600">{t("getInTouch")}</p>
                             </div>
                         </div>
                         <div className="cursor-pointer px-4 py-2 border border-gray-300 rounded-full grid place-content-center hover:border-gray-400">
-                            <p className="text-sm text-gray-700">{t("downloadCV")}</p>
+                            <p className="text-sm dark:text-white text-gray-700">{t("downloadCV")}</p>
                         </div>
                     </div>
                 </div>

@@ -5,7 +5,7 @@ import headerIlustration from "@/assets/ilustration/Conversation-pana.svg";
 
 function BaseContact() {
     return (
-        <main className="min-h-dvh w-[90%] ml-[5%] grid place-content-center">
+        <main className="min-h-dvh px-[5%] grid place-content-center dark:bg-black">
             <div className="fex flex-col">
                 <div className="grid place-content-center">
                     <Image
@@ -18,7 +18,7 @@ function BaseContact() {
                 </div>
                 <div className="mt-5 space-y-2">
                     <h2 className="text-2xl font-extrabold leading-none text-center tracking-tight text-gray-600 md:text-3xl dark:text-white">Contacto</h2>
-                    <p className="text-center text-xs sm:text-sm font-thin">Buscame por cualquiera de estos canales de comunicacion y charlamos!</p>
+                    <p className="text-center text-xs sm:text-sm font-thin dark:text-gray-400">Buscame por cualquiera de estos canales de comunicacion y charlamos!</p>
                 </div>
 
                 <div className="grid place-content-center">

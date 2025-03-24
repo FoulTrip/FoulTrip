@@ -94,7 +94,7 @@ function ListCarrousel({ isClose }: { isClose: boolean }) {
                 {!projectSelect && hasMoreProjects && (
                     <button
                         onClick={() => setShowAll(!showAll)}
-                        className="self-center mt-2 px-4 py-2 text-sm font-medium text-gray-600 cursor-pointer"
+                        className="self-center mt-2 px-4 py-2 text-sm font-medium text-gray-600 dark:hover:text-gray-400 cursor-pointer"
                     >
                         {showAll ? "Ver menos" : "Ver más"}
                     </button>

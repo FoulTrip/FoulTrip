@@ -10,41 +10,82 @@ interface DarkModeContextType {
 const DarkModeContext = createContext<DarkModeContextType | undefined>(undefined);
 
 export function DarkModeProvider({ children }: { children: ReactNode }) {
-    // Estado con valor inicial fallback para SSR
+    // Estado para controlar si estamos en el cliente
+    const [mounted, setMounted] = useState(false);
+    // Estado para el modo oscuro con valor inicial para SSR
     const [darkmode, setDarkmode] = useState(false);
-    // Estado para controlar si el componente está listo
-    const [isInitialized, setIsInitialized] = useState(false);
 
+    // Este efecto solo se ejecuta una vez al montar el componente en el cliente
     useEffect(() => {
-        // Código que solo se ejecuta en el cliente
-        const isDark = localStorage.getItem("theme") === "dark" ||
-            (!localStorage.getItem("theme") &&
-                window.matchMedia("(prefers-color-scheme: dark)").matches);
+        // Verificamos si estamos en el navegador
+        if (typeof window !== 'undefined') {
+            setMounted(true);
 
-        setDarkmode(isDark);
+            // Determinar el tema inicial
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-        if (isDark) {
-            document.documentElement.classList.add("dark");
-        } else {
-            document.documentElement.classList.remove("dark");
+            const initialDarkMode =
+                savedTheme === "dark" ||
+                (savedTheme === null && prefersDark);
+
+            setDarkmode(initialDarkMode);
+
+            // Aplicar el tema inicial al documento
+            if (initialDarkMode) {
+                document.documentElement.classList.add("dark");
+            } else {
+                document.documentElement.classList.remove("dark");
+            }
+
+            console.log("Tema inicial:", initialDarkMode ? "oscuro" : "claro");
         }
-
-        setIsInitialized(true);
     }, []);
 
+    // Escuchar cambios en preferencias del sistema
+    useEffect(() => {
+        if (!mounted) return;
+
+        const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+        const handleChange = (e: MediaQueryListEvent) => {
+            // Solo cambiar automáticamente si no hay preferencia guardada
+            if (!localStorage.getItem("theme")) {
+                const newDarkMode = e.matches;
+                setDarkmode(newDarkMode);
+
+                if (newDarkMode) {
+                    document.documentElement.classList.add("dark");
+                } else {
+                    document.documentElement.classList.remove("dark");
+                }
+
+                console.log("Tema del sistema cambiado:", newDarkMode ? "oscuro" : "claro");
+            }
+        };
+
+        mediaQuery.addEventListener("change", handleChange);
+        return () => mediaQuery.removeEventListener("change", handleChange);
+    }, [mounted]);
+
+    // Función para cambiar manualmente el tema
     const changeDarkMode = () => {
-        const newDarkMode = !darkmode;
-        setDarkmode(newDarkMode);
+        // Importante: usar la forma funcional para asegurar el valor actualizado
+        setDarkmode(prevDarkMode => {
+            const newDarkMode = !prevDarkMode;
 
-        if (newDarkMode) {
-            document.documentElement.classList.add("dark");
-            localStorage.setItem("theme", "dark");
-        } else {
-            document.documentElement.classList.remove("dark");
-            localStorage.setItem("theme", "light");
-        }
+            // Aplicar el cambio al DOM
+            if (newDarkMode) {
+                document.documentElement.classList.add("dark");
+                localStorage.setItem("theme", "dark");
+            } else {
+                document.documentElement.classList.remove("dark");
+                localStorage.setItem("theme", "light");
+            }
 
-        console.log("Tema cambiado:", newDarkMode ? "oscuro" : "claro");
+            console.log("Tema cambiado manualmente:", newDarkMode ? "oscuro" : "claro");
+            return newDarkMode;
+        });
     };
 
     return (

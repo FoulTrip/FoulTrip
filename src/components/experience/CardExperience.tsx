@@ -18,7 +18,7 @@ function CardExperience({ experience }: { experience: Experience }) {
                         />
                     </div>
                     <div className="flex flex-col gap-1">
-                        <p className="font-bold text-start text-xl text-gray-600">{experience.position}</p>
+                        <p className="font-bold text-start text-xl text-gray-600 dark:text-gray-400">{experience.position}</p>
                         <div className="flex flex-row gap-2 text-xs sm:text-sm">
                             <div className="grid place-content-center bg-gray-100 px-3 py-1 rounded-full">
                                 <div className="flex flex-row gap-1">
@@ -40,10 +40,10 @@ function CardExperience({ experience }: { experience: Experience }) {
                     </div>
                 </div>
 
-                <p className="text-[10px] grow text-end text-gray-600">{experience.initialDate} - {experience.endDate}</p>
+                <p className="text-[10px] grow text-end text-gray-600 dark:text-gray-500">{experience.initialDate} - {experience.endDate}</p>
             </div>
 
-            <p className="font-thin">{experience.Description}</p>
+            <p className="font-thin dark:text-gray-400">{experience.Description}</p>
         </div>
     )
 }

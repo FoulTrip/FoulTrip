@@ -27,25 +27,25 @@ function CardProject({
             {/* Contenido a la derecha */}
             <div className="flex flex-col p-4 md:w-2/3 justify-center space-y-3">
                 <div className="flex flex-row justify-between">
-                    <h2 className="text-2xl font-extrabold text-gray-700">{project.name}</h2>
+                    <h2 className="text-2xl font-extrabold text-gray-700 dark:text-gray-100">{project.name}</h2>
                     <div className="grid place-content-center">
                         <div className="flex flex-row gap-1 px-3 py-1 rounded-full">
                             <div className="grid place-content-center">
-                                <GoRepo className="drop-shadow-md text-gray-500" />
+                                <GoRepo className="drop-shadow-md text-gray-500 dark:text-gray-100" />
                             </div>
-                            <p className="text-xs text-gray-500 drop-shadow-md">{project.repositories.length}</p>
+                            <p className="text-xs text-gray-500 dark:text-gray-100 drop-shadow-md">{project.repositories.length}</p>
                         </div>
                     </div>
                 </div>
-                <p className="text-xs font-medium text-gray-500">{project.slug}</p>
-                <p className="text-sm text-gray-600 line-clamp-3 md:line-clamp-none">{project.description}</p>
+                <p className="text-xs font-medium text-gray-500 dark:text-gray-400">{project.slug}</p>
+                <p className="text-sm text-gray-600 dark:text-gray-500 line-clamp-3 md:line-clamp-none">{project.description}</p>
 
                 {/* Enlaces */}
                 <div className="flex gap-3 pt-2">
                     {project.uriDocs && (
                         <a
                             href={project.uriDocs}
-                            className="text-sm inline-flex items-center gap-1 text-gray-600 hover:text-gray-900"
+                            className="text-sm inline-flex items-center gap-1 text-gray-600 dark:text-gray-500 hover:text-gray-900 dark:hover:text-gray-50"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -58,7 +58,7 @@ function CardProject({
 
                     <p
                         onClick={() => onSelect(project)}
-                        className="text-sm inline-flex items-center text-gray-600 hover:text-gray-900 gap-1 cursor-pointer"
+                        className="text-sm inline-flex items-center text-gray-600 dark:text-gray-500 hover:text-gray-900 dark:hover:text-gray-50 gap-1 cursor-pointer"
                         rel="noopener noreferrer"
                     >
                         <div className="grid place-content-center">

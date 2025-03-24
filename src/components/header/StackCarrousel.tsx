@@ -27,7 +27,7 @@ const LogoCarousel: React.FC = () => {
     return (
         <div className="overflow-hidden w-full">
             <div className="grid place-content-center mb-5">
-                <p className="font-bold text-gray-600">{t('titleSkills')}</p>
+                <p className="font-bold dark:text-white text-gray-600">{t('titleSkills')}</p>
             </div>
             <div className="flex">
                 {logos.map((logo, index) => (
