@@ -33,3 +33,14 @@ export type stackType =
     | "MongoDB"
     | "Prisma"
     | "Blockchain";
+
+
+export interface Experience {
+    position: string
+    company: string
+    logo: string
+    type: string
+    initialDate: string
+    endDate: string
+    Description: string
+}

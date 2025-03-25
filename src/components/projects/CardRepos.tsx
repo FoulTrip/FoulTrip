@@ -56,7 +56,7 @@ function CardRepo({ repo }: { repo: Repository }) {
                         <div className="rounded-md flex sm:flex-row gap-1 justify-between sm:justify-start sm:basis-[120px] w-full">
                             <div className="rounded-md flex sm:flex-row gap-1 justify-between sm:justify-start">
                                 <div className="flex grow justify-end">
-                                    <div className="bg-blue-50 border w-full border-blue-300 rounded-md borderborder-blue-200 grid place-content-center px-3 py-1">
+                                    <div className="bg-blue-50 border w-full border-blue-300 rounded-md grid place-content-center px-3 py-1">
                                         <div className="flex flex-row gap-1">
                                             <div className="grid place-content-center">
                                                 <TbSettings className="text-sm drop-shadow-md text-blue-400" />
@@ -65,16 +65,16 @@ function CardRepo({ repo }: { repo: Repository }) {
                                         </div>
                                     </div>
                                 </div>
-                                {!repo.isPrivate && (
-                                    <div>
-                                        <div className="bg-gray-500 hover:bg-gray-600 cursor-pointer border border-gray-600 rounded-md borderborder-blue-200 grid place-content-center px-3 py-1">
-                                            <div className="grid place-content-center">
-                                                <FaGithub className="text-sm drop-shadow-md text-white" />
-                                            </div>
+                            </div>
+                            {!repo.isPrivate && (
+                                <div>
+                                    <div className="bg-gray-500 hover:bg-gray-600 cursor-pointer border border-gray-600 rounded-md borderborder-blue-200 grid place-content-center px-3 py-1">
+                                        <div className="grid place-content-center">
+                                            <FaGithub className="text-sm drop-shadow-md text-white" />
                                         </div>
                                     </div>
-                                )}
-                            </div>
+                                </div>
+                            )}
                         </div>
                     </div>
                 )}
@@ -82,13 +82,15 @@ function CardRepo({ repo }: { repo: Repository }) {
                 {repo.status == "Funcionando" && (
                     <div className="flex justify-end">
                         <div className="rounded-md flex sm:flex-row gap-1 justify-between sm:justify-start sm:basis-[120px] w-full">
-                            <div className="flex grow justify-end">
-                                <div className="bg-green-100 border w-full border-green-300 rounded-md borderborder-blue-200 grid place-content-center px-3 py-1">
-                                    <div className="flex flex-row gap-1">
-                                        <div className="grid place-content-center">
-                                            <TbSettings className="text-sm drop-shadow-md text-green-400" />
+                            <div className="rounded-md flex sm:flex-row gap-1 justify-between sm:justify-start">
+                                <div className="flex grow justify-end">
+                                    <div className="bg-green-100 border w-full border-green-300 rounded-md grid place-content-center px-3 py-1">
+                                        <div className="flex flex-row gap-1">
+                                            <div className="grid place-content-center">
+                                                <TbSettings className="text-sm drop-shadow-md text-green-400" />
+                                            </div>
+                                            <p className="text-xs font-bold drop-shadow-md text-green-500">{repo.status}</p>
                                         </div>
-                                        <p className="text-xs font-bold drop-shadow-md text-green-500">{repo.status}</p>
                                     </div>
                                 </div>
                             </div>
