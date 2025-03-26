@@ -22,9 +22,9 @@ const SidebarBlog = () => {
 
     return (
         <div className="w-64 p-4 border-r h-screen">
-            <h1 className="text-2xl font-bold mb-6">Tools & Craft</h1>
+            <h1 className="text-2xl font-bold mb-6">Innovación <br /> & Desarrollo</h1>
             <p className="text-gray-600 mb-6 border border-transparent border-b-gray-300 pb-8 text-sm">
-                Reflexiones sobre cómo será el trabajo en el futuro, según las personas y los equipos que lo crean.
+                Cómo la programación, el blockchain y la tecnología están moldeando el futuro.
             </p>
             <nav>
                 {menuItems.map((item, index) => (
@@ -72,11 +72,11 @@ const BaseSideBarPage: React.FC<BaseSideBarPageProps> = ({ children }) => {
                     <header className="pt-6">
                         <div className="flex items-center mb-4">
                             <div>
-                                <h1 className="text-2xl font-bold">Tools & Craft</h1>
+                                <h1 className="text-2xl font-bold">Innovación & Desarrollo</h1>
                             </div>
                         </div>
                         <p className="text-gray-600 mb-4">
-                            Reflexiones sobre cómo será el trabajo en el futuro, según las personas y los equipos que lo crean.
+                            Cómo la programación, el blockchain y la tecnología están moldeando el futuro.
                         </p>
                         <div className="relative">
                             <div className="flex overflow-x-auto space-x-4 pb-2 no-scrollbar">

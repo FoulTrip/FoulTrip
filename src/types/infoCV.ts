@@ -44,3 +44,16 @@ export interface Experience {
     endDate: string
     Description: string
 }
+
+export interface ArticleDto {
+    id: string;
+    name?: string;       // Nombre corto o identificador del artículo
+    type: typeBlog;
+    cover: string;
+    title: string;      // Título completo del artículo
+    date: string;       // Fecha en formato ISO (ej. "2025-03-26")
+    description?: string;// Breve descripción del artículo
+    content: string;    // Contenido en formato MDX o Markdown
+}
+
+export type typeBlog = "web3" | "development" | "biz-tech" | "trends";
