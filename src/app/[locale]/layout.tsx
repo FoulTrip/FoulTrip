@@ -4,6 +4,7 @@ import "../globals.css";
 import { DarkModeProvider } from "@/context/DarkModeContext";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
+import Navbar from "@/components/gadgets/NavBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           <DarkModeProvider>
+            <Navbar />
             {children}
           </DarkModeProvider>
         </NextIntlClientProvider>

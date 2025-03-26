@@ -60,9 +60,9 @@ function Navbar() {
     };
 
     const links = [
-        { href: '#projects', label: t('projects') },
-        { href: '#skills', label: t('skills') },
-        { href: '#contact', label: t('contact') },
+        { href: '/#projects', label: t('projects') },
+        { href: '/#experience', label: t('experience') },
+        { href: '/#contact', label: t('contact') },
         { href: '/blog', label: "Blog" }
     ];
 

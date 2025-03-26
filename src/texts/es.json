@@ -1,8 +1,9 @@
 {
     "Navbar": {
-        "projects": "Proyectos",
-        "skills": "Habilidades",
-        "contact": "Contacto"
+        "projects": "Projectos",
+        "experience": "Experiencia",
+        "contact": "Contacto",
+        "blog": "Blog"
     },
     "BaseHeader": {
         "headline": "Construyendo negocios\nimpulsados por la innovación.",

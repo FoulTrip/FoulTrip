@@ -1,8 +1,9 @@
 {
     "Navbar": {
         "projects": "Projects",
-        "skills": "Skills",
-        "contact": "Contact"
+        "experience": "Experience",
+        "contact": "Contact",
+        "blog": "Blog"
     },
     "BaseHeader": {
         "headline": "Building businesses\ndriven by innovation.",
