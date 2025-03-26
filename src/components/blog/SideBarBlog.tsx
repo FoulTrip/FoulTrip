@@ -20,14 +20,6 @@ const menuItems: itemsProps[] = [
 const SidebarBlog = () => {
     const router = useRouter();
 
-    const menuItems: itemsProps[] = [
-        { name: 'Recientes', link: '/blog' },
-        { name: 'Development', link: '/blog/topic/development' },
-        { name: 'Web3', link: '/blog/topic/web3' },
-        { name: 'Biz Tech', link: '/blog/topic/biz-tech' },
-        { name: 'Trends', link: '/blog/topic/trends' },
-    ];
-
     return (
         <div className="w-64 p-4 border-r h-screen">
             <h1 className="text-2xl font-bold mb-6">Tools & Craft</h1>
@@ -49,18 +41,26 @@ const SidebarBlog = () => {
     );
 };
 
-const BaseSideBarPage: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
+// Define a more specific type for children prop
+interface BaseSideBarPageProps {
+    children: React.ReactNode;
+}
+
+const BaseSideBarPage: React.FC<BaseSideBarPageProps> = ({ children }) => {
     const [activeItem, setActiveItem] = useState<string>('Más recientes');
-    const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 1024);
+    const [isMobile, setIsMobile] = useState<boolean>(typeof window !== 'undefined' && window.innerWidth < 1024);
     const router = useRouter();
 
     React.useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth < 1024);
-        };
+        // Check if window is defined to avoid SSR issues
+        if (typeof window !== 'undefined') {
+            const handleResize = () => {
+                setIsMobile(window.innerWidth < 1024);
+            };
 
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }
     }, []);
 
     return (
