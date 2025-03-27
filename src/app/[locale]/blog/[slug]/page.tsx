@@ -1,4 +1,5 @@
 "use client"
+
 import { ArticleDto } from "@/types/infoCV";
 import axios from "axios";
 import { useRouter } from "next/navigation";
@@ -36,13 +37,27 @@ function ArticleContent({ params }: { params: Promise<{ slug: string }> }) {
 
     // Custom components for MDX (optional)
     const components = {
-        h1: (props: any) => <h1 className="text-3xl font-bold mb-4" {...props} />,
-        h2: (props: any) => <h2 className="text-2xl font-semibold mt-6 mb-3" {...props} />,
-        p: (props: any) => <p className="mb-4 leading-relaxed" {...props} />,
-        strong: (props: any) => <strong className="font-bold" {...props} />,
-        ul: (props: any) => <ul className="list-disc pl-5 mb-4" {...props} />,
-        ol: (props: any) => <ol className="list-decimal pl-5 mb-4" {...props} />,
-        li: (props: any) => <li className="mb-2" {...props} />
+        h1: ({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
+            <h1 className="text-3xl font-bold mb-4" {...props}>{children}</h1>
+        ),
+        h2: ({ children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
+            <h2 className="text-2xl font-semibold mt-6 mb-3" {...props}>{children}</h2>
+        ),
+        p: ({ children, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => (
+            <p className="mb-4 leading-relaxed" {...props}>{children}</p>
+        ),
+        strong: ({ children, ...props }: React.HTMLAttributes<HTMLElement>) => (
+            <strong className="font-bold" {...props}>{children}</strong>
+        ),
+        ul: ({ children, ...props }: React.HTMLAttributes<HTMLUListElement>) => (
+            <ul className="list-disc pl-5 mb-4" {...props}>{children}</ul>
+        ),
+        ol: ({ children, ...props }: React.HTMLAttributes<HTMLOListElement>) => (
+            <ol className="list-decimal pl-5 mb-4" {...props}>{children}</ol>
+        ),
+        li: ({ children, ...props }: React.HTMLAttributes<HTMLLIElement>) => (
+            <li className="mb-2" {...props}>{children}</li>
+        )
     };
 
     return (
