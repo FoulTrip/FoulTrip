@@ -29,7 +29,7 @@ function BaseBlogPage() {
     }, [])
 
     return (
-        <main className="px-[5%] pt-24">
+        <main className="px-[5%] pt-24 dark:bg-black pb-20">
             <BaseSideBarPage>
                 <div className="min-h-dvh border border-transparent sm:border-l sm:border-l-gray-300 sm:px-10">
                     <div className="grid sm:grid-cols-2 grid-cols-1 gap-10">
@@ -43,13 +43,13 @@ function BaseBlogPage() {
                                     className="w-full h-[300px] object-cover rounded-md"
                                     onClick={() => redirContent(article.slug)}
                                 />
-                                <p className="text-sm font-light">{article.type}</p>
+                                <p className="text-sm font-light dark:text-gray-400">{article.type}</p>
                                 <p
-                                    className="text-2xl font-bold hover:text-blue-400 cursor-pointer"
+                                    className="text-2xl font-bold hover:text-blue-400 dark:text-white cursor-pointer"
                                     onClick={() => redirContent(article.slug)}
                                 >{article.title}</p>
                                 <p
-                                    className="font-thin cursor-pointer"
+                                    className="font-thin cursor-pointer dark:text-gray-300"
                                     onClick={() => redirContent(article.slug)}
                                 >{article.description}</p>
                             </div>

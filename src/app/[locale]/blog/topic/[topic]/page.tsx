@@ -12,7 +12,7 @@ function TopicPage({ params }: { params: Promise<{ topic: typeBlog }> }) {
 
     return (
         <>
-            <main className="px-[5%] pt-24">
+            <main className="px-[5%] pt-24 dark:bg-black">
                 <BaseSideBarPage>
                     <div className="grid place-content-center w-full mt-10">
                         {topic == "web3" && <GiCubes size={80} />}
