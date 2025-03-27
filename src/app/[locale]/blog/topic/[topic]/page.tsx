@@ -3,8 +3,6 @@
 import BaseSideBarPage from "@/components/blog/SideBarBlog";
 import { typeBlog } from "@/types/infoCV";
 import { use } from "react"
-import web3icon from "@/assets/ilustration/blog/web3.svg"
-import Image from "next/image";
 import { GiCubes } from "react-icons/gi";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
 

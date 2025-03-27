@@ -1,7 +1,9 @@
 "use client"
 
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
+import blogg from "@/assets/ilustration/blog/blogs.png"
 
 interface itemsProps {
     name: string
@@ -21,8 +23,10 @@ const SidebarBlog = () => {
     const router = useRouter();
 
     return (
-        <div className="w-64 p-4 border-r h-screen">
-            <h1 className="text-2xl font-bold mb-6">Innovación <br /> & Desarrollo</h1>
+        <div className="w-72 p-4 pl-20 h-full sticky top-0">
+            <div className='flex justify-start mb-4'>
+                <Image src={blogg} alt={"blog"} width={60} height={60} className='drop-shadow-md' />
+            </div>
             <p className="text-gray-600 mb-6 border border-transparent border-b-gray-300 pb-8 text-sm">
                 Cómo la programación, el blockchain y la tecnología están moldeando el futuro.
             </p>
@@ -41,7 +45,6 @@ const SidebarBlog = () => {
     );
 };
 
-// Define a more specific type for children prop
 interface BaseSideBarPageProps {
     children: React.ReactNode;
 }
@@ -52,7 +55,6 @@ const BaseSideBarPage: React.FC<BaseSideBarPageProps> = ({ children }) => {
     const router = useRouter();
 
     React.useEffect(() => {
-        // Check if window is defined to avoid SSR issues
         if (typeof window !== 'undefined') {
             const handleResize = () => {
                 setIsMobile(window.innerWidth < 1024);
@@ -64,15 +66,15 @@ const BaseSideBarPage: React.FC<BaseSideBarPageProps> = ({ children }) => {
     }, []);
 
     return (
-        <div className="flex min-h-screen sm:fixed">
+        <div className="flex min-h-screen">
             {!isMobile && <SidebarBlog />}
 
-            <div className="flex-1">
+            <div className="flex-1 flex flex-col overflow-auto">
                 {isMobile ? (
-                    <header className="pt-6">
+                    <header className="pt-6 px-4 shrink-0">
                         <div className="flex items-center mb-4">
-                            <div>
-                                <h1 className="text-2xl font-bold">Innovación & Desarrollo</h1>
+                            <div className='flex justify-start mb-4'>
+                                <Image src={blogg} alt={"blog"} width={60} height={60} className='drop-shadow-md' />
                             </div>
                         </div>
                         <p className="text-gray-600 mb-4">
@@ -103,8 +105,10 @@ const BaseSideBarPage: React.FC<BaseSideBarPageProps> = ({ children }) => {
                     </header>
                 ) : null}
 
-                <main className="p-4">
-                    {children}
+                <main className="flex-1 overflow-hidden">
+                    <div className="h-full overflow-y-auto">
+                        {children}
+                    </div>
                 </main>
             </div>
         </div>
