@@ -69,7 +69,7 @@ function Navbar() {
     return (
         <nav className={`fixed top-0 left-0 right-0 w-full z-[9999] transition-all duration-300 ${scrolled ? 'bg-white/70 dark:bg-black/50 backdrop-blur-md py-3' : 'dark:bg-gray-900/100 bg-transparent py-5'}`}>
             <div className="container mx-auto px-4 flex items-center justify-between">
-                <a href="#" className="text-xl font-bold text-gray-800 dark:text-white">David Vasquez</a>
+                <p onClick={() => router.push("/")} className="text-xl font-bold text-gray-800 dark:text-white">David Vasquez</p>
 
                 <div className="hidden md:flex items-center justify-center flex-1">
                     <div className="flex space-x-8">

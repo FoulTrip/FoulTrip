@@ -15,8 +15,8 @@ const menuItems: itemsProps[] = [
     { name: 'Recientes', link: '/blog' },
     { name: 'Development', link: '/blog/topic/development' },
     { name: 'Web3', link: '/blog/topic/web3' },
-    { name: 'Biz Tech', link: '/blog/topic/biz-tech' },
-    { name: 'Trends', link: '/blog/topic/trends' },
+    // { name: 'Biz Tech', link: '/blog/topic/biz-tech' },
+    // { name: 'Trends', link: '/blog/topic/trends' },
 ];
 
 const SidebarBlog = () => {

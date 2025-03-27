@@ -58,4 +58,4 @@ export interface ArticleDto {
     proyects: Project[]
 }
 
-export type typeBlog = "web3" | "development" | "biz-tech" | "trends";
+export type typeBlog = "web3" | "development";

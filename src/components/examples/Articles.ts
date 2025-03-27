@@ -3,41 +3,93 @@ import { ArticleDto } from "@/types/infoCV";
 const Articles: ArticleDto[] = [
     {
         id: "01",
-        title: "TripChain y la Web3: Una Mirada Simple a la Nueva Era Digital",
-        slug: "tripchain-web3-nueva-era-digital",
-        date: "2025-03-26",
+        title: "TripCodeChain y la Web3: Una Mirada Simple a la Nueva Era Digital",
+        slug: "tripcodechain-web3-nueva-era-digital",
+        date: "27 de Marzo de 2025",
         cover: "/covers/article_tripchain_web3.jpg",
-        description: "Descubre cómo TripChain democratiza la tecnología blockchain, facilitando la creación de aplicaciones descentralizadas y ofreciendo más control y seguridad en la era digital de la Web3.",
+        description: "Descubre cómo TripCodeChain democratiza la tecnología blockchain, facilitando la creación de aplicaciones descentralizadas y ofreciendo más control y seguridad en la era digital de la Web3.",
         type: "web3",
         content: `
-            # TripChain y la Web3: Una Mirada Simple a la Nueva Era Digital
+# TripCodeChain: Democratizando la Tecnología Blockchain para Negocios
 
-            La Web3 es una nueva forma de usar internet en la que las personas tienen más control sobre sus datos y pueden interactuar sin depender tanto de grandes empresas. En este contexto, **TripChain** se presenta como una herramienta que ayuda a que esta idea se haga realidad, facilitando la creación y el uso de aplicaciones seguras y transparentes para todos.
+## Una Nueva Revolución Tecnológica
 
-            ## ¿Qué es TripChain?
+Imagina un mundo donde cada pequeño negocio pueda crear su propia moneda digital, automatizar sus procesos críticos y operar con la misma seguridad y transparencia que las grandes corporaciones tecnológicas. Este es el sueño que TripChain está haciendo realidad.
 
-            Imagina TripChain como una especie de "plataforma de construcción" para crear aplicaciones y servicios digitales basados en blockchain, una tecnología que registra información de forma segura y transparente. Con TripChain, las empresas pueden aprovechar esta tecnología sin tener que aprender todos los detalles complicados.
+## ¿Qué Hace Único a TripCodeChain?
 
-            ## ¿Cómo ayuda TripChain a la Web3?
+TripChain no es solo otra plataforma blockchain. Es un ecosistema completo diseñado para democratizar la tecnología descentralizada, permitiendo que cualquier empresa, desde una pequeña tienda local hasta una corporación internacional, aproveche el poder de los smart contracts y las criptomonedas.
 
-            1. **Más Control y Menos Intermediarios**  
-            Normalmente, al hacer una compra o transferir dinero, intervienen muchos intermediarios, como los bancos. Con TripChain, las transacciones se registran en una red segura sin depender de estos intermediarios, lo que significa que las personas pueden tener más control sobre sus propios datos y dinero.
+## Tecnología Revolucionaria: Cómo Funciona
 
-            2. **Contratos Inteligentes Fáciles de Usar**  
-            Los "contratos inteligentes" son programas que se ejecutan automáticamente al cumplirse ciertas condiciones. TripChain permite a las empresas usar estos contratos de manera sencilla para automatizar procesos, como pagar automáticamente a un proveedor cuando se recibe un producto.
+### 1. Blockchain Descentralizada de Próxima Generación
 
-            3. **Economía Digital con Criptomonedas**  
-            TripChain facilita que las empresas creen sus propias monedas digitales (tokens), que pueden usarse para recompensar a clientes o para realizar pagos de forma rápida y segura. Esto hace que la economía digital sea más accesible y amigable.
+La red de TripChain utiliza un innovador mecanismo de consenso híbrido que combina:
 
-            4. **Seguridad y Privacidad Mejoradas**  
-            Al usar una red descentralizada, la información no se guarda en un solo lugar, reduciendo el riesgo de hackeos o fugas de datos. Esto aumenta la seguridad tanto para empresas como para usuarios.
+- **Delegated Proof of Stake (DPoS)**: Para validaciones rápidas y eficientes
+- **Practical Byzantine Fault Tolerance (PBFT)**: Garantizando una seguridad inquebrantable
 
-            5. **Facilidad para Empezar**  
-            La tecnología blockchain puede parecer complicada, pero TripChain está diseñada para ser fácil de usar, ofreciendo herramientas y guías que permiten integrar la tecnología sin necesidad de ser expertos.
+### 2. Smart Contracts Inteligentes
 
-            ## En Resumen
+TripChain introduce un modelo único con dos tipos de smart contracts:
 
-            TripChain actúa como un puente para que más empresas y personas puedan aprovechar los beneficios de la Web3. Al hacer la tecnología blockchain más accesible, TripChain ayuda a construir un futuro en el que internet sea más seguro, transparente y centrado en las personas. Con menos intermediarios y más control sobre nuestros datos, la Web3 abre la puerta a una nueva era digital en la que todos podemos participar de manera más activa y segura.
+#### Contrato de Transacciones y Recompensas
+
+- Registra pagos en tiempo real
+- Emite automáticamente criptomonedas como recompensa a clientes
+- Valida cada transacción con precisión milimétrica
+
+#### Contrato de Procesos Críticos
+
+- Almacena información empresarial sensible
+- Garantiza la inmutabilidad de registros importantes
+- Permite auditorías transparentes sin exponer datos confidenciales
+
+### 3. Criptomonedas Personalizadas
+
+Cada negocio puede:
+
+- Crear su propia criptomoneda
+- Establecer reglas de emisión
+- Definir mecanismos de recompensa
+- Controlar la oferta y demanda de su token
+
+## Beneficios Revolucionarios
+
+### Para Negocios
+
+- Seguridad de nivel empresarial
+- Automatización de procesos
+- Transparencia total
+- Nuevas formas de generar valor
+
+### Para Clientes
+
+- Recompensas instantáneas
+- Trazabilidad de transacciones
+- Experiencias de compra mejoradas
+
+## Casos de Uso Reales
+
+### BlockScrum: Gestión de Proyectos Blockchain
+
+Una plataforma que registra cada sprint, tarea y asignación en una blockchain inmutable, eliminando disputas y mejorando la transparencia en equipos de desarrollo.
+
+### ParfumCol: Comercio Electrónico Descentralizado
+
+Un marketplace de perfumes donde cada compra genera tokens de recompensa, creando un ecosistema de fidelización basado en blockchain.
+
+### Inventario Descentralizado
+
+Una solución que permite a negocios de cualquier tamaño gestionar su inventario, emitir criptomonedas y automatizar procesos críticos.
+
+## El Futuro ya Está Aquí
+
+TripChain no es solo una tecnología. Es una revolución económica que democratiza el acceso a herramientas financieras avanzadas, permitiendo que incluso el negocio más pequeño pueda operar con la eficiencia de una corporación global.
+
+**La economía digital del futuro no será centralizada. Será descentralizada, transparente y accesible para todos.**
+
+🚀 Bienvenidos a la Era TripCodeChain.
         `,
         proyects: [
             {
@@ -252,7 +304,7 @@ const Articles: ArticleDto[] = [
         id: "02",
         title: "TypeScript y Go: El Espejismo del Rendimiento en Desarrollo y Producción",
         slug: "typescript-go-rendimiento-desarrollo",
-        date: "2025-03-27",
+        date: "27 de Marzo de 2025",
         cover: "/covers/article_go_ts.png",
         description: "La migración de TypeScript a Go mejora las herramientas de desarrollo, pero no garantiza un rendimiento mágico en producción.",
         type: "development",
