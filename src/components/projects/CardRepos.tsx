@@ -3,112 +3,103 @@ import { FaGithub } from "react-icons/fa6";
 import { GoRepo, GoRepoLocked } from "react-icons/go";
 import { LiaPencilRulerSolid } from "react-icons/lia";
 import { TbSettings } from "react-icons/tb";
+import { RiCheckboxCircleLine } from "react-icons/ri";
 
 function CardRepo({ repo }: { repo: Repository }) {
+    const statusConfig = {
+        "Planeando": {
+            bg: "bg-amber-50 dark:bg-amber-900/20",
+            border: "border-amber-200 dark:border-amber-800",
+            text: "text-amber-700 dark:text-amber-400",
+            icon: LiaPencilRulerSolid
+        },
+        "En desarrollo": {
+            bg: "bg-blue-50 dark:bg-blue-900/20",
+            border: "border-blue-200 dark:border-blue-800",
+            text: "text-blue-700 dark:text-blue-400",
+            icon: TbSettings
+        },
+        "Funcionando": {
+            bg: "bg-green-50 dark:bg-green-900/20",
+            border: "border-green-200 dark:border-green-800",
+            text: "text-green-700 dark:text-green-400",
+            icon: RiCheckboxCircleLine
+        }
+    };
+
+    const currentStatus = statusConfig[repo.status as keyof typeof statusConfig];
+    const StatusIcon = currentStatus?.icon || TbSettings;
+
     return (
-        <>
-            <div className="flex flex-col-reverse gap-1 border border-gray-400 p-2 rounded-md">
-                <div className="flex flex-row grow">
-                    <div className="grid place-content-center p-3">
-                        {repo.isPrivate
-                            ? <GoRepoLocked
-                                className="text-gray-600 drop-shadow-md dark:text-gray-100"
-                                size={30} />
-                            : <GoRepo
-                                className="text-gray-600 drop-shadow-md dark:text-gray-100"
-                                size={30} />
-                        }
-                    </div>
-                    <div className="p-3">
-                        <p className="text-lg text-gray-600 dark:text-gray-300 font-extrabold">{repo.name}</p>
-                        <p className="text-xs text-gray-500">{repo.description}</p>
+        <div className="group relative p-4 sm:p-5 bg-white dark:bg-gray-900 rounded-lg border border-gray-100 dark:border-gray-800 hover:border-gray-200 dark:hover:border-gray-700 hover:shadow-sm transition-all duration-200">
+
+            {/* Header Section */}
+            <div className="flex items-start gap-4 mb-4">
+
+                {/* Repository Icon */}
+                <div className="flex-shrink-0 mt-1">
+                    <div className="w-10 h-10 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 flex items-center justify-center">
+                        {repo.isPrivate ? (
+                            <GoRepoLocked className="w-5 h-5 text-gray-600 dark:text-gray-400" />
+                        ) : (
+                            <GoRepo className="w-5 h-5 text-gray-600 dark:text-gray-400" />
+                        )}
                     </div>
                 </div>
 
-                {repo.status == "Planeando" && (
-                    <div className="flex justify-end">
-                        <div className="rounded-md flex sm:flex-row gap-1 justify-between sm:justify-start sm:basis-[120px] w-full">
-                            <div className="flex grow justify-end">
-                                <div className="bg-pink-100 border w-full border-pink-200 rounded-md borderborder-blue-200 grid place-content-center px-3 py-1">
-                                    <div className="flex flex-row gap-1">
-                                        <div className="grid place-content-center">
-                                            <LiaPencilRulerSolid className="text-sm drop-shadow-md text-pink-500" />
-                                        </div>
-                                        <p className="text-xs font-bold drop-shadow-md text-pink-400">{repo.status}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            {!repo.isPrivate && (
-                                <div>
-                                    <div className="bg-gray-500 hover:bg-gray-600 cursor-pointer border border-gray-600 rounded-md borderborder-blue-200 grid place-content-center px-3 py-1">
-                                        <div className="grid place-content-center">
-                                            <FaGithub className="text-sm drop-shadow-md text-white" />
-                                        </div>
-                                    </div>
-                                </div>
+                {/* Repository Info */}
+                <div className="flex-1 min-w-0">
+                    <div className="flex items-start justify-between gap-3">
+                        <div className="flex-1 min-w-0">
+                            <h3 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-gray-100 leading-tight mb-1 truncate">
+                                {repo.name}
+                            </h3>
+                            {repo.description && (
+                                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                                    {repo.description}
+                                </p>
                             )}
                         </div>
                     </div>
-                )}
-
-                {repo.status == "En desarrollo" && (
-                    <div className="flex justify-end">
-                        <div className="rounded-md flex sm:flex-row gap-1 justify-between sm:justify-start sm:basis-[120px] w-full">
-                            <div className="rounded-md flex sm:flex-row gap-1 justify-between sm:justify-start">
-                                <div className="flex grow justify-end">
-                                    <div className="bg-blue-50 border w-full border-blue-300 rounded-md grid place-content-center px-3 py-1">
-                                        <div className="flex flex-row gap-1">
-                                            <div className="grid place-content-center">
-                                                <TbSettings className="text-sm drop-shadow-md text-blue-400" />
-                                            </div>
-                                            <p className="text-xs font-bold drop-shadow-md text-blue-400">{repo.status}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {!repo.isPrivate && (
-                                <div>
-                                    <div className="bg-gray-500 hover:bg-gray-600 cursor-pointer border border-gray-600 rounded-md borderborder-blue-200 grid place-content-center px-3 py-1">
-                                        <div className="grid place-content-center">
-                                            <FaGithub className="text-sm drop-shadow-md text-white" />
-                                        </div>
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                )}
-
-                {repo.status == "Funcionando" && (
-                    <div className="flex justify-end">
-                        <div className="rounded-md flex sm:flex-row gap-1 justify-between sm:justify-start sm:basis-[120px] w-full">
-                            <div className="rounded-md flex sm:flex-row gap-1 justify-between sm:justify-start">
-                                <div className="flex grow justify-end">
-                                    <div className="bg-green-100 border w-full border-green-300 rounded-md grid place-content-center px-3 py-1">
-                                        <div className="flex flex-row gap-1">
-                                            <div className="grid place-content-center">
-                                                <TbSettings className="text-sm drop-shadow-md text-green-400" />
-                                            </div>
-                                            <p className="text-xs font-bold drop-shadow-md text-green-500">{repo.status}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {!repo.isPrivate && (
-                                <div>
-                                    <div className="bg-gray-500 hover:bg-gray-600 cursor-pointer border border-gray-600 rounded-md borderborder-blue-200 grid place-content-center px-3 py-1">
-                                        <div className="grid place-content-center">
-                                            <FaGithub className="text-sm drop-shadow-md text-white" />
-                                        </div>
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                )}
+                </div>
             </div>
-        </>
-    )
+
+            {/* Footer Section */}
+            <div className="flex items-center justify-between gap-3">
+
+                {/* Status Badge */}
+                {currentStatus && (
+                    <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium ${currentStatus.bg} ${currentStatus.border} ${currentStatus.text} border`}>
+                        <StatusIcon className="w-3.5 h-3.5" />
+                        <span>{repo.status}</span>
+                    </div>
+                )}
+
+                {/* Actions */}
+                <div className="flex items-center gap-2">
+                    {!repo.isPrivate && (
+                        <a
+                            href="#"
+                            className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-150"
+                            title="Ver en GitHub"
+                        >
+                            <FaGithub className="w-4 h-4" />
+                        </a>
+                    )}
+                </div>
+            </div>
+
+            {/* Privacy indicator */}
+            {repo.isPrivate && (
+                <div className="absolute top-3 right-3">
+                    <div className="w-2 h-2 rounded-full bg-amber-400 dark:bg-amber-500"></div>
+                </div>
+            )}
+
+            {/* Hover indicator */}
+            <div className="absolute inset-0 rounded-lg ring-1 ring-gray-900/5 dark:ring-gray-100/5 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none" />
+        </div>
+    );
 }
 
 export default CardRepo;

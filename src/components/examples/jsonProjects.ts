@@ -2,6 +2,63 @@ import { Project } from "@/types/infoCV";
 
 export const Projects: Project[] = [
     {
+        "id": "2",
+        "name": "KodeChain",
+        "slug": "Blockchain para la gestión empresarial y transacciones seguras",
+        "description": "Blockchain descentralizada diseñada para que las empresas gestionen transacciones, emitan su propia criptomoneda y registren procesos críticos con seguridad e inmutabilidad. Utiliza una red P2P y smart contracts para automatizar pagos, controlar inventarios y validar operaciones sin intermediarios. Su algoritmo de consenso híbrido combina Delegated Proof of Stake (DPoS) y Practical Byzantine Fault Tolerance (PBFT), garantizando transacciones rápidas, seguras y eficientes.",
+        "largeDescription": "Blockchain descentralizada enfocada en la gestión empresarial, permitiendo a las compañías registrar transacciones, emitir criptomonedas propias y garantizar la integridad de sus procesos críticos. Su arquitectura basada en una red P2P (Peer-to-Peer) permite que múltiples nodos almacenen y validen información sin depender de un servidor central, asegurando alta disponibilidad y resistencia ante fallos.\nCada nodo en TripChain mantiene una copia completa de la blockchain y participa en la validación de transacciones a través de un mecanismo de consenso híbrido que combina Delegated Proof of Stake (DPoS) y Practical Byzantine Fault Tolerance (PBFT). Esto permite procesar transacciones en segundos sin el alto consumo energético de otras blockchains tradicionales.\nLas empresas operan en TripChain mediante cuentas empresariales que interactúan con smart contracts para gestionar pagos, emitir criptomonedas y registrar procesos clave como auditorías y control de inventario. Gracias a su estructura descentralizada, cada transacción es transparente, auditable e inmutable, proporcionando confianza tanto a los negocios como a sus clientes.",
+        "cover": "/backgrounds-projects/blocks_mosaic.jpg",
+        "uriDocs": "https://tripchaindocs.fly.dev/es/",
+        "stack": [
+            "React.js",
+            "typescript",
+            "Nextjs",
+            "Nest.js",
+            "Docker",
+            "Kubernetes",
+            "Google Cloud Plattform",
+            "Vercel"
+        ],
+        "repositories": [
+            {
+                "id": "2",
+                "name": "Nodo Validador",
+                "description": "Responsable de validar transacciones, generar bloques y mantener el consenso en la red. Implementa un mecanismo híbrido de DPoS y PBFT para garantizar seguridad y velocidad en las transacciones, coordinando la verificación y comunicación entre nodos.",
+                "status": "Planeando",
+                "isPrivate": false,
+                "uri": "https://github.com/teamTripCode/tc-validator-node",
+                "web": "https://tripchain.vercel.app/"
+            },
+            {
+                "id": "3",
+                "name": "Nodo Completo",
+                "description": "Nodo que replica y almacena el historial completo de la blockchain, asegurando que todos los bloques y transacciones sean accesibles en cualquier momento. Actúa como un respaldo descentralizado, permitiendo la validación independiente de datos y la ejecución de consultas avanzadas sin depender de terceros. Su implementación optimiza la indexación de datos y soporta sincronización eficiente con otros nodos de la red.",
+                "status": "Planeando",
+                "isPrivate": false,
+                "uri": "https://github.com/teamTripCode/tc-full-node",
+                "web": "https://tripchain.vercel.app/"
+            },
+            {
+                "id": "5",
+                "name": "KodeChain Explorer",
+                "description": "Plataforma web para visualizar bloques, transacciones y la actividad de la red en tiempo real. Proporciona herramientas avanzadas de búsqueda y análisis, permitiendo auditar el historial de la blockchain, verificar el estado de cuentas y contratos inteligentes. Incluye gráficos de métricas de red, estados de validadores y estadísticas de uso, optimizando la transparencia y el monitoreo del sistema.",
+                "status": "En desarrollo",
+                "isPrivate": false,
+                "uri": "https://github.com/teamTripCode/tc-explorer",
+                "web": "https://tripchain.vercel.app/"
+            },
+            {
+                "id": "6",
+                "name": "Web Documentation",
+                "description": "Repositorio central de documentación técnica de TripChain. Contiene guías detalladas sobre la configuración de nodos, interacción con la API, desarrollo de smart contracts y mejores prácticas de seguridad. Incluye ejemplos prácticos, especificaciones de endpoints y documentación en múltiples formatos para facilitar la integración con sistemas externos.",
+                "status": "Funcionando",
+                "isPrivate": false,
+                "uri": "https://github.com/teamTripCode/tc-docs",
+                "web": "https://tripchain.vercel.app/docs"
+            }
+        ]
+    },
+    {
         "id": "1",
         "name": "BlockScrum",
         "slug": "SaaS enfocado en el seguimiento de proyectos Scrum",
@@ -39,81 +96,6 @@ export const Projects: Project[] = [
             }
         ]
 
-    },
-    {
-        "id": "2",
-        "name": "TripCode Chain",
-        "slug": "Blockchain para la gestión empresarial y transacciones seguras",
-        "description": "Blockchain descentralizada diseñada para que las empresas gestionen transacciones, emitan su propia criptomoneda y registren procesos críticos con seguridad e inmutabilidad. Utiliza una red P2P y smart contracts para automatizar pagos, controlar inventarios y validar operaciones sin intermediarios. Su algoritmo de consenso híbrido combina Delegated Proof of Stake (DPoS) y Practical Byzantine Fault Tolerance (PBFT), garantizando transacciones rápidas, seguras y eficientes.",
-        "largeDescription": "Blockchain descentralizada enfocada en la gestión empresarial, permitiendo a las compañías registrar transacciones, emitir criptomonedas propias y garantizar la integridad de sus procesos críticos. Su arquitectura basada en una red P2P (Peer-to-Peer) permite que múltiples nodos almacenen y validen información sin depender de un servidor central, asegurando alta disponibilidad y resistencia ante fallos.\nCada nodo en TripChain mantiene una copia completa de la blockchain y participa en la validación de transacciones a través de un mecanismo de consenso híbrido que combina Delegated Proof of Stake (DPoS) y Practical Byzantine Fault Tolerance (PBFT). Esto permite procesar transacciones en segundos sin el alto consumo energético de otras blockchains tradicionales.\nLas empresas operan en TripChain mediante cuentas empresariales que interactúan con smart contracts para gestionar pagos, emitir criptomonedas y registrar procesos clave como auditorías y control de inventario. Gracias a su estructura descentralizada, cada transacción es transparente, auditable e inmutable, proporcionando confianza tanto a los negocios como a sus clientes.",
-        "cover": "/backgrounds-projects/blocks_mosaic.jpg",
-        "uriDocs": "https://tripchaindocs.fly.dev/es/",
-        "stack": [
-            "React.js",
-            "typescript",
-            "Nextjs",
-            "Nest.js",
-            "Docker",
-            "Kubernetes",
-            "Google Cloud Plattform",
-            "Vercel"
-        ],
-        "repositories": [
-            {
-                "id": "1",
-                "name": "Nodo Semilla",
-                "description": "Facilita la conexión inicial de nuevos nodos en la red blockchain. No valida transacciones ni almacena bloques completos, sino que mantiene una lista de nodos activos y la comparte para garantizar la descentralización y continuidad de la red.",
-                "status": "Planeando",
-                "isPrivate": false,
-                "uri": "https://github.com/teamTripCode/tc-seed-node",
-                "web": "https://tripchain.vercel.app/"
-            },
-            {
-                "id": "2",
-                "name": "Nodo Validador",
-                "description": "Responsable de validar transacciones, generar bloques y mantener el consenso en la red. Implementa un mecanismo híbrido de DPoS y PBFT para garantizar seguridad y velocidad en las transacciones, coordinando la verificación y comunicación entre nodos.",
-                "status": "Planeando",
-                "isPrivate": false,
-                "uri": "https://github.com/teamTripCode/tc-validator-node",
-                "web": "https://tripchain.vercel.app/"
-            },
-            {
-                "id": "3",
-                "name": "Nodo Completo",
-                "description": "Nodo que replica y almacena el historial completo de la blockchain, asegurando que todos los bloques y transacciones sean accesibles en cualquier momento. Actúa como un respaldo descentralizado, permitiendo la validación independiente de datos y la ejecución de consultas avanzadas sin depender de terceros. Su implementación optimiza la indexación de datos y soporta sincronización eficiente con otros nodos de la red.",
-                "status": "Planeando",
-                "isPrivate": false,
-                "uri": "https://github.com/teamTripCode/tc-full-node",
-                "web": "https://tripchain.vercel.app/"
-            },
-            {
-                "id": "4",
-                "name": "Nodo API",
-                "description": "Módulo de servicio que expone una API REST y WebSocket para interactuar con la blockchain. Facilita la consulta de datos en tiempo real, la gestión de cuentas, la ejecución de smart contracts y el procesamiento de transacciones. Implementa mecanismos de autenticación y control de acceso, garantizando operaciones seguras y escalables para integraciones empresariales y clientes externos.",
-                "status": "Planeando",
-                "isPrivate": false,
-                "uri": "https://github.com/teamTripCode/tc-api-node",
-                "web": "https://tripchain.vercel.app/"
-            },
-            {
-                "id": "5",
-                "name": "TripChain Explorer",
-                "description": "Plataforma web para visualizar bloques, transacciones y la actividad de la red en tiempo real. Proporciona herramientas avanzadas de búsqueda y análisis, permitiendo auditar el historial de la blockchain, verificar el estado de cuentas y contratos inteligentes. Incluye gráficos de métricas de red, estados de validadores y estadísticas de uso, optimizando la transparencia y el monitoreo del sistema.",
-                "status": "Planeando",
-                "isPrivate": false,
-                "uri": "https://github.com/teamTripCode/tc-explorer",
-                "web": "https://tripchain.vercel.app/"
-            },
-            {
-                "id": "6",
-                "name": "Web Documentation",
-                "description": "Repositorio central de documentación técnica de TripChain. Contiene guías detalladas sobre la configuración de nodos, interacción con la API, desarrollo de smart contracts y mejores prácticas de seguridad. Incluye ejemplos prácticos, especificaciones de endpoints y documentación en múltiples formatos para facilitar la integración con sistemas externos.",
-                "status": "Funcionando",
-                "isPrivate": false,
-                "uri": "https://github.com/teamTripCode/tc-docs",
-                "web": "https://tripchain.vercel.app/docs"
-            }
-        ]
     },
     {
         "id": "3",
@@ -159,7 +141,7 @@ export const Projects: Project[] = [
     },
     {
         "id": "4",
-        "name": "Inventario Descentralizado",
+        "name": "Vexa",
         "slug": "DApp para la gestión de inventarios y recompensas empresariales",
         "description": "Plataforma diseñada para la gestión eficiente de inventarios en negocios de cualquier tamaño. Permite administrar productos, registrar transacciones y automatizar recompensas en criptomonedas para los clientes según sus compras. Cada negocio (tenant) puede generar y gestionar su propia criptomoneda dentro del ecosistema, asegurando transparencia y trazabilidad en todas las operaciones.",
         "largeDescription": "Aplicación SaaS basada en blockchain que permite a las empresas gestionar su inventario y recompensar a sus clientes con criptomonedas propias. Su arquitectura descentralizada basada en una red P2P garantiza la seguridad e inmutabilidad de los datos.\nCada negocio puede crear su propia criptomoneda dentro de la plataforma, establecer reglas de recompensa y realizar un seguimiento detallado de a qué clientes se les ha otorgado criptomonedas por sus compras. Además, la integración con smart contracts asegura que cada transacción sea transparente y auditable.\nLa plataforma proporciona herramientas avanzadas de gestión de inventario, permitiendo a los negocios registrar entradas, salidas y movimientos de stock en tiempo real, con reportes detallados y automatización de procesos clave. Gracias a su infraestructura escalable, puede adaptarse tanto a pequeñas tiendas como a grandes corporaciones con múltiples sucursales.",

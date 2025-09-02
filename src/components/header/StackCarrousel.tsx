@@ -54,7 +54,9 @@ const LogoCarousel: React.FC = () => {
           "linear-gradient(to right, transparent 0, black 128px, black calc(100% - 200px), transparent 100%)",
       }}
     >
-      <h2 className="text-center mb-4">{t("titleSkills")}</h2>
+      <div className="text-center mb-6">
+        <h2 className="text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">{t("titleSkills")}</h2>
+      </div>
       <div
         ref={trackRef}
         className="inline-flex flex-nowrap"

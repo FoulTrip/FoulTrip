@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import LogoCarousel from "./StackCarrousel";
 import { FaGithubAlt, FaDownload } from "react-icons/fa6";
+import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import { useRouter, usePathname } from "next/navigation";
 
 function BaseHeader() {
@@ -29,19 +30,24 @@ function BaseHeader() {
         document.body.removeChild(link);
     };
 
+    const handleGithubVisit = () => {
+        window.open("https://github.com/FoulTrip", "_blank", "noopener,noreferrer");
+    };
+
     return (
-        <main className="min-h-dvh grid place-content-center dark:bg-black/90 w-[90%] ml-[5%] pt-32 pb-20">
-            <div>
+        <main className="min-h-dvh grid place-content-center dark:bg-black/90 w-full px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+            <div className="w-full max-w-6xl mx-auto">
                 <div className="grid place-content-center mb-2">
                     <Image
                         src={"https://avatars.githubusercontent.com/u/83887793?v=4"}
                         alt="icon"
                         width={250}
                         height={250}
-                        className="drop-shadow-md rounded-full"
+                        className="drop-shadow-md rounded-full w-48 h-48 sm:w-64 sm:h-64"
                     />
                 </div>
-                <h1 className="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center">
+                
+                <h1 className="mb-4 text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl text-center px-2">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
                         {t("headline").split("\n").map((line, i) => (
                             <span key={i}>
@@ -52,33 +58,32 @@ function BaseHeader() {
                     </span>
                 </h1>
 
-                <p className="text-sm font-thin text-center mt-8 mb-8 dark:text-white text-gray-600">
+                <p className="text-sm sm:text-base lg:text-lg text-center mt-8 mb-8 dark:text-gray-300 text-gray-600 leading-relaxed max-w-4xl mx-auto px-4">
                     {t("description")}
                 </p>
 
                 <div className="grid place-content-center">
-                    <div className="flex flex-row gap-4">
-                        <div onClick={() => router.push("https://github.com/FoulTrip")} className="px-4 py-2 dark:bg-white bg-gray-600 rounded-full grid place-content-center border border-gray-300 hover:border-gray-400 cursor-pointer">
-                            <div className="flex flex-row gap-2">
-                                <div className="grid place-content-center">
-                                    <FaGithubAlt className="drop-shadow-md text-white dark:text-gray-600" />
-                                </div>
-                                <p className="text-sm text-gray-50 dark:text-gray-600">{t("getInTouch")}</p>
-                            </div>
-                        </div>
-                        <div
-                            onClick={handleDownloadCV}
-                            className="cursor-pointer px-4 py-2 border border-gray-300 rounded-full grid place-content-center hover:border-gray-400"
+                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full max-w-md sm:max-w-none">
+                        <button 
+                            onClick={handleGithubVisit}
+                            className="group inline-flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-xl font-semibold hover:bg-gray-800 dark:hover:bg-gray-100 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl text-sm sm:text-base"
                         >
-                            <div className="flex flex-row gap-2 items-center">
-                                <FaDownload className="text-sm dark:text-white text-gray-700" />
-                                <p className="text-sm dark:text-white text-gray-700">{t("downloadCV")}</p>
-                            </div>
-                        </div>
+                            <FaGithubAlt className="w-4 h-4 sm:w-5 sm:h-5" />
+                            <span>{t("getInTouch")}</span>
+                            <HiArrowTopRightOnSquare className="w-3 h-3 sm:w-4 sm:h-4 opacity-70 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-200" />
+                        </button>
+                        
+                        <button
+                            onClick={handleDownloadCV}
+                            className="group inline-flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-6 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-white border-2 border-gray-200 dark:border-gray-700 rounded-xl font-semibold hover:border-gray-300 dark:hover:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl text-sm sm:text-base"
+                        >
+                            <FaDownload className="w-3 h-3 sm:w-4 sm:h-4 group-hover:animate-bounce" />
+                            <span>{t("downloadCV")}</span>
+                        </button>
                     </div>
                 </div>
 
-                <div className="grid place-content-center mt-10">
+                <div className="grid place-content-center mt-8 sm:mt-12 w-full">
                     <LogoCarousel />
                 </div>
             </div>
