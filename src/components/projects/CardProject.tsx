@@ -3,6 +3,7 @@ import { Project } from "@/types/infoCV";
 import { LuBookText } from "react-icons/lu";
 import { GoRepo } from "react-icons/go";
 import { HiArrowRight } from "react-icons/hi2";
+import { useDarkMode } from "@/context/DarkModeContext";
 
 function CardProject({
     project,
@@ -11,6 +12,8 @@ function CardProject({
     project: Project,
     onSelect: (project: Project) => void;
 }) {
+
+    const { darkmode } = useDarkMode()
     return (
         <div className="group relative p-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:border-gray-200 dark:hover:border-gray-700 hover:shadow-md transition-all duration-300">
 
@@ -20,12 +23,12 @@ function CardProject({
                 <div className="lg:w-1/3 flex-shrink-0">
                     <div className="relative aspect-video w-full rounded-lg overflow-hidden bg-gray-50 dark:bg-gray-800">
                         <Image
-                            src={project.cover}
+                            src={darkmode ? project.dark_cover : project.cover}
                             alt={project.name}
                             fill
                             className="object-cover group-hover:scale-105 transition-transform duration-300"
                         />
-                        <div className="absolute inset-0 ring-1 ring-inset ring-gray-900/10 dark:ring-gray-100/10 rounded-lg" />
+                        
                     </div>
                 </div>
 

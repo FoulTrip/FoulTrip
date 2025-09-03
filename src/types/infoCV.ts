@@ -5,7 +5,9 @@ export interface Project {
     slug: string;
     description: string;
     largeDescription: string;
+    logo: string;
     cover: string;
+    dark_cover: string
     uriDocs: string;
     stack: stackType[];
     repositories: Repository[];

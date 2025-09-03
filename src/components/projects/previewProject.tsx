@@ -1,23 +1,24 @@
 import { Project, Repository } from "@/types/infoCV";
 import CardRepo from "./CardRepos";
-import Image from "next/image";
 import ListStacks from "./listSkills";
+import { useTranslations } from "next-intl";
 
 function PreviewProject({ project }: { project: Project }) {
+    const t = useTranslations("Common")
     return (
         <div className="space-y-8">
 
             {/* Project Cover */}
-            <div className="relative overflow-hidden rounded-xl bg-gray-50 dark:bg-gray-800">
+            {/* <div className="relative overflow-hidden rounded-xl bg-gray-50 dark:bg-gray-800">
                 <Image
                     src={project.cover}
                     alt={project.name}
-                    className="w-full h-[200px] object-cover"
-                    width={500}
+                    className="w-full h-[200px] object-contain"
+                    width={800}
                     height={500}
                 />
                 <div className="absolute inset-0 ring-1 ring-inset ring-gray-900/10 dark:ring-gray-100/10 rounded-xl" />
-            </div>
+            </div> */}
 
             {/* Project Description */}
             <div className="prose prose-gray dark:prose-invert max-w-none">
@@ -31,7 +32,7 @@ function PreviewProject({ project }: { project: Project }) {
                 <div className="flex items-center gap-2">
                     <div className="w-1 h-6 bg-blue-500 rounded-full" />
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
-                        Tecnologías
+                        {t('titleTecs')}
                     </h3>
                 </div>
                 <div className="pl-3">
@@ -44,7 +45,7 @@ function PreviewProject({ project }: { project: Project }) {
                 <div className="flex items-center gap-2">
                     <div className="w-1 h-6 bg-green-500 rounded-full" />
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
-                        Repositorios
+                        {t("titleRepositories")}
                     </h3>
                 </div>
 

@@ -8,7 +8,9 @@
     "Common": {
         "showMore": "Show more",
         "showLess": "Show less",
-        "backToProjects": "Back to projects"
+        "backToProjects": "Back to projects",
+        "titleTecs": "Technologies",
+        "titleRepositories": "Repositories"
     },
     "BaseHeader": {
         "headline": "Building businesses\ndriven by innovation.",
@@ -19,12 +21,14 @@
     },
     "Projects": [
         {
-            "id": "2",
-            "name": "KodeChain",
+            "id": "1",
+            "name": "TripKode",
             "slug": "Blockchain for enterprise management and secure transactions",
             "description": "Decentralized blockchain designed for businesses to manage transactions, issue their own cryptocurrency, and record critical processes with security and immutability. Utilizes a P2P network and smart contracts to automate payments, control inventory, and validate operations without intermediaries. Its hybrid consensus algorithm combines Delegated Proof of Stake (DPoS) and Practical Byzantine Fault Tolerance (PBFT), ensuring fast, secure, and efficient transactions.",
             "largeDescription": "Decentralized blockchain focused on enterprise management, enabling companies to record transactions, issue their own cryptocurrencies, and guarantee the integrity of their critical processes. Its architecture based on a P2P (Peer-to-Peer) network allows multiple nodes to store and validate information without relying on a central server, ensuring high availability and resistance to failures.\nEach node in TripChain maintains a complete copy of the blockchain and participates in transaction validation through a hybrid consensus mechanism that combines Delegated Proof of Stake (DPoS) and Practical Byzantine Fault Tolerance (PBFT). This enables transaction processing in seconds without the high energy consumption of other traditional blockchains.\nBusinesses operate on TripChain through enterprise accounts that interact with smart contracts to manage payments, issue cryptocurrencies, and record key processes such as audits and inventory control. Thanks to its decentralized structure, each transaction is transparent, auditable, and immutable, providing trust to both businesses and their customers.",
-            "cover": "/backgrounds-projects/blocks_mosaic.jpg",
+            "cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756905969/Portafolio/banner_tripkode_portafolio_bqumll.png",
+            "dark_cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756907719/Portafolio/banner_tripkode_dark_portafolio_gtoayo.png",
+            "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1729375887/TripCode/Logos/luc79qy6rewoqovhxwrz.png",
             "uriDocs": "https://tripchaindocs.fly.dev/es/",
             "stack": [
                 "React.js",
@@ -76,12 +80,73 @@
             ]
         },
         {
-            "id": "1",
+            "id": "2",
+            "name": "KodeChain",
+            "slug": "Blockchain for enterprise management and secure transactions",
+            "description": "Decentralized blockchain designed for businesses to manage transactions, issue their own cryptocurrency, and record critical processes with security and immutability. Utilizes a P2P network and smart contracts to automate payments, control inventory, and validate operations without intermediaries. Its hybrid consensus algorithm combines Delegated Proof of Stake (DPoS) and Practical Byzantine Fault Tolerance (PBFT), ensuring fast, secure, and efficient transactions.",
+            "largeDescription": "Decentralized blockchain focused on enterprise management, enabling companies to record transactions, issue their own cryptocurrencies, and guarantee the integrity of their critical processes. Its architecture based on a P2P (Peer-to-Peer) network allows multiple nodes to store and validate information without relying on a central server, ensuring high availability and resistance to failures.\nEach node in TripChain maintains a complete copy of the blockchain and participates in transaction validation through a hybrid consensus mechanism that combines Delegated Proof of Stake (DPoS) and Practical Byzantine Fault Tolerance (PBFT). This enables transaction processing in seconds without the high energy consumption of other traditional blockchains.\nBusinesses operate on TripChain through enterprise accounts that interact with smart contracts to manage payments, issue cryptocurrencies, and record key processes such as audits and inventory control. Thanks to its decentralized structure, each transaction is transparent, auditable, and immutable, providing trust to both businesses and their customers.",
+            "cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756904929/Portafolio/banner_kodechain_portafolio_sfz331.png",
+            "dark_cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756907850/Portafolio/banner_kodechain_dark_portafolio_bv5evg.png",
+            "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1756827546/TripCode/Logos/ace8f488-f7d5-4215-aa71-7050eeb34573_dkblzi_eajjzn.png",
+            "uriDocs": "https://tripchaindocs.fly.dev/es/",
+            "stack": [
+                "React.js",
+                "typescript",
+                "Nextjs",
+                "Nest.js",
+                "Docker",
+                "Cloudflare",
+                "Go",
+                "Tailwind CSS"
+            ],
+            "repositories": [
+                {
+                    "id": "2",
+                    "name": "Validator Node",
+                    "description": "Responsible for validating transactions, generating blocks, and maintaining consensus on the network. Implements a hybrid mechanism of DPoS and PBFT to guarantee security and speed in transactions, coordinating verification and communication between nodes.",
+                    "status": "In development",
+                    "isPrivate": false,
+                    "uri": "https://github.com/teamTripCode/tc-validator-node",
+                    "web": ""
+                },
+                {
+                    "id": "3",
+                    "name": "Full Node",
+                    "description": "Node that replicates and stores the complete blockchain history, ensuring that all blocks and transactions are accessible at any time. Acts as a decentralized backup, enabling independent data validation and execution of advanced queries without relying on third parties. Its implementation optimizes data indexing and supports efficient synchronization with other network nodes.",
+                    "status": "In development",
+                    "isPrivate": true,
+                    "uri": "",
+                    "web": ""
+                },
+                {
+                    "id": "5",
+                    "name": "KodeChain Explorer",
+                    "description": "Web platform for visualizing blocks, transactions, and real-time network activity. Provides advanced search and analysis tools, enabling blockchain history auditing, account and smart contract status verification. Includes network metrics charts, validator states, and usage statistics, optimizing system transparency and monitoring.",
+                    "status": "In development",
+                    "isPrivate": true,
+                    "uri": "",
+                    "web": "https://tripchain.vercel.app/"
+                },
+                {
+                    "id": "6",
+                    "name": "Web Documentation",
+                    "description": "Central repository of TripChain technical documentation. Contains detailed guides on node configuration, API interaction, smart contract development, and security best practices. Includes practical examples, endpoint specifications, and documentation in multiple formats to facilitate integration with external systems.",
+                    "status": "In development",
+                    "isPrivate": false,
+                    "uri": "https://github.com/teamTripCode/tc-docs",
+                    "web": "https://tripchain.vercel.app/docs"
+                }
+            ]
+        },
+        {
+            "id": "3",
             "name": "BlockScrum",
             "slug": "SaaS focused on Scrum project tracking",
             "description": "Agile project management platform based on Scrum, enabling planning, monitoring, and optimization of tasks in development teams. Incorporates blockchain technology to record critical project events immutably, ensuring transparency and traceability in each sprint, task, and team assignment.",
             "largeDescription": "Application designed for project management under the Scrum methodology, providing interactive boards for real-time sprint planning and tracking. In addition to its traditional task organization and role management tools, BlockScrum uses TripChain blockchain to record key project events, such as task assignments, sprint changes, and final deliveries. This enables teams to maintain an immutable history of their progress, ensuring transparency and facilitating compliance audits.\n\nThanks to its modular and scalable architecture, BlockScrum enables workflow automation through external API integration, role-based permission management, and team performance analysis. Its blockchain integration provides additional security in validating critical project data, ensuring that development decisions are reliable and verifiable.",
-            "cover": "/backgrounds-projects/scrum_mosaic.jpg",
+            "cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756912400/Portafolio/banner_blockscrum_portafolio_brfipd.png",
+            "dark_cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756912557/Portafolio/banner_blockscrum_black_nhook5.png",
+            "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1756827546/TripCode/Logos/ace8f488-f7d5-4215-aa71-7050eeb34573_dkblzi_eajjzn.png",
             "uriDocs": "",
             "stack": [
                 "React.js",
@@ -115,12 +180,14 @@
             ]
         },
         {
-            "id": "3",
+            "id": "4",
             "name": "ParfumCol",
             "slug": "DApp for perfume commerce and rewards",
             "description": "E-commerce platform specialized in perfumes, integrating blockchain technology to guarantee authenticity, traceability, and security in transactions. Implements a cryptocurrency-based rewards system, allowing customers to earn benefits from their purchases.",
             "largeDescription": "E-commerce application focused on perfume sales, utilizing TripChain blockchain to record transactions immutably and provide transparency in purchase and distribution processes. Its integration with smart contracts enables cryptocurrency issuance as customer incentives, creating a rewards ecosystem within the platform.\nParfumCol's architecture consists of a Nest.js backend that manages users, orders, and blockchain transactions, and a Next.js frontend optimized for speed and user experience. It uses Prisma as an ORM to handle data in MongoDB, Docker for scalable deployment, and Google Cloud Platform for hosting and secure storage.",
             "cover": "/backgrounds-projects/blocks_mosaic.jpg",
+            "dark_cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756907719/Portafolio/banner_tripkode_dark_portafolio_gtoayo.png",
+            "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1756827546/TripCode/Logos/ace8f488-f7d5-4215-aa71-7050eeb34573_dkblzi_eajjzn.png",
             "uriDocs": "https://parfumcol-docs.vercel.app/",
             "stack": [
                 "React.js",
@@ -157,12 +224,14 @@
             ]
         },
         {
-            "id": "4",
+            "id": "5",
             "name": "Vexa",
             "slug": "DApp for inventory management and enterprise rewards",
             "description": "Platform designed for efficient inventory management in businesses of any size. Enables product administration, transaction recording, and automated cryptocurrency rewards for customers based on their purchases. Each business (tenant) can generate and manage its own cryptocurrency within the ecosystem, ensuring transparency and traceability in all operations.",
             "largeDescription": "Blockchain-based SaaS application that enables companies to manage their inventory and reward their customers with their own cryptocurrencies. Its decentralized architecture based on a P2P network guarantees data security and immutability.\nEach business can create its own cryptocurrency within the platform, establish reward rules, and maintain detailed tracking of which customers have been granted cryptocurrencies for their purchases. Additionally, smart contract integration ensures that every transaction is transparent and auditable.\nThe platform provides advanced inventory management tools, enabling businesses to record entries, exits, and stock movements in real-time, with detailed reports and key process automation. Thanks to its scalable infrastructure, it can adapt to both small stores and large corporations with multiple branches.",
             "cover": "/backgrounds-projects/blocks_mosaic.jpg",
+            "dark_cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756907719/Portafolio/banner_tripkode_dark_portafolio_gtoayo.png",
+            "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1756827546/TripCode/Logos/ace8f488-f7d5-4215-aa71-7050eeb34573_dkblzi_eajjzn.png",
             "uriDocs": "dwdwd",
             "stack": [
                 "React.js",
