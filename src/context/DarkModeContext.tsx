@@ -37,8 +37,6 @@ export function DarkModeProvider({ children }: { children: ReactNode }) {
             } else {
                 document.documentElement.classList.remove("dark");
             }
-
-            console.log("Tema inicial:", initialDarkMode ? "oscuro" : "claro");
         }
     }, []);
 
@@ -83,7 +81,6 @@ export function DarkModeProvider({ children }: { children: ReactNode }) {
                 localStorage.setItem("theme", "light");
             }
 
-            console.log("Tema cambiado manualmente:", newDarkMode ? "oscuro" : "claro");
             return newDarkMode;
         });
     };

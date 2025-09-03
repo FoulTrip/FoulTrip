@@ -21,7 +21,6 @@ function ListExperience() {
     useEffect(() => {
         const getExperiences = async () => {
             const response = await axios.get("/api/experience");
-            console.log(response.data.data);
             if (response.data.success === true) setExperiences(response.data.data);
         }
 
