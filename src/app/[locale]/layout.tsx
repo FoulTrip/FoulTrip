@@ -36,13 +36,12 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Analytics />
-        <SpeedInsights />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <DarkModeProvider>
-
             <Navbar />
             {children}
+            <Analytics />
+            <SpeedInsights />
           </DarkModeProvider>
         </NextIntlClientProvider>
       </body>
