@@ -1,6 +1,6 @@
 "use client"
-import axios from "axios";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 import CardProject from "./CardProject";
 import { GoRepo } from "react-icons/go";
 import { HiXMark } from "react-icons/hi2";
@@ -34,13 +34,18 @@ function ListCarrousel({ isClose }: { isClose: boolean }) {
         if (isClose == true) close;
     }, [isClose])
 
+    const t = useTranslations();
+    
     useEffect(() => {
-        const getProjects = async () => {
-            const response = await axios.get("/api/projects");
-            if (response.data.success === true) setProjects(response.data.data);
+        try {
+            const rawProjects = t.raw("Projects");
+            const projectsData = Array.isArray(rawProjects) ? rawProjects : [];
+            setProjects(projectsData);
+        } catch (error) {
+            console.error("Error loading projects from translations:", error);
+            setProjects([]);
         }
-        getProjects()
-    }, []);
+    }, [t]);
 
     // Determinar cuántos proyectos mostrar
     const visibleProjects = showAll ? projects : projects?.slice(0, 3);
@@ -58,7 +63,7 @@ function ListCarrousel({ isClose }: { isClose: boolean }) {
                         <button
                             onClick={handleCloseProject}
                             className="flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-150"
-                            title="Volver a proyectos"
+                            title={t("Common.backToProjects")}
                         >
                             <HiChevronLeft className="w-4 h-4" />
                         </button>
@@ -68,7 +73,7 @@ function ListCarrousel({ isClose }: { isClose: boolean }) {
                         id="projects"
                         className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-gray-100"
                     >
-                        Proyectos
+                        {t("Navbar.projects")}
                     </h2>
                 </div>
 
@@ -108,7 +113,7 @@ function ListCarrousel({ isClose }: { isClose: boolean }) {
                                     onClick={() => setShowAll(!showAll)}
                                     className="inline-flex items-center px-6 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-150"
                                 >
-                                    {showAll ? "Ver menos" : `Ver más (${projects.length - 3})`}
+                                    {showAll ? t("Common.showLess") : `${t("Common.showMore")} (${projects.length - 3})`}
                                 </button>
                             </div>
                         )}

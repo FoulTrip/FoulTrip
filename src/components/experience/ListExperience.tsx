@@ -1,7 +1,7 @@
 "use client"
 
-import axios from "axios";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 import CardExperience from "./CardExperience";
 
 export interface Experience {
@@ -18,14 +18,18 @@ function ListExperience() {
     const [experiences, setExperiences] = useState<Experience[] | null>(null);
     const [showAll, setShowAll] = useState(false);
 
+    const t = useTranslations();
+    
     useEffect(() => {
-        const getExperiences = async () => {
-            const response = await axios.get("/api/experience");
-            if (response.data.success === true) setExperiences(response.data.data);
+        try {
+            const rawExperiences = t.raw("Experience");
+            const experiencesData = Array.isArray(rawExperiences) ? rawExperiences : [];
+            setExperiences(experiencesData);
+        } catch (error) {
+            console.error("Error loading experiences from translations:", error);
+            setExperiences([]);
         }
-
-        getExperiences()
-    }, []);
+    }, [t]);
 
     // Determinar cuántos proyectos mostrar
     const visibleProjects = showAll ? experiences : experiences?.slice(0, 3);
@@ -44,7 +48,7 @@ function ListExperience() {
                     onClick={() => setShowAll(!showAll)}
                     className="self-center mt-2 px-4 py-2 text-sm font-medium text-gray-600 cursor-pointer"
                 >
-                    {showAll ? "Ver menos" : "Ver más"}
+                    {showAll ? t("Common.showLess") : t("Common.showMore")}
                 </button>
             )}
         </div>

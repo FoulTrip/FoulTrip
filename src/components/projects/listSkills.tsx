@@ -10,8 +10,12 @@ import {
     SiVercel,
     SiMongodb,
     SiPrisma,
-    SiHiveBlockchain
+    SiHiveBlockchain,
+    SiGo,
+    SiCloudflare,
+    SiTailwindcss
 } from "react-icons/si";
+import { FaGolang } from "react-icons/fa6";
 
 const stackConfig = {
     "React.js": {
@@ -90,6 +94,27 @@ const stackConfig = {
         bg: "bg-purple-50 dark:bg-purple-900/20",
         border: "border-purple-200 dark:border-purple-800",
         name: "Blockchain"
+    },
+    "Go": {
+        icon: FaGolang,
+        color: "text-blue-600",
+        bg: "bg-blue-50 dark:bg-blue-900/20",
+        border: "border-blue-200 dark:border-blue-800",
+        name: "Go"
+    },
+    "Cloudflare": {
+        icon: SiCloudflare,
+        color: "text-orange-500",
+        bg: "bg-orange-50 dark:bg-orange-900/20",
+        border: "border-orange-200 dark:border-orange-800",
+        name: "Cloudflare"
+    },
+    "Tailwind CSS": {
+        icon: SiTailwindcss,
+        color: "text-cyan-500",
+        bg: "bg-cyan-50 dark:bg-cyan-900/20",
+        border: "border-cyan-200 dark:border-cyan-800",
+        name: "Tailwind CSS"
     }
 };
 

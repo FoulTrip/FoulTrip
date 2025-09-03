@@ -2,12 +2,19 @@ import { Repository } from "@/types/infoCV";
 import { FaGithub } from "react-icons/fa6";
 import { GoRepo, GoRepoLocked } from "react-icons/go";
 import { LiaPencilRulerSolid } from "react-icons/lia";
-import { TbSettings } from "react-icons/tb";
+import { TbSettings, TbWorld } from "react-icons/tb";
 import { RiCheckboxCircleLine } from "react-icons/ri";
+import Link from "next/link";
 
 function CardRepo({ repo }: { repo: Repository }) {
     const statusConfig = {
         "Planeando": {
+            bg: "bg-amber-50 dark:bg-amber-900/20",
+            border: "border-amber-200 dark:border-amber-800",
+            text: "text-amber-700 dark:text-amber-400",
+            icon: LiaPencilRulerSolid
+        },
+        "Planning": {
             bg: "bg-amber-50 dark:bg-amber-900/20",
             border: "border-amber-200 dark:border-amber-800",
             text: "text-amber-700 dark:text-amber-400",
@@ -19,7 +26,19 @@ function CardRepo({ repo }: { repo: Repository }) {
             text: "text-blue-700 dark:text-blue-400",
             icon: TbSettings
         },
+        "In development": {
+            bg: "bg-blue-50 dark:bg-blue-900/20",
+            border: "border-blue-200 dark:border-blue-800",
+            text: "text-blue-700 dark:text-blue-400",
+            icon: TbSettings
+        },
         "Funcionando": {
+            bg: "bg-green-50 dark:bg-green-900/20",
+            border: "border-green-200 dark:border-green-800",
+            text: "text-green-700 dark:text-green-400",
+            icon: RiCheckboxCircleLine
+        },
+        "Functional": {
             bg: "bg-green-50 dark:bg-green-900/20",
             border: "border-green-200 dark:border-green-800",
             text: "text-green-700 dark:text-green-400",
@@ -77,9 +96,22 @@ function CardRepo({ repo }: { repo: Repository }) {
 
                 {/* Actions */}
                 <div className="flex items-center gap-2">
-                    {!repo.isPrivate && (
+                    {repo.web && repo.web.length != 0 && (
+                        <Link
+                            href={repo.web}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-150"
+                            title="Ver en GitHub"
+                        >
+                            <TbWorld className="w-4 h-4" />
+                        </Link>
+                    )}
+                    {!repo.isPrivate && repo.uri && (
                         <a
-                            href="#"
+                            href={repo.web}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-150"
                             title="Ver en GitHub"
                         >

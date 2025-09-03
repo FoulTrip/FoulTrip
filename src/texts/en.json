@@ -5,11 +5,469 @@
         "contact": "Contact",
         "blog": "Blog"
     },
+    "Common": {
+        "showMore": "Show more",
+        "showLess": "Show less",
+        "backToProjects": "Back to projects"
+    },
     "BaseHeader": {
         "headline": "Building businesses\ndriven by innovation.",
-        "description": "Full Stack Developer with experience in Next.js, React, and TypeScript, specializing in creating attractive, functional, and scalable web applications. Expert in Python, MongoDB, MySQL, and Prisma for robust backend solutions, and deploying projects on Vercel and Google Cloud. Passionate about transforming ideas into innovative products, optimizing performance, and user experience.",
+        "description": "Full Stack Developer with expertise in Next.js, React, and TypeScript, specializing in creating attractive, functional, and scalable web applications. Expert in Python, MongoDB, MySQL, and Prisma for robust backend solutions, and experienced in deploying projects on Vercel and Google Cloud. Passionate about transforming ideas into innovative products while optimizing performance and user experience.",
         "getInTouch": "Github",
         "downloadCV": "Download CV",
         "titleSkills": "Experience with"
-    }
+    },
+    "Projects": [
+        {
+            "id": "2",
+            "name": "KodeChain",
+            "slug": "Blockchain for enterprise management and secure transactions",
+            "description": "Decentralized blockchain designed for businesses to manage transactions, issue their own cryptocurrency, and record critical processes with security and immutability. Utilizes a P2P network and smart contracts to automate payments, control inventory, and validate operations without intermediaries. Its hybrid consensus algorithm combines Delegated Proof of Stake (DPoS) and Practical Byzantine Fault Tolerance (PBFT), ensuring fast, secure, and efficient transactions.",
+            "largeDescription": "Decentralized blockchain focused on enterprise management, enabling companies to record transactions, issue their own cryptocurrencies, and guarantee the integrity of their critical processes. Its architecture based on a P2P (Peer-to-Peer) network allows multiple nodes to store and validate information without relying on a central server, ensuring high availability and resistance to failures.\nEach node in TripChain maintains a complete copy of the blockchain and participates in transaction validation through a hybrid consensus mechanism that combines Delegated Proof of Stake (DPoS) and Practical Byzantine Fault Tolerance (PBFT). This enables transaction processing in seconds without the high energy consumption of other traditional blockchains.\nBusinesses operate on TripChain through enterprise accounts that interact with smart contracts to manage payments, issue cryptocurrencies, and record key processes such as audits and inventory control. Thanks to its decentralized structure, each transaction is transparent, auditable, and immutable, providing trust to both businesses and their customers.",
+            "cover": "/backgrounds-projects/blocks_mosaic.jpg",
+            "uriDocs": "https://tripchaindocs.fly.dev/es/",
+            "stack": [
+                "React.js",
+                "typescript",
+                "Nextjs",
+                "Nest.js",
+                "Docker",
+                "Cloudflare",
+                "Go",
+                "Tailwind CSS"
+            ],
+            "repositories": [
+                {
+                    "id": "2",
+                    "name": "Validator Node",
+                    "description": "Responsible for validating transactions, generating blocks, and maintaining consensus on the network. Implements a hybrid mechanism of DPoS and PBFT to guarantee security and speed in transactions, coordinating verification and communication between nodes.",
+                    "status": "In development",
+                    "isPrivate": false,
+                    "uri": "https://github.com/teamTripCode/tc-validator-node",
+                    "web": ""
+                },
+                {
+                    "id": "3",
+                    "name": "Full Node",
+                    "description": "Node that replicates and stores the complete blockchain history, ensuring that all blocks and transactions are accessible at any time. Acts as a decentralized backup, enabling independent data validation and execution of advanced queries without relying on third parties. Its implementation optimizes data indexing and supports efficient synchronization with other network nodes.",
+                    "status": "In development",
+                    "isPrivate": true,
+                    "uri": "",
+                    "web": ""
+                },
+                {
+                    "id": "5",
+                    "name": "KodeChain Explorer",
+                    "description": "Web platform for visualizing blocks, transactions, and real-time network activity. Provides advanced search and analysis tools, enabling blockchain history auditing, account and smart contract status verification. Includes network metrics charts, validator states, and usage statistics, optimizing system transparency and monitoring.",
+                    "status": "In development",
+                    "isPrivate": true,
+                    "uri": "",
+                    "web": "https://tripchain.vercel.app/"
+                },
+                {
+                    "id": "6",
+                    "name": "Web Documentation",
+                    "description": "Central repository of TripChain technical documentation. Contains detailed guides on node configuration, API interaction, smart contract development, and security best practices. Includes practical examples, endpoint specifications, and documentation in multiple formats to facilitate integration with external systems.",
+                    "status": "In development",
+                    "isPrivate": false,
+                    "uri": "https://github.com/teamTripCode/tc-docs",
+                    "web": "https://tripchain.vercel.app/docs"
+                }
+            ]
+        },
+        {
+            "id": "1",
+            "name": "BlockScrum",
+            "slug": "SaaS focused on Scrum project tracking",
+            "description": "Agile project management platform based on Scrum, enabling planning, monitoring, and optimization of tasks in development teams. Incorporates blockchain technology to record critical project events immutably, ensuring transparency and traceability in each sprint, task, and team assignment.",
+            "largeDescription": "Application designed for project management under the Scrum methodology, providing interactive boards for real-time sprint planning and tracking. In addition to its traditional task organization and role management tools, BlockScrum uses TripChain blockchain to record key project events, such as task assignments, sprint changes, and final deliveries. This enables teams to maintain an immutable history of their progress, ensuring transparency and facilitating compliance audits.\n\nThanks to its modular and scalable architecture, BlockScrum enables workflow automation through external API integration, role-based permission management, and team performance analysis. Its blockchain integration provides additional security in validating critical project data, ensuring that development decisions are reliable and verifiable.",
+            "cover": "/backgrounds-projects/scrum_mosaic.jpg",
+            "uriDocs": "",
+            "stack": [
+                "React.js",
+                "typescript",
+                "Nextjs",
+                "MongoDB",
+                "Prisma",
+                "Vercel",
+                "Blockchain",
+                "Tailwind CSS"
+            ],
+            "repositories": [
+                {
+                    "id": "1",
+                    "name": "Blockscrum-core",
+                    "isPrivate": true,
+                    "description": "BlockScrum is a comprehensive platform for agile project management based on the Scrum methodology. It enables planning, tracking, and control of tasks in development teams.",
+                    "status": "In development",
+                    "uri": "https://github.com/teamTripCode/tc-scrum-app",
+                    "web": "https://blockscrum.vercel.app/"
+                },
+                {
+                    "id": "2",
+                    "name": "Web Documentation",
+                    "isPrivate": true,
+                    "description": "Repository dedicated to BlockScrum's official documentation, detailing functionalities, user guides, and best practices for optimizing agile project management.",
+                    "status": "Planning",
+                    "uri": "https://github.com/teamTripCode/tc-scrum-app",
+                    "web": "https://blockscrum.vercel.app/"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "name": "ParfumCol",
+            "slug": "DApp for perfume commerce and rewards",
+            "description": "E-commerce platform specialized in perfumes, integrating blockchain technology to guarantee authenticity, traceability, and security in transactions. Implements a cryptocurrency-based rewards system, allowing customers to earn benefits from their purchases.",
+            "largeDescription": "E-commerce application focused on perfume sales, utilizing TripChain blockchain to record transactions immutably and provide transparency in purchase and distribution processes. Its integration with smart contracts enables cryptocurrency issuance as customer incentives, creating a rewards ecosystem within the platform.\nParfumCol's architecture consists of a Nest.js backend that manages users, orders, and blockchain transactions, and a Next.js frontend optimized for speed and user experience. It uses Prisma as an ORM to handle data in MongoDB, Docker for scalable deployment, and Google Cloud Platform for hosting and secure storage.",
+            "cover": "/backgrounds-projects/blocks_mosaic.jpg",
+            "uriDocs": "https://parfumcol-docs.vercel.app/",
+            "stack": [
+                "React.js",
+                "typescript",
+                "Nextjs",
+                "Nest.js",
+                "MongoDB",
+                "Prisma",
+                "Docker",
+                "Google Cloud Plattform",
+                "Vercel",
+                "Blockchain",
+                "Tailwind CSS"
+            ],
+            "repositories": [
+                {
+                    "id": "1",
+                    "name": "Backend API",
+                    "description": "Backend microservice developed in Nest.js with TypeScript, responsible for user authentication, order management, and payment processing. Uses Prisma as ORM for data manipulation in MongoDB and integrates TripChain blockchain to record all critical application processes. Implements custom smart contracts that manage the platform's native cryptocurrency, enabling issuance and distribution of rewards for users who make purchases or pay subscriptions. Exposes a secure RESTful API with JWT validation, role-based access control, and attack protection through rate limiting.",
+                    "status": "Planning",
+                    "isPrivate": false,
+                    "uri": "https://github.com/teamTripCode/parfumcol-backend",
+                    "web": "https://parfumcol.vercel.app/"
+                },
+                {
+                    "id": "2",
+                    "name": "Frontend Web",
+                    "description": "Frontend application developed in Next.js with TypeScript and React, optimized for performance and SEO through Server-Side Rendering (SSR) and Static Site Generation (SSG). Provides an interactive interface for perfume purchases and cryptocurrency rewards management. Communicates with the backend API to process payments and record transactions on TripChain blockchain. Implements JWT authentication, state management with Zustand or Redux, and modular design based on reusable components.",
+                    "status": "Planning",
+                    "isPrivate": false,
+                    "uri": "https://github.com/teamTripCode/parfumcol-frontend",
+                    "web": "https://parfumcol.vercel.app/"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "name": "Vexa",
+            "slug": "DApp for inventory management and enterprise rewards",
+            "description": "Platform designed for efficient inventory management in businesses of any size. Enables product administration, transaction recording, and automated cryptocurrency rewards for customers based on their purchases. Each business (tenant) can generate and manage its own cryptocurrency within the ecosystem, ensuring transparency and traceability in all operations.",
+            "largeDescription": "Blockchain-based SaaS application that enables companies to manage their inventory and reward their customers with their own cryptocurrencies. Its decentralized architecture based on a P2P network guarantees data security and immutability.\nEach business can create its own cryptocurrency within the platform, establish reward rules, and maintain detailed tracking of which customers have been granted cryptocurrencies for their purchases. Additionally, smart contract integration ensures that every transaction is transparent and auditable.\nThe platform provides advanced inventory management tools, enabling businesses to record entries, exits, and stock movements in real-time, with detailed reports and key process automation. Thanks to its scalable infrastructure, it can adapt to both small stores and large corporations with multiple branches.",
+            "cover": "/backgrounds-projects/blocks_mosaic.jpg",
+            "uriDocs": "dwdwd",
+            "stack": [
+                "React.js",
+                "typescript",
+                "Nextjs",
+                "Nest.js",
+                "MongoDB",
+                "Prisma",
+                "Docker",
+                "Google Cloud Plattform",
+                "Vercel",
+                "Blockchain",
+                "Tailwind CSS"
+            ],
+            "repositories": [
+                {
+                    "id": "1",
+                    "name": "Frontend App",
+                    "description": "Web application developed in Next.js with React and TypeScript. Implements a real-time inventory management system with JWT-based authentication, dynamic interfaces with Zustand for global state management, and efficient communication with the backend API through Axios. Optimized for SSR and SSG, ensuring fast loading and smooth experience.",
+                    "status": "In development",
+                    "isPrivate": false,
+                    "uri": "https://github.com/teamTripCode/tc-inventory-frontend",
+                    "web": "https://decentralized-inventory.vercel.app/"
+                },
+                {
+                    "id": "2",
+                    "name": "Backend App",
+                    "description": "REST API developed in NestJS with a modular architecture based on DDD (Domain-Driven Design) principles. Implements JWT authentication, multi-tenant user management, MongoDB integration through Prisma, and a smart contract engine for issuing and managing each business's cryptocurrencies. Deployed on Google Cloud with Docker containers.",
+                    "status": "In development",
+                    "isPrivate": false,
+                    "uri": "https://github.com/teamTripCode/tc-inventory-backend",
+                    "web": "https://decentralized-inventory-api.vercel.app/"
+                },
+                {
+                    "id": "3",
+                    "name": "Documentation Web",
+                    "description": "Technical documentation website built with Docusaurus and hosted on Vercel. Contains integration guides for developers, REST API documentation, and implementation examples of smart contracts used in the platform. Designed to facilitate system adoption by companies and developers.",
+                    "status": "In development",
+                    "isPrivate": false,
+                    "uri": "https://github.com/teamTripCode/tc-inventory-docs",
+                    "web": "https://decentralized-inventory-docs.vercel.app/"
+                }
+            ]
+        }
+    ],
+    "Experience": [
+        {
+            "position": "Lead Full Stack Developer",
+            "company": "Crédito Ya",
+            "logo": "/logos/credito_ya.png",
+            "type": "Freelancer",
+            "initialDate": "May 2024",
+            "endDate": "Nov 2024",
+            "Description": "Led the development of a web application that completely digitalizes the loan application process, optimizing user experience and reducing friction. Implemented dynamic real-time interfaces for clients and employees, improving transparency and efficiency in managing each application. Also designed automated workflows for credit approval, reducing response times and optimizing application administration."
+        },
+        {
+            "position": "Backend Developer",
+            "company": "Smart Talent",
+            "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1732945154/TripCode/Logos/cggalummkorqburvelfo.png",
+            "type": "Freelancer",
+            "initialDate": "May 2024",
+            "endDate": "Jul 2024",
+            "Description": "Developed a feedback management system for administrators to visualize, manage, and track internal company reports. Implemented a state flow to efficiently classify and resolve feedback, enabling more precise control over requests and improving internal communication."
+        },
+        {
+            "position": "Lead Full Stack Developer",
+            "company": "Todo En Bicicleta",
+            "logo": "/logos/todo_en_bici.png",
+            "type": "Freelancer",
+            "initialDate": "Dec 2023",
+            "endDate": "Oct 2024",
+            "Description": "Developed a travel application with real-time location tracking, enabling users to monitor the traveler's route live. Implemented an interactive streaming zone for users to connect live, manage interactions, and receive real-time comments. Additionally, designed a complete traveler profile, including biography and an exclusive section for ebook viewing. Access to books is protected and only available to those who have purchased them through PayPal, ensuring security and exclusivity."
+        }
+    ],
+    "Articles": [
+        {
+            "id": "01",
+            "title": "TripCodeChain and Web3: A Simple Look at the New Digital Era",
+            "slug": "tripcodechain-web3-nueva-era-digital",
+            "date": "March 27, 2025",
+            "cover": "/covers/article_tripchain_web3.jpg",
+            "description": "Discover how TripCodeChain democratizes blockchain technology, facilitating the creation of decentralized applications and offering greater control and security in the Web3 digital era.",
+            "type": "web3",
+            "content": "# TripCodeChain: Democratizing Blockchain Technology for Business\n\n## A New Technological Revolution\n\nImagine a world where every small business can create its own digital currency, automate its critical processes, and operate with the same security and transparency as major technology corporations. This is the vision that TripChain is making reality.\n\n## What Makes TripCodeChain Unique?\n\nTripChain is not just another blockchain platform. It is a complete ecosystem designed to democratize decentralized technology, enabling any company, from a small local store to an international corporation, to harness the power of smart contracts and cryptocurrencies.\n\n## Revolutionary Technology: How It Works\n\n### 1. Next-Generation Decentralized Blockchain\n\nThe TripChain network utilizes an innovative hybrid consensus mechanism that combines:\n\n- **Delegated Proof of Stake (DPoS)**: For fast and efficient validations\n- **Practical Byzantine Fault Tolerance (PBFT)**: Guaranteeing unbreakable security\n\n### 2. Intelligent Smart Contracts\n\nTripChain introduces a unique model with two types of smart contracts:\n\n#### Transaction and Rewards Contract\n\n- Records payments in real time\n- Automatically issues cryptocurrencies as customer rewards\n- Validates each transaction with millimetric precision\n\n#### Critical Process Contract\n\n- Stores sensitive business information\n- Guarantees immutability of important records\n- Enables transparent audits without exposing confidential data\n\n### 3. Customized Cryptocurrencies\n\nEach business can:\n\n- Create its own cryptocurrency\n- Establish issuance rules\n- Define reward mechanisms\n- Control the supply and demand of its token\n\n## Revolutionary Benefits\n\n### For Businesses\n\n- Enterprise-level security\n- Process automation\n- Complete transparency\n- New ways to generate value\n\n### For Customers\n\n- Instant rewards\n- Transaction traceability\n- Enhanced shopping experiences\n\n## Real Use Cases\n\n### BlockScrum: Blockchain Project Management\n\nA platform that records every sprint, task, and assignment on an immutable blockchain, eliminating disputes and improving transparency in development teams.\n\n### ParfumCol: Decentralized E-commerce\n\nA perfume marketplace where each purchase generates reward tokens, creating a blockchain-based loyalty ecosystem.\n\n### Decentralized Inventory\n\nA solution that enables businesses of any size to manage their inventory, issue cryptocurrencies, and automate critical processes.\n\n## The Future Is Here\n\nTripChain is not just technology. It is an economic revolution that democratizes access to advanced financial tools, enabling even the smallest business to operate with the efficiency of a global corporation.\n\n**The digital economy of the future will not be centralized. It will be decentralized, transparent, and accessible to all.**\n\nWelcome to the TripCodeChain Era.",
+            "proyects": [
+                {
+                    "id": "1",
+                    "name": "BlockScrum",
+                    "slug": "SaaS focused on Scrum project tracking",
+                    "description": "Agile project management platform based on Scrum, enabling planning, monitoring, and optimization of tasks in development teams. Incorporates blockchain technology to record critical project events immutably, ensuring transparency and traceability in each sprint, task, and team assignment.",
+                    "largeDescription": "Application designed for project management under the Scrum methodology, providing interactive boards for real-time sprint planning and tracking. In addition to its traditional task organization and role management tools, BlockScrum uses TripChain blockchain to record key project events, such as task assignments, sprint changes, and final deliveries. This enables teams to maintain an immutable history of their progress, ensuring transparency and facilitating compliance audits.\n\nThanks to its modular and scalable architecture, BlockScrum enables workflow automation through external API integration, role-based permission management, and team performance analysis. Its blockchain integration provides additional security in validating critical project data, ensuring that development decisions are reliable and verifiable.",
+                    "cover": "/backgrounds-projects/scrum_mosaic.jpg",
+                    "uriDocs": "",
+                    "stack": [
+                        "React.js",
+                        "typescript",
+                        "Nextjs",
+                        "MongoDB",
+                        "Prisma",
+                        "Vercel",
+                        "Blockchain",
+                        "Tailwind CSS"
+                    ],
+                    "repositories": [
+                        {
+                            "id": "1",
+                            "name": "Blockscrum-core",
+                            "isPrivate": true,
+                            "description": "BlockScrum is a comprehensive platform for agile project management based on the Scrum methodology. It enables planning, tracking, and control of tasks in development teams.",
+                            "status": "In development",
+                            "uri": "https://github.com/teamTripCode/tc-scrum-app",
+                            "web": "https://blockscrum.vercel.app/"
+                        },
+                        {
+                            "id": "2",
+                            "name": "Web Documentation",
+                            "isPrivate": true,
+                            "description": "Repository dedicated to BlockScrum's official documentation, detailing functionalities, user guides, and best practices for optimizing agile project management.",
+                            "status": "Planning",
+                            "uri": "https://github.com/teamTripCode/tc-scrum-app",
+                            "web": "https://blockscrum.vercel.app/"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "name": "TripCode Chain",
+                    "slug": "Blockchain for enterprise management and secure transactions",
+                    "description": "Decentralized blockchain designed for businesses to manage transactions, issue their own cryptocurrency, and record critical processes with security and immutability. Utilizes a P2P network and smart contracts to automate payments, control inventory, and validate operations without intermediaries. Its hybrid consensus algorithm combines Delegated Proof of Stake (DPoS) and Practical Byzantine Fault Tolerance (PBFT), ensuring fast, secure, and efficient transactions.",
+                    "largeDescription": "Decentralized blockchain focused on enterprise management, enabling companies to record transactions, issue their own cryptocurrencies, and guarantee the integrity of their critical processes. Its architecture based on a P2P (Peer-to-Peer) network allows multiple nodes to store and validate information without relying on a central server, ensuring high availability and resistance to failures.\nEach node in TripChain maintains a complete copy of the blockchain and participates in transaction validation through a hybrid consensus mechanism that combines Delegated Proof of Stake (DPoS) and Practical Byzantine Fault Tolerance (PBFT). This enables transaction processing in seconds without the high energy consumption of other traditional blockchains.\nBusinesses operate on TripChain through enterprise accounts that interact with smart contracts to manage payments, issue cryptocurrencies, and record key processes such as audits and inventory control. Thanks to its decentralized structure, each transaction is transparent, auditable, and immutable, providing trust to both businesses and their customers.",
+                    "cover": "/backgrounds-projects/blocks_mosaic.jpg",
+                    "uriDocs": "https://tripchaindocs.fly.dev/es/",
+                    "stack": [
+                        "React.js",
+                        "typescript",
+                        "Nextjs",
+                        "Nest.js",
+                        "Docker",
+                        "Kubernetes",
+                        "Google Cloud Plattform",
+                        "Vercel",
+                        "Tailwind CSS"
+                    ],
+                    "repositories": [
+                        {
+                            "id": "1",
+                            "name": "Seed Node",
+                            "description": "Facilitates initial connection of new nodes in the blockchain network. Does not validate transactions or store complete blocks, but maintains a list of active nodes and shares it to ensure network decentralization and continuity.",
+                            "status": "Planning",
+                            "isPrivate": false,
+                            "uri": "https://github.com/teamTripCode/tc-seed-node",
+                            "web": "https://tripchain.vercel.app/"
+                        },
+                        {
+                            "id": "2",
+                            "name": "Validator Node",
+                            "description": "Responsible for validating transactions, generating blocks, and maintaining consensus on the network. Implements a hybrid mechanism of DPoS and PBFT to guarantee security and speed in transactions, coordinating verification and communication between nodes.",
+                            "status": "Planning",
+                            "isPrivate": false,
+                            "uri": "https://github.com/teamTripCode/tc-validator-node",
+                            "web": "https://tripchain.vercel.app/"
+                        },
+                        {
+                            "id": "3",
+                            "name": "Full Node",
+                            "description": "Node that replicates and stores the complete blockchain history, ensuring that all blocks and transactions are accessible at any time. Acts as a decentralized backup, enabling independent data validation and execution of advanced queries without relying on third parties. Its implementation optimizes data indexing and supports efficient synchronization with other network nodes.",
+                            "status": "Planning",
+                            "isPrivate": false,
+                            "uri": "https://github.com/teamTripCode/tc-full-node",
+                            "web": "https://tripchain.vercel.app/"
+                        },
+                        {
+                            "id": "4",
+                            "name": "API Node",
+                            "description": "Service module that exposes a REST API and WebSocket to interact with the blockchain. Facilitates real-time data querying, account management, smart contract execution, and transaction processing. Implements authentication and access control mechanisms, ensuring secure and scalable operations for enterprise integrations and external clients.",
+                            "status": "Planning",
+                            "isPrivate": false,
+                            "uri": "https://github.com/teamTripCode/tc-api-node",
+                            "web": "https://tripchain.vercel.app/"
+                        },
+                        {
+                            "id": "5",
+                            "name": "TripChain Explorer",
+                            "description": "Web platform for visualizing blocks, transactions, and real-time network activity. Provides advanced search and analysis tools, enabling blockchain history auditing, account and smart contract status verification. Includes network metrics charts, validator states, and usage statistics, optimizing system transparency and monitoring.",
+                            "status": "Planning",
+                            "isPrivate": false,
+                            "uri": "https://github.com/teamTripCode/tc-explorer",
+                            "web": "https://tripchain.vercel.app/"
+                        },
+                        {
+                            "id": "6",
+                            "name": "Web Documentation",
+                            "description": "Central repository of TripChain technical documentation. Contains detailed guides on node configuration, API interaction, smart contract development, and security best practices. Includes practical examples, endpoint specifications, and documentation in multiple formats to facilitate integration with external systems.",
+                            "status": "Functional",
+                            "isPrivate": false,
+                            "uri": "https://github.com/teamTripCode/tc-docs",
+                            "web": "https://tripchain.vercel.app/docs"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "name": "ParfumCol",
+                    "slug": "DApp for perfume commerce and rewards",
+                    "description": "E-commerce platform specialized in perfumes, integrating blockchain technology to guarantee authenticity, traceability, and security in transactions. Implements a cryptocurrency-based rewards system, allowing customers to earn benefits from their purchases.",
+                    "largeDescription": "E-commerce application focused on perfume sales, utilizing TripChain blockchain to record transactions immutably and provide transparency in purchase and distribution processes. Its integration with smart contracts enables cryptocurrency issuance as customer incentives, creating a rewards ecosystem within the platform.\nParfumCol's architecture consists of a Nest.js backend that manages users, orders, and blockchain transactions, and a Next.js frontend optimized for speed and user experience. It uses Prisma as an ORM to handle data in MongoDB, Docker for scalable deployment, and Google Cloud Platform for hosting and secure storage.",
+                    "cover": "/backgrounds-projects/blocks_mosaic.jpg",
+                    "uriDocs": "https://parfumcol-docs.vercel.app/",
+                    "stack": [
+                        "React.js",
+                        "typescript",
+                        "Nextjs",
+                        "Nest.js",
+                        "MongoDB",
+                        "Prisma",
+                        "Docker",
+                        "Google Cloud Plattform",
+                        "Vercel",
+                        "Blockchain",
+                        "Tailwind CSS"
+                    ],
+                    "repositories": [
+                        {
+                            "id": "1",
+                            "name": "Backend API",
+                            "description": "Backend microservice developed in Nest.js with TypeScript, responsible for user authentication, order management, and payment processing. Uses Prisma as ORM for data manipulation in MongoDB and integrates TripChain blockchain to record all critical application processes. Implements custom smart contracts that manage the platform's native cryptocurrency, enabling issuance and distribution of rewards for users who make purchases or pay subscriptions. Exposes a secure RESTful API with JWT validation, role-based access control, and attack protection through rate limiting.",
+                            "status": "Planning",
+                            "isPrivate": false,
+                            "uri": "https://github.com/teamTripCode/parfumcol-backend",
+                            "web": "https://parfumcol.vercel.app/"
+                        },
+                        {
+                            "id": "2",
+                            "name": "Frontend Web",
+                            "description": "Frontend application developed in Next.js with TypeScript and React, optimized for performance and SEO through Server-Side Rendering (SSR) and Static Site Generation (SSG). Provides an interactive interface for perfume purchases and cryptocurrency rewards management. Communicates with the backend API to process payments and record transactions on TripChain blockchain. Implements JWT authentication, state management with Zustand or Redux, and modular design based on reusable components.",
+                            "status": "Planning",
+                            "isPrivate": false,
+                            "uri": "https://github.com/teamTripCode/parfumcol-frontend",
+                            "web": "https://parfumcol.vercel.app/"
+                        }
+                    ]
+                },
+                {
+                    "id": "4",
+                    "name": "Decentralized Inventory",
+                    "slug": "DApp for inventory management and enterprise rewards",
+                    "description": "Platform designed for efficient inventory management in businesses of any size. Enables product administration, transaction recording, and automated cryptocurrency rewards for customers based on their purchases. Each business (tenant) can generate and manage its own cryptocurrency within the ecosystem, ensuring transparency and traceability in all operations.",
+                    "largeDescription": "Blockchain-based SaaS application that enables companies to manage their inventory and reward their customers with their own cryptocurrencies. Its decentralized architecture based on a P2P network guarantees data security and immutability.\nEach business can create its own cryptocurrency within the platform, establish reward rules, and maintain detailed tracking of which customers have been granted cryptocurrencies for their purchases. Additionally, smart contract integration ensures that every transaction is transparent and auditable.\nThe platform provides advanced inventory management tools, enabling businesses to record entries, exits, and stock movements in real-time, with detailed reports and key process automation. Thanks to its scalable infrastructure, it can adapt to both small stores and large corporations with multiple branches.",
+                    "cover": "/backgrounds-projects/blocks_mosaic.jpg",
+                    "uriDocs": "dwdwd",
+                    "stack": [
+                        "React.js",
+                        "typescript",
+                        "Nextjs",
+                        "Nest.js",
+                        "MongoDB",
+                        "Prisma",
+                        "Docker",
+                        "Google Cloud Plattform",
+                        "Vercel",
+                        "Blockchain",
+                        "Tailwind CSS"
+                    ],
+                    "repositories": [
+                        {
+                            "id": "1",
+                            "name": "Frontend App",
+                            "description": "Web application developed in Next.js with React and TypeScript. Implements a real-time inventory management system with JWT-based authentication, dynamic interfaces with Zustand for global state management, and efficient communication with the backend API through Axios. Optimized for SSR and SSG, ensuring fast loading and smooth experience.",
+                            "status": "In development",
+                            "isPrivate": false,
+                            "uri": "https://github.com/teamTripCode/tc-inventory-frontend",
+                            "web": "https://decentralized-inventory.vercel.app/"
+                        },
+                        {
+                            "id": "2",
+                            "name": "Backend App",
+                            "description": "REST API developed in NestJS with a modular architecture based on DDD (Domain-Driven Design) principles. Implements JWT authentication, multi-tenant user management, MongoDB integration through Prisma, and a smart contract engine for issuing and managing each business's cryptocurrencies. Deployed on Google Cloud with Docker containers.",
+                            "status": "In development",
+                            "isPrivate": false,
+                            "uri": "https://github.com/teamTripCode/tc-inventory-backend",
+                            "web": "https://decentralized-inventory-api.vercel.app/"
+                        },
+                        {
+                            "id": "3",
+                            "name": "Documentation Web",
+                            "description": "Technical documentation website built with Docusaurus and hosted on Vercel. Contains integration guides for developers, REST API documentation, and implementation examples of smart contracts used in the platform. Designed to facilitate system adoption by companies and developers.",
+                            "status": "In development",
+                            "isPrivate": false,
+                            "uri": "https://github.com/teamTripCode/tc-inventory-docs",
+                            "web": "https://decentralized-inventory-docs.vercel.app/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "02",
+            "title": "TypeScript and Go: The Performance Mirage in Development and Production",
+            "slug": "typescript-go-rendimiento-desarrollo",
+            "date": "March 27, 2025",
+            "cover": "/covers/article_go_ts.png",
+            "description": "Migration from TypeScript to Go improves development tools, but does not guarantee magical performance gains in production.",
+            "type": "development",
+            "content": "# TypeScript and Go: The Performance Mirage in Development and Production\n\nWhen a 10x performance improvement is announced, developers inevitably get excited. The migration of TypeScript to a native Go implementation generates expectations of radical transformations in application performance. However, the reality is more complex and nuanced.\n\n## Development vs Production: Two Different Worlds\n\n### The Context of Development Tools\n\nThe improvements announced by the TypeScript team focus primarily on the development ecosystem:\n\n1. **Compilation Speed**\n   Reduction of compilation times up to 10 times, faster project loading in editors, and instantaneous startup of development tools.\n\n2. **Developer Experience**\n   Faster auto-completion, more agile code navigation, instant refactoring, and more efficient error detection.\n\n### Why This Does Not Translate Directly to Production Performance\n\n#### Fundamental Execution Differences\n\n- **Compilation vs Execution**: Development tools run in local development environments.\n- **Runtime**: The production application uses the JavaScript/Node.js engine, not the compiler.\n- **Execution Context**: Production optimizers (like Chrome's V8) operate differently.\n\n#### Layers of Abstraction\n\n- TypeScript compiles to JavaScript\n- Go generates native binary code\n- In production, you are still executing on virtual machines like Node.js\n\n## Real Production Performance Factors\n\n1. **Application Architecture**\n   Microservices design, caching strategies, and database query optimization.\n\n2. **Infrastructure**\n   Load balancers, server configuration, and scaling strategies.\n\n3. **Algorithms and Data Structures**\n   Implementation efficiency, computational complexity, and memory management.\n\n## Myths and Realities\n\n**Myth**: \"Migrating to Go will improve my application\"  \n**Reality**: Only improves development tools\n\n**Myth**: \"10x faster means faster application\"  \n**Reality**: Mainly improves compilation and tooling\n\n## Real Optimization Strategies\n\n### For Development\n- Use new TypeScript implementation\n- Leverage faster tools\n- Improve coding experience\n\n### For Production\n1. Code optimization\n2. Architecture improvement\n3. Efficient resource usage\n4. Implementation of efficient design patterns\n\n## Conclusion: Realistic Expectations\n\nThe migration of TypeScript to Go represents a significant advance in development tools, not a magical solution for production performance.\n\n**Final Recommendations**:\n- Celebrate development improvements\n- Do not expect production miracles\n- Continue focusing on architecture optimization\n- Perform real benchmarks\n- Maintain a critical mindset about performance promises\n\n### True Optimization\n\nPerformance does not come from a language or tool, but from:\n- Intelligent design\n- Deep understanding of architecture\n- Efficient implementation\n- Continuous improvement\n\n**Technology evolves, but the principles of good software engineering remain constant.**",
+            "proyects": []
+        }
+    ]
 }
