@@ -8,6 +8,8 @@ import { HiChevronLeft } from "react-icons/hi2";
 import { useRouter } from "next/navigation";
 import PreviewProject from "./previewProject";
 import { Project } from "@/types/infoCV";
+import Image from "next/image";
+import { useDarkMode } from "@/context/DarkModeContext";
 
 function ListCarrousel({ isClose }: { isClose: boolean }) {
     const [projects, setProjects] = useState<Project[] | null>(null);
@@ -15,6 +17,7 @@ function ListCarrousel({ isClose }: { isClose: boolean }) {
     const [isExpandProject, setIsExpandProject] = useState<boolean>(false);
     const router = useRouter();
     const [projectSelect, setProjectSelect] = useState<Project | null>(null);
+    const { darkmode } = useDarkMode();
 
     const handleExpandProject = (project: Project) => {
         setIsExpandProject(true)
@@ -81,7 +84,7 @@ function ListCarrousel({ isClose }: { isClose: boolean }) {
                 {projectSelect && (
                     <div className="flex items-center gap-3">
                         <div className="flex items-center gap-2 px-4 py-2 bg-gray-50 dark:bg-gray-800 rounded-full border border-gray-200 dark:border-gray-700">
-                            <GoRepo className="w-4 h-4 text-gray-500 dark:text-gray-400" />
+                            <Image src={darkmode && projectSelect.logo_dark ? projectSelect.logo_dark : projectSelect.logo} alt="logo" width={25} height={25} />
                             <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                                 {projectSelect.name}
                             </span>

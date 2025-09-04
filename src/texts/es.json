@@ -23,12 +23,13 @@
         {
             "id": "1",
             "name": "TripKode",
-            "slug": "Blockchain para la gestión empresarial y transacciones seguras",
-            "description": "Blockchain descentralizada diseñada para que las empresas gestionen transacciones, emitan su propia criptomoneda y registren procesos críticos con seguridad e inmutabilidad. Utiliza una red P2P y smart contracts para automatizar pagos, controlar inventarios y validar operaciones sin intermediarios. Su algoritmo de consenso híbrido combina Delegated Proof of Stake (DPoS) y Practical Byzantine Fault Tolerance (PBFT), garantizando transacciones rápidas, seguras y eficientes.",
-            "largeDescription": "Blockchain descentralizada enfocada en la gestión empresarial, permitiendo a las compañías registrar transacciones, emitir criptomonedas propias y garantizar la integridad de sus procesos críticos. Su arquitectura basada en una red P2P (Peer-to-Peer) permite que múltiples nodos almacenen y validen información sin depender de un servidor central, asegurando alta disponibilidad y resistencia ante fallos.\nCada nodo en TripChain mantiene una copia completa de la blockchain y participa en la validación de transacciones a través de un mecanismo de consenso híbrido que combina Delegated Proof of Stake (DPoS) y Practical Byzantine Fault Tolerance (PBFT). Esto permite procesar transacciones en segundos sin el alto consumo energético de otras blockchains tradicionales.\nLas empresas operan en TripChain mediante cuentas empresariales que interactúan con smart contracts para gestionar pagos, emitir criptomonedas y registrar procesos clave como auditorías y control de inventario. Gracias a su estructura descentralizada, cada transacción es transparente, auditable e inmutable, proporcionando confianza tanto a los negocios como a sus clientes.",
+            "slug": "Ecosistema blockchain integral para economías digitales descentralizadas",
+            "description": "TripKode es una empresa pionera que construye ecosistemas tecnológicos completos combinando desarrollo de software tradicional con blockchain propietaria (KodeChain). Creamos plataformas SaaS sectoriales interconectadas donde cada comercio puede tener su propia criptomoneda de recompensas, desde panaderías hasta inmobiliarias tokenizadas. Utilizamos metodologías Scrum descentralizadas y arquitectura triple-chain con consenso dual (DPoS + PBFT) para crear economías circulares reales donde los tokens se intercambian entre sectores económicos diversos.",
+            "largeDescription": "TripKode redefine la intersección entre desarrollo de software empresarial y tecnología blockchain a través de KodeChain, nuestra blockchain de tercera generación con arquitectura triple-chain y consenso dual que combina Delegated Proof of Stake (DPoS) y Practical Byzantine Fault Tolerance (PBFT).\n\nNo somos solo desarrolladores web ni únicamente una empresa blockchain: construimos ecosistemas tecnológicos completos que transforman sectores económicos enteros. Desarrollamos verticales especializados como BlockEstate para democratizar la inversión inmobiliaria, sistemas de fidelización tokenizados para panaderías, y redes interconectadas de veterinarias, eventos y cosméticos.\n\nLa magia ocurre en la interoperabilidad: los tokens ganados comprando pan pueden utilizarse para pagar alquiler en un edificio tokenizado o invertir en bienes raíces, creando una economía circular real donde cada sector fortalece a los demás. Cada comercio opera independientemente su propio sistema de recompensas tokenizadas mientras mantiene conexión con el ecosistema completo.\n\nHemos revolucionado el desarrollo de software implementando el primer sistema Scrum completamente descentralizado, operando nativamente sobre KodeChain. Nuestros procesos críticos se registran en blockchain proporcionando trazabilidad inmutable, resolución eficiente de errores y transparencia total para clientes y stakeholders.\n\nOperamos una comunidad exclusiva de desarrolladores que trabajan en un entorno completamente descentralizado, participando en una nueva forma de colaboración blockchain-native. TripKode está creando el futuro donde cada comercio local puede tener su economía tokenizada, los sectores se interconectan exponencialmente, y los usuarios participan en una economía digital que beneficia a toda la comunidad.",
             "cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756905969/Portafolio/banner_tripkode_portafolio_bqumll.png",
             "dark_cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756907719/Portafolio/banner_tripkode_dark_portafolio_gtoayo.png",
             "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1729375887/TripCode/Logos/luc79qy6rewoqovhxwrz.png",
+            "logo_dark": "https://res.cloudinary.com/dqluumk10/image/upload/v1729375962/TripCode/Logos/u6u9tlzjqlzxyywuzfqi.png",
             "uriDocs": "https://tripchaindocs.fly.dev/es/",
             "stack": [
                 "React.js",
@@ -61,7 +62,7 @@
                 },
                 {
                     "id": "5",
-                    "name": "KodeChain Explorer",
+                    "name": "KodeChain Descentralized Exchange",
                     "description": "Plataforma web para visualizar bloques, transacciones y la actividad de la red en tiempo real. Proporciona herramientas avanzadas de búsqueda y análisis, permitiendo auditar el historial de la blockchain, verificar el estado de cuentas y contratos inteligentes. Incluye gráficos de métricas de red, estados de validadores y estadísticas de uso, optimizando la transparencia y el monitoreo del sistema.",
                     "status": "Funcionando",
                     "isPrivate": true,
@@ -82,9 +83,9 @@
         {
             "id": "2",
             "name": "KodeChain",
-            "slug": "Blockchain para la gestión empresarial y transacciones seguras",
-            "description": "Blockchain descentralizada diseñada para que las empresas gestionen transacciones, emitan su propia criptomoneda y registren procesos críticos con seguridad e inmutabilidad. Utiliza una red P2P y smart contracts para automatizar pagos, controlar inventarios y validar operaciones sin intermediarios. Su algoritmo de consenso híbrido combina Delegated Proof of Stake (DPoS) y Practical Byzantine Fault Tolerance (PBFT), garantizando transacciones rápidas, seguras y eficientes.",
-            "largeDescription": "Blockchain descentralizada enfocada en la gestión empresarial, permitiendo a las compañías registrar transacciones, emitir criptomonedas propias y garantizar la integridad de sus procesos críticos. Su arquitectura basada en una red P2P (Peer-to-Peer) permite que múltiples nodos almacenen y validen información sin depender de un servidor central, asegurando alta disponibilidad y resistencia ante fallos.\nCada nodo en TripChain mantiene una copia completa de la blockchain y participa en la validación de transacciones a través de un mecanismo de consenso híbrido que combina Delegated Proof of Stake (DPoS) y Practical Byzantine Fault Tolerance (PBFT). Esto permite procesar transacciones en segundos sin el alto consumo energético de otras blockchains tradicionales.\nLas empresas operan en TripChain mediante cuentas empresariales que interactúan con smart contracts para gestionar pagos, emitir criptomonedas y registrar procesos clave como auditorías y control de inventario. Gracias a su estructura descentralizada, cada transacción es transparente, auditable e inmutable, proporcionando confianza tanto a los negocios como a sus clientes.",
+            "slug": "Red Blockchain descentralizada con criptografía post-cuántica y consenso híbrido",
+            "description": "Blockchain que implementa criptografía post-cuántica con ML-DSA-65, consenso híbrido dinámico (DPoS/PBFT), y arquitectura de doble capa. Elimina completamente el minado tradicional utilizando un sistema de staking moderno, procesa contratos inteligentes WASM en sandbox seguro, e integra un sistema experto nativo. Su economía deflacionaria automática y red P2P avanzada con libp2p proporcionan escalabilidad, seguridad cuántica-resistente y eficiencia energética superior.",
+            "largeDescription": "KodeChain representa mi contribución técnica más significativa al espacio blockchain, desarrollando una red de tercera generación que aborda las limitaciones fundamentales de blockchains tradicionales mediante innovaciones arquitectónicas avanzadas.\n\nImplementé una arquitectura de doble capa que separa la execution chain del procesamiento de transacciones y las beacon chains para gestión de consenso, permitiendo escalabilidad horizontal y flexibilidad operacional. El sistema utiliza consenso híbrido dinámico donde los nodos pueden alternar entre PBFT para máxima seguridad y finalidad, y DPoS para alto throughput, adaptándose automáticamente a las necesidades de la red.\n\nLa seguridad post-cuántica se logra mediante la implementación completa del algoritmo Dilithium3, certificado por NIST, garantizando resistencia contra futuros ataques de computación cuántica. Desarrollé un sistema de staking moderno que elimina completamente el minado energéticamente intensivo, donde los validadores requieren stake mínimo de 10 TKC y máximo de 100,000 TKC por validador, con período de bloqueo de 30 días.\n\nLos contratos inteligentes operan en un ambiente WASM sandboxed que permite ejecución de código TypeScript/AssemblyScript de forma segura y aislada, sin acceso a recursos del sistema. Integré un sistema experto nativo con motor de inferencia que evalúa reglas configurables, procesamiento de consultas estructuradas y generación automática de respuestas.\n\nLa red P2P implementa protocolos avanzados incluyendo libp2p para descubrimiento automático, GossipSub para difusión de mensajes, y DHT para tabla hash distribuida, asegurando comunicación eficiente entre nodos. El sistema económico deflacionario quema automáticamente el 20% de las comisiones de transacción, con distribución del 50% para validadores y 30% para desarrollo.\n\nKodeChain procesa transacciones con finalidad en segundos, consume mínima energía comparado con blockchains tradicionales, y proporciona transparencia completa mediante registro inmutable de todas las operaciones. Esta arquitectura establece las bases para aplicaciones descentralizadas de próxima generación que requieren seguridad enterprise, escalabilidad masiva y eficiencia operacional.",
             "cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756904929/Portafolio/banner_kodechain_portafolio_sfz331.png",
             "dark_cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756907850/Portafolio/banner_kodechain_dark_portafolio_bv5evg.png",
             "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1756827546/TripCode/Logos/ace8f488-f7d5-4215-aa71-7050eeb34573_dkblzi_eajjzn.png",
@@ -103,7 +104,7 @@
                 {
                     "id": "2",
                     "name": "Nodo Validador",
-                    "description": "Responsable de validar transacciones, generar bloques y mantener el consenso en la red. Implementa un mecanismo híbrido de DPoS y PBFT para garantizar seguridad y velocidad en las transacciones, coordinando la verificación y comunicación entre nodos.",
+                    "description": "Componente fundamental en la infraestructura de la red para gestionar la integridad y continuidad operacional de la red blockchain validando los bloques en las cadenas mediante consensos.",
                     "status": "En desarrollo",
                     "isPrivate": true,
                     "uri": "",
@@ -112,7 +113,7 @@
                 {
                     "id": "3",
                     "name": "Nodo Completo",
-                    "description": "Nodo que replica y almacena el historial completo de la blockchain, asegurando que todos los bloques y transacciones sean accesibles en cualquier momento. Actúa como un respaldo descentralizado, permitiendo la validación independiente de datos y la ejecución de consultas avanzadas sin depender de terceros. Su implementación optimiza la indexación de datos y soporta sincronización eficiente con otros nodos de la red.",
+                    "description": "Componente en la infraestructura de la red que almacena el historial completo de las blockchains, asegurando que todos los bloques, transacciones y cadenas sean accesibles en cualquier momento.",
                     "status": "En desarrollo",
                     "isPrivate": true,
                     "uri": "",
@@ -121,7 +122,7 @@
                 {
                     "id": "5",
                     "name": "KodeChain Explorer",
-                    "description": "Plataforma web para visualizar bloques, transacciones y la actividad de la red en tiempo real. Proporciona herramientas avanzadas de búsqueda y análisis, permitiendo auditar el historial de la blockchain, verificar el estado de cuentas y contratos inteligentes. Incluye gráficos de métricas de red, estados de validadores y estadísticas de uso, optimizando la transparencia y el monitoreo del sistema.",
+                    "description": "Plataforma web para crear cuentas(wallets), visualizar bloques, transacciones, tokens y la actividad de la red en tiempo real. Proporciona herramientas avanzadas de búsqueda y análisis, permitiendo auditar el historial de la blockchain, verificar el estado de cuentas y contratos inteligentes.",
                     "status": "Funcionando",
                     "isPrivate": true,
                     "uri": "",
@@ -130,7 +131,7 @@
                 {
                     "id": "6",
                     "name": "Web Documentation",
-                    "description": "Repositorio central de documentación técnica de TripChain. Contiene guías detalladas sobre la configuración de nodos, interacción con la API, desarrollo de smart contracts y mejores prácticas de seguridad. Incluye ejemplos prácticos, especificaciones de endpoints y documentación en múltiples formatos para facilitar la integración con sistemas externos.",
+                    "description": "Repositorio central de documentación técnica de KodeChain. Contiene guías detalladas sobre la configuración de nodos, interacción con la API, desarrollo de smart contracts y mejores prácticas de seguridad.",
                     "status": "En desarrollo",
                     "isPrivate": true,
                     "uri": "",
@@ -146,7 +147,8 @@
             "largeDescription": "Aplicación diseñada para la gestión de proyectos bajo la metodología Scrum, proporcionando tableros interactivos para la planificación y seguimiento de sprints en tiempo real. Además de sus herramientas tradicionales de organización de tareas y roles, BlockScrum utiliza la blockchain de TripChain para registrar eventos clave dentro del proyecto, como asignaciones de tareas, cambios en sprints y entregas finales. Esto permite que los equipos cuenten con un historial inmutable de su progreso, garantizando la transparencia y facilitando auditorías de cumplimiento.\n\nGracias a su arquitectura modular y escalable, BlockScrum permite la automatización de flujos de trabajo mediante integración con APIs externas, gestión de permisos basada en roles y análisis de rendimiento de los equipos. Su integración con blockchain proporciona seguridad adicional en la validación de datos críticos del proyecto, asegurando que las decisiones tomadas en el desarrollo sean confiables y verificables.",
             "cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756912400/Portafolio/banner_blockscrum_portafolio_brfipd.png",
             "dark_cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756912557/Portafolio/banner_blockscrum_black_nhook5.png",
-            "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1756827546/TripCode/Logos/ace8f488-f7d5-4215-aa71-7050eeb34573_dkblzi_eajjzn.png",
+            "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1756915455/TripCode/Logos/blockscrum_logo_jndppi.png",
+            "logo_dark": "https://res.cloudinary.com/dqluumk10/image/upload/v1756915399/TripCode/Logos/blockScrum_logo_black_bfvucu.png",
             "uriDocs": "",
             "stack": [
                 "React.js",
@@ -226,53 +228,114 @@
         {
             "id": "5",
             "name": "Vexa",
-            "slug": "DApp para la gestión de inventarios y recompensas empresariales",
-            "description": "Plataforma diseñada para la gestión eficiente de inventarios en negocios de cualquier tamaño. Permite administrar productos, registrar transacciones y automatizar recompensas en criptomonedas para los clientes según sus compras. Cada negocio (tenant) puede generar y gestionar su propia criptomoneda dentro del ecosistema, asegurando transparencia y trazabilidad en todas las operaciones.",
-            "largeDescription": "Aplicación SaaS basada en blockchain que permite a las empresas gestionar su inventario y recompensar a sus clientes con criptomonedas propias. Su arquitectura descentralizada basada en una red P2P garantiza la seguridad e inmutabilidad de los datos.\nCada negocio puede crear su propia criptomoneda dentro de la plataforma, establecer reglas de recompensa y realizar un seguimiento detallado de a qué clientes se les ha otorgado criptomonedas por sus compras. Además, la integración con smart contracts asegura que cada transacción sea transparente y auditable.\nLa plataforma proporciona herramientas avanzadas de gestión de inventario, permitiendo a los negocios registrar entradas, salidas y movimientos de stock en tiempo real, con reportes detallados y automatización de procesos clave. Gracias a su infraestructura escalable, puede adaptarse tanto a pequeñas tiendas como a grandes corporaciones con múltiples sucursales.",
-            "cover": "/backgrounds-projects/blocks_mosaic.jpg",
-            "dark_cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756907719/Portafolio/banner_tripkode_dark_portafolio_gtoayo.png",
-            "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1756827546/TripCode/Logos/ace8f488-f7d5-4215-aa71-7050eeb34573_dkblzi_eajjzn.png",
-            "uriDocs": "dwdwd",
+            "slug": "Plataforma integral de gestión empresarial y contabilidad dentro del ecosistema KodeChain",
+            "description": "Sistema multi-tenant de gestión empresarial que integra contabilidad, facturación, inventarios, nómina y reportes fiscales. Como vertical contable del ecosistema KodeChain, permite a las empresas gestionar sus operaciones mientras automatizan recompensas tokenizadas para clientes, empleados y proveedores, creando un círculo virtuoso de valor dentro de la economía digital.",
+            "largeDescription": "Vexa es la solución integral de gestión empresarial que revoluciona la administración tradicional al integrar funcionalidades contables avanzadas con la potencia del ecosistema KodeChain. La plataforma permite a empresas de cualquier tamaño gestionar su contabilidad, facturación electrónica, control de inventarios, nómina, y reportes fiscales desde una única interfaz multi-tenant.\n\nCada empresa tenant puede configurar su propio sistema de recompensas tokenizadas, emitiendo tokens automáticamente a clientes por compras recurrentes, a empleados por cumplimiento de metas, y a proveedores por entregas puntuales. Esta tokenización empresarial se integra naturalmente con otros verticales de KodeChain, permitiendo que los tokens generados en el contexto empresarial sean utilizables en comercios, servicios y proyectos inmobiliarios del ecosistema.\n\nLa arquitectura multi-tenant garantiza que cada empresa opere en un entorno completamente aislado y personalizado, mientras mantiene acceso a las ventajas colaborativas del ecosistema KodeChain. Los tokens empresariales pueden intercambiarse con otros sectores, creando una red de valor donde las decisiones de compra, trabajo y colaboración empresarial se ven recompensadas tangiblemente.\n\nVexa incluye módulos especializados para facturación electrónica con cumplimiento DIAN, gestión de inventarios en tiempo real, cálculo automático de nóminas, reportes fiscales automatizados, análisis financiero predictivo, y un motor de inteligencia artificial para optimización de flujos de caja. Todo esto potenciado por la transparencia blockchain y la interoperabilidad del ecosistema KodeChain.",
+            "cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1757002050/Portafolio/banner_vexa_fvku1q.png",
+            "dark_cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1757001947/Portafolio/banner_vexa_dark_ltfobn.png",
+            "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1757000011/TripCode/Logos/logo-vexa_m7uewn.png",
+            "logo_dark": "https://res.cloudinary.com/dqluumk10/image/upload/v1757000010/TripCode/Logos/logo_vexa_light_hyzw85.png",
+            "uriDocs": "https://vexa-docs.vercel.app/",
             "stack": [
                 "React.js",
-                "typescript",
-                "Nextjs",
+                "TypeScript",
+                "Next.js",
                 "Nest.js",
                 "MongoDB",
+                "PostgreSQL",
                 "Prisma",
                 "Docker",
-                "Google Cloud Plattform",
+                "Google Cloud Platform",
                 "Vercel",
-                "Blockchain",
-                "Tailwind CSS"
+                "KodeChain Blockchain",
+                "Smart Contracts",
+                "Web3.js",
+                "Tailwind CSS",
+                "Chart.js",
+                "PDF Generation"
             ],
             "repositories": [
                 {
                     "id": "1",
-                    "name": "Frontend App",
-                    "description": "Aplicación web desarrollada en Next.js con React y TypeScript. Implementa un sistema de gestión de inventarios en tiempo real con autenticación basada en JWT, interfaces dinámicas con Zustand para manejo de estado global y comunicación eficiente con la API backend mediante Axios. Optimizado para SSR y SSG, asegurando una carga rápida y una experiencia fluida.",
+                    "name": "Vexa SuperApp",
+                    "description": "Aplicación web multi-tenant desarrollada en Next.js para gestión empresarial integral. Incluye módulos de contabilidad con plan de cuentas personalizable, facturación electrónica DIAN, control de inventarios con códigos de barras, nómina automatizada, reportes fiscales y dashboard de tokens empresariales. Arquitectura modular que permite personalización por tenant y integración Web3 con KodeChain.",
                     "status": "En desarrollo",
                     "isPrivate": false,
-                    "uri": "https://github.com/teamTripCode/tc-inventory-frontend",
-                    "web": "https://decentralized-inventory.vercel.app/"
+                    "uri": "https://github.com/kodechain/vexa-frontend",
+                    "web": "https://vexa-platform.vercel.app/"
                 },
                 {
                     "id": "2",
-                    "name": "Backend App",
-                    "description": "API REST desarrollada en NestJS con una arquitectura modular basada en principios de DDD (Domain-Driven Design). Implementa autenticación con JWT, gestión de usuarios multi-tenant, integración con MongoDB a través de Prisma y un motor de smart contracts para la emisión y gestión de criptomonedas de cada negocio. Desplegado en Google Cloud con contenedores Docker.",
+                    "name": "Vexa Core",
+                    "description": "API REST empresarial desarrollada en NestJS con arquitectura DDD y sistema multi-tenant. Gestiona contabilidad general, facturación electrónica, inventarios, nóminas, reportes fiscales e integración con entidades gubernamentales. Incluye motor de smart contracts para emisión de tokens empresariales, cálculos automáticos de impuestos y sincronización con el ecosistema KodeChain para intercambio de valor sectorial.",
                     "status": "En desarrollo",
                     "isPrivate": false,
-                    "uri": "https://github.com/teamTripCode/tc-inventory-backend",
-                    "web": "https://decentralized-inventory-api.vercel.app/"
+                    "uri": "https://github.com/kodechain/vexa-backend",
+                    "web": "https://vexa-api.vercel.app/"
                 },
                 {
-                    "id": "3",
-                    "name": "Documentation Web",
-                    "description": "Sitio web de documentación técnica construido con Docusaurus y alojado en Vercel. Contiene guías de integración para desarrolladores, documentación de la API REST y ejemplos de implementación de los smart contracts utilizados en la plataforma. Diseñado para facilitar la adopción del sistema por parte de empresas y desarrolladores.",
+                    "id": "7",
+                    "name": "Vexa Documentation Hub",
+                    "description": "Centro de documentación integral construido con Docusaurus. Incluye guías de implementación multi-tenant, manuales de módulos contables, documentación de APIs, tutoriales de integración KodeChain, casos de uso empresariales, compliance fiscal colombiano, y manuales de tokenización empresarial. Disponible en español con soporte para expansión latinoamericana.",
                     "status": "En desarrollo",
                     "isPrivate": false,
-                    "uri": "https://github.com/teamTripCode/tc-inventory-docs",
-                    "web": "https://decentralized-inventory-docs.vercel.app/"
+                    "uri": "https://github.com/kodechain/vexa-docs",
+                    "web": "https://vexa-docs.vercel.app/"
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "name": "BlockEstate",
+            "slug": "Plataforma de inversión inmobiliaria tokenizada dentro del ecosistema KodeChain",
+            "description": "Plataforma que democratiza la inversión inmobiliaria a través de tokenización, permitiendo a inversionistas acceder a proyectos desde montos pequeños mientras recompensa a inquilinos puntuales. Opera como el vertical inmobiliario del ecosistema KodeChain, creando sinergia con múltiples sectores económicos a través de un sistema de recompensas y tokenización universal.",
+            "largeDescription": "BlockEstate representa la evolución natural de la inversión inmobiliaria tradicional, resolviendo tres problemas fundamentales del mercado colombiano: barreras de entrada prohibitivas para inversores pequeños, falta de incentivos para inquilinos puntuales, y desconexión entre propietarios de terrenos e inversionistas.\n\nLa plataforma tokeniza proyectos inmobiliarios distribuyendo automáticamente el 25% al propietario del terreno, el 60% al pool de construcción, el 3% al arquitecto ganador, el 8% a un fondo de mantenimiento perpetuo y el 4% como fees de plataforma. Un algoritmo de precios escalonados recompensa la inversión temprana, duplicando los precios conforme se acerca al objetivo de capitalización.\n\nUna vez construido el edificio, los inquilinos que pagan durante los primeros 5 días del mes reciben el 5% de su pago en tokens de recompensa, utilizables en cualquier comercio del ecosistema KodeChain. Esta interoperabilidad sectorial crea efectos de red exponenciales donde el valor se mantiene y multiplica dentro del ecosistema.\n\nLa integración con KodeChain permite que tokens generados por compras en panaderías, veterinarias, eventos o productos cosméticos puedan utilizarse como parte del pago de alquileres, creando una economía circular autosostenible con múltiples fuentes de ingresos.",
+            "cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1757001444/Portafolio/banner_blockstate_light_m17gy3.png",
+            "dark_cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1757001444/Portafolio/banner_blockstate_dark_aiitur.png",
+            "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1757000100/TripCode/Logos/logo_blockstate_bz2ixq.png",
+            "uriDocs": "https://blockestate-docs.vercel.app/",
+            "stack": [
+                "React.js",
+                "TypeScript",
+                "Next.js",
+                "Nest.js",
+                "MongoDB",
+                "Prisma",
+                "Docker",
+                "Google Cloud Platform",
+                "Vercel",
+                "KodeChain Blockchain",
+                "Smart Contracts",
+                "Tailwind CSS",
+                "Web3.js"
+            ],
+            "repositories": [
+                {
+                    "id": "1",
+                    "name": "BlockEstate SuperApp",
+                    "description": "Aplicación web desarrollada en Next.js para la gestión de inversiones inmobiliarias tokenizadas. Incluye dashboard para inversionistas, sistema de votación para administradores, calculadora de ROI con precios dinámicos, y portal de inquilinos con gestión de tokens de recompensa. Integrada con Web3 para interacciones blockchain y optimizada para SSR/SSG.",
+                    "status": "En desarrollo",
+                    "isPrivate": true,
+                    "uri": "https://github.com/kodechain/blockestate-frontend",
+                    "web": "https://blockestate-platform.vercel.app/"
+                },
+                {
+                    "id": "2",
+                    "name": "BlockEstate Core",
+                    "description": "API REST desarrollada en NestJS con arquitectura DDD para la gestión de proyectos inmobiliarios tokenizados. Implementa autenticación JWT, valuación automatizada de terrenos, algoritmos de precios dinámicos, gestión de fondos de construcción y mantenimiento, e integración con KodeChain para distribución de tokens y procesamiento de pagos de alquileres.",
+                    "status": "En desarrollo",
+                    "isPrivate": true,
+                    "uri": "https://github.com/kodechain/blockestate-backend",
+                    "web": "https://blockestate-api.vercel.app/"
+                },
+                {
+                    "id": "4",
+                    "name": "BlockEstate Documentation",
+                    "description": "Documentación técnica y comercial construida con Docusaurus. Incluye whitepaper del ecosistema KodeChain, guías de inversión, documentación de APIs, ejemplos de integración para desarrolladores, y manuales para propietarios de terrenos, inversionistas e inquilinos. Disponible en español e inglés para expansión latinoamericana.",
+                    "status": "En desarrollo",
+                    "isPrivate": true,
+                    "uri": "https://github.com/kodechain/blockestate-docs",
+                    "web": "https://blockestate-docs.vercel.app/"
                 }
             ]
         }

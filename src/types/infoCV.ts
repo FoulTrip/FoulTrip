@@ -6,6 +6,7 @@ export interface Project {
     description: string;
     largeDescription: string;
     logo: string;
+    logo_dark?: string; 
     cover: string;
     dark_cover: string
     uriDocs: string;
