@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import 'keen-slider/keen-slider.min.css';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
