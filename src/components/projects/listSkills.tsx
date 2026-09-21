@@ -13,9 +13,15 @@ import {
     SiHiveBlockchain,
     SiGo,
     SiCloudflare,
-    SiTailwindcss
+    SiTailwindcss,
+    SiPython,
+    SiFastapi,
+    SiRust,
+    SiRedis,
+    SiSocketdotio
 } from "react-icons/si";
 import { FaGolang } from "react-icons/fa6";
+import { FaRegCreditCard } from "react-icons/fa";
 
 const stackConfig = {
     "React.js": {
@@ -115,6 +121,55 @@ const stackConfig = {
         bg: "bg-cyan-50 dark:bg-cyan-900/20",
         border: "border-cyan-200 dark:border-cyan-800",
         name: "Tailwind CSS"
+    },
+    "Python": {
+        icon: SiPython,
+        color: "text-yellow-600",
+        bg: "bg-yellow-50 dark:bg-yellow-900/20",
+        border: "border-yellow-200 dark:border-yellow-800",
+        name: "Python"
+    },
+    "FastAPI": {
+        icon: SiFastapi,
+        color: "text-teal-600",
+        bg: "bg-teal-50 dark:bg-teal-900/20",
+        border: "border-teal-200 dark:border-teal-800",
+        name: "FastAPI"
+    },
+    "Rust": {
+        icon: SiRust,
+        color: "text-orange-700",
+        bg: "bg-orange-50 dark:bg-orange-900/20",
+        border: "border-orange-200 dark:border-orange-800",
+        name: "Rust"
+    },
+    "Redis": {
+        icon: SiRedis,
+        color: "text-red-500",
+        bg: "bg-red-50 dark:bg-red-900/20",
+        border: "border-red-200 dark:border-red-800",
+        name: "Redis"
+    },
+    "Socket.io": {
+        icon: SiSocketdotio,
+        color: "text-gray-900 dark:text-gray-100",
+        bg: "bg-gray-50 dark:bg-gray-800",
+        border: "border-gray-200 dark:border-gray-700",
+        name: "Socket.io"
+    },
+    "Online Payments": {
+        icon: FaRegCreditCard,
+        color: "text-green-600",
+        bg: "bg-green-50 dark:bg-green-900/20",
+        border: "border-green-200 dark:border-green-800",
+        name: "Online Payments"
+    },
+    "Google Cloud Platform": {
+        icon: SiGooglecloud,
+        color: "text-yellow-600",
+        bg: "bg-yellow-50 dark:bg-yellow-900/20",
+        border: "border-yellow-200 dark:border-yellow-800",
+        name: "GCP"
     }
 };
 

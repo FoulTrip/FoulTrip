@@ -84,7 +84,7 @@ function ListCarrousel({ isClose }: { isClose: boolean }) {
                 {projectSelect && (
                     <div className="flex items-center gap-3">
                         <div className="flex items-center gap-2 px-4 py-2 bg-gray-50 dark:bg-gray-800 rounded-full border border-gray-200 dark:border-gray-700">
-                            <Image src={darkmode && projectSelect.logo_dark ? projectSelect.logo_dark : projectSelect.logo} alt="logo" width={25} height={25} />
+                            <Image src={darkmode && projectSelect.logo_dark ? projectSelect.logo_dark : projectSelect.logo} alt="logo" width={25} height={25} className="h-[25px] w-[25px]" />
                             <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                                 {projectSelect.name}
                             </span>

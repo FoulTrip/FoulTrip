@@ -8,6 +8,7 @@ export interface Experience {
     position: string
     company: string
     logo: string
+    logo_dark?: string
     type: string
     initialDate: string
     endDate: string

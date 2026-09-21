@@ -21,66 +21,6 @@
     },
     "Projects": [
         {
-            "id": "1",
-            "name": "TripKode",
-            "slug": "Ecosistema blockchain integral para economías digitales descentralizadas",
-            "description": "TripKode es una empresa pionera que construye ecosistemas tecnológicos completos combinando desarrollo de software tradicional con blockchain propietaria (KodeChain). Creamos plataformas SaaS sectoriales interconectadas donde cada comercio puede tener su propia criptomoneda de recompensas, desde panaderías hasta inmobiliarias tokenizadas. Utilizamos metodologías Scrum descentralizadas y arquitectura triple-chain con consenso dual (DPoS + PBFT) para crear economías circulares reales donde los tokens se intercambian entre sectores económicos diversos.",
-            "largeDescription": "TripKode redefine la intersección entre desarrollo de software empresarial y tecnología blockchain a través de KodeChain, nuestra blockchain de tercera generación con arquitectura triple-chain y consenso dual que combina Delegated Proof of Stake (DPoS) y Practical Byzantine Fault Tolerance (PBFT).\n\nNo somos solo desarrolladores web ni únicamente una empresa blockchain: construimos ecosistemas tecnológicos completos que transforman sectores económicos enteros. Desarrollamos verticales especializados como BlockEstate para democratizar la inversión inmobiliaria, sistemas de fidelización tokenizados para panaderías, y redes interconectadas de veterinarias, eventos y cosméticos.\n\nLa magia ocurre en la interoperabilidad: los tokens ganados comprando pan pueden utilizarse para pagar alquiler en un edificio tokenizado o invertir en bienes raíces, creando una economía circular real donde cada sector fortalece a los demás. Cada comercio opera independientemente su propio sistema de recompensas tokenizadas mientras mantiene conexión con el ecosistema completo.\n\nHemos revolucionado el desarrollo de software implementando el primer sistema Scrum completamente descentralizado, operando nativamente sobre KodeChain. Nuestros procesos críticos se registran en blockchain proporcionando trazabilidad inmutable, resolución eficiente de errores y transparencia total para clientes y stakeholders.\n\nOperamos una comunidad exclusiva de desarrolladores que trabajan en un entorno completamente descentralizado, participando en una nueva forma de colaboración blockchain-native. TripKode está creando el futuro donde cada comercio local puede tener su economía tokenizada, los sectores se interconectan exponencialmente, y los usuarios participan en una economía digital que beneficia a toda la comunidad.",
-            "cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756905969/Portafolio/banner_tripkode_portafolio_bqumll.png",
-            "dark_cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756907719/Portafolio/banner_tripkode_dark_portafolio_gtoayo.png",
-            "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1729375887/TripCode/Logos/luc79qy6rewoqovhxwrz.png",
-            "logo_dark": "https://res.cloudinary.com/dqluumk10/image/upload/v1729375962/TripCode/Logos/u6u9tlzjqlzxyywuzfqi.png",
-            "uriDocs": "https://tripchaindocs.fly.dev/es/",
-            "stack": [
-                "React.js",
-                "typescript",
-                "Nextjs",
-                "Nest.js",
-                "Docker",
-                "Cloudflare",
-                "Go",
-                "Tailwind CSS"
-            ],
-            "repositories": [
-                {
-                    "id": "2",
-                    "name": "Nodo Validador",
-                    "description": "Responsable de validar transacciones, generar bloques y mantener el consenso en la red. Implementa un mecanismo híbrido de DPoS y PBFT para garantizar seguridad y velocidad en las transacciones, coordinando la verificación y comunicación entre nodos.",
-                    "status": "En desarrollo",
-                    "isPrivate": true,
-                    "uri": "",
-                    "web": ""
-                },
-                {
-                    "id": "3",
-                    "name": "Nodo Completo",
-                    "description": "Nodo que replica y almacena el historial completo de la blockchain, asegurando que todos los bloques y transacciones sean accesibles en cualquier momento. Actúa como un respaldo descentralizado, permitiendo la validación independiente de datos y la ejecución de consultas avanzadas sin depender de terceros. Su implementación optimiza la indexación de datos y soporta sincronización eficiente con otros nodos de la red.",
-                    "status": "En desarrollo",
-                    "isPrivate": true,
-                    "uri": "",
-                    "web": ""
-                },
-                {
-                    "id": "5",
-                    "name": "KodeChain Descentralized Exchange",
-                    "description": "Plataforma web para visualizar bloques, transacciones y la actividad de la red en tiempo real. Proporciona herramientas avanzadas de búsqueda y análisis, permitiendo auditar el historial de la blockchain, verificar el estado de cuentas y contratos inteligentes. Incluye gráficos de métricas de red, estados de validadores y estadísticas de uso, optimizando la transparencia y el monitoreo del sistema.",
-                    "status": "Funcionando",
-                    "isPrivate": true,
-                    "uri": "",
-                    "web": "https://kodechain.site"
-                },
-                {
-                    "id": "6",
-                    "name": "Web Documentation",
-                    "description": "Repositorio central de documentación técnica de TripChain. Contiene guías detalladas sobre la configuración de nodos, interacción con la API, desarrollo de smart contracts y mejores prácticas de seguridad. Incluye ejemplos prácticos, especificaciones de endpoints y documentación en múltiples formatos para facilitar la integración con sistemas externos.",
-                    "status": "En desarrollo",
-                    "isPrivate": true,
-                    "uri": "",
-                    "web": ""
-                }
-            ]
-        },
-        {
             "id": "2",
             "name": "KodeChain",
             "slug": "Red Blockchain descentralizada con criptografía post-cuántica y consenso híbrido",
@@ -141,232 +81,83 @@
         },
         {
             "id": "3",
-            "name": "BlockScrum",
-            "slug": "SaaS enfocado en el seguimiento de proyectos Scrum",
-            "description": "Plataforma de gestión ágil de proyectos basada en Scrum, que permite la planificación, monitoreo y optimización de tareas en equipos de desarrollo. Incorpora tecnología blockchain para registrar eventos críticos del proyecto de manera inmutable, asegurando transparencia y trazabilidad en cada sprint, tarea y asignación de equipo.",
-            "largeDescription": "Aplicación diseñada para la gestión de proyectos bajo la metodología Scrum, proporcionando tableros interactivos para la planificación y seguimiento de sprints en tiempo real. Además de sus herramientas tradicionales de organización de tareas y roles, BlockScrum utiliza la blockchain de TripChain para registrar eventos clave dentro del proyecto, como asignaciones de tareas, cambios en sprints y entregas finales. Esto permite que los equipos cuenten con un historial inmutable de su progreso, garantizando la transparencia y facilitando auditorías de cumplimiento.\n\nGracias a su arquitectura modular y escalable, BlockScrum permite la automatización de flujos de trabajo mediante integración con APIs externas, gestión de permisos basada en roles y análisis de rendimiento de los equipos. Su integración con blockchain proporciona seguridad adicional en la validación de datos críticos del proyecto, asegurando que las decisiones tomadas en el desarrollo sean confiables y verificables.",
-            "cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756912400/Portafolio/banner_blockscrum_portafolio_brfipd.png",
-            "dark_cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756912557/Portafolio/banner_blockscrum_black_nhook5.png",
-            "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1756915455/TripCode/Logos/blockscrum_logo_jndppi.png",
-            "logo_dark": "https://res.cloudinary.com/dqluumk10/image/upload/v1756915399/TripCode/Logos/blockScrum_logo_black_bfvucu.png",
+            "name": "KodeTap",
+            "slug": "Plataforma de gestión y operaciones para PYMEs colombianas",
+            "description": "KodeTap es el ERP para PYMEs colombianas que unifica todo el negocio en un solo sistema: tienda física y tienda en línea conectadas al instante, pagos que llegan directo a tu cuenta, facturación electrónica DIAN automática, inventarios, nómina y un asistente de IA que atiende por WhatsApp 24/7. Su roadmap apunta al ecosistema KodeChain: sistema propio de recompensas y pagos digitales directos.",
+            "largeDescription": "KodeTap es el ERP que las PYMEs colombianas necesitan para dejar atrás los cuadernos, las hojas de cálculo y los cinco programas que no se hablan entre sí. Una sola caja, una sola web: lo que se vende en el local se refleja en internet al instante, el inventario nunca falla, el dinero de cada venta llega directo a la cuenta del negocio y la facturación electrónica obligatoria se genera sola con cada venta. Sin filas, sin plata retenida por días y sin clientes perdidos porque nadie respondió el WhatsApp un domingo.\n\nTodo el negocio vive en un solo lugar: perfil público digital, catálogo con carrito, menú en mesa con pedidos en tiempo real, tres pantallas operativas (cocina, mesero y punto de venta con impresión térmica), inventario multi-sede, eventos con boletería y check-in QR, citas agendables, red de afiliados y checkout con pagos directos. El dueño ve ventas, caja y comportamiento en tiempo real, y cada sede opera conectada bajo la misma fuente de verdad.\n\nPor dentro son cuatro piezas trabajando juntas: un SuperApp web con panel por roles, un core multi-sede que centraliza inventario, pagos, nómina, proveedores y facturación, agentes de IA que atienden el WhatsApp del negocio (responden dudas, toman pedidos y hasta gestionan productos y stock para el dueño), y un oráculo fiscal que firma y envía cada factura a la DIAN en segundos.\n\nY el roadmap mira al ecosistema KodeChain: tu propio sistema de recompensas donde cada compra devuelve saldo real al cliente para gastar en tu negocio (lealtad automática), y pagos digitales directos del celular del cliente al tuyo, sin pasar por los bancos tradicionales. KodeTap ordena tu negocio hoy y te prepara para la economía tokenizada del mañana.",
+            "cover": "/kodetap/banner_kodetap_portafolio.png",
+            "dark_cover": "/kodetap/banner_kodetap_black.png",
+            "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1778164506/TripCode/Logos/image_1_f9ktsm.png",
             "uriDocs": "",
             "stack": [
                 "React.js",
                 "typescript",
                 "Nextjs",
-                "MongoDB",
-                "Prisma",
-                "Vercel",
-                "Blockchain",
-                "Tailwind CSS"
-            ],
-            "repositories": [
-                {
-                    "id": "1",
-                    "name": "Blockscrum-core",
-                    "isPrivate": true,
-                    "description": "BlockScrum es una plataforma integral para la gestión ágil de proyectos basada en la metodología Scrum. Permite la planificación, seguimiento y control de tareas en equipos de desarrollo.",
-                    "status": "En desarrollo",
-                    "uri": "https://github.com/teamTripCode/tc-scrum-app",
-                    "web": "https://blockscrum.vercel.app/"
-                },
-                {
-                    "id": "2",
-                    "name": "Documentación Web",
-                    "isPrivate": true,
-                    "description": "Repositorio destinado a la documentación oficial de BlockScrum, donde se detallan funcionalidades, guías de uso y mejores prácticas para optimizar la gestión de proyectos ágiles.",
-                    "status": "Planeando",
-                    "uri": "https://github.com/teamTripCode/tc-scrum-app",
-                    "web": "https://blockscrum.vercel.app/"
-                }
-            ]
-        },
-        {
-            "id": "4",
-            "name": "ParfumCol",
-            "slug": "DApp para el comercio de perfumes y recompensas",
-            "description": "Plataforma de comercio electrónico especializada en perfumes, integrando tecnología blockchain para garantizar autenticidad, trazabilidad y seguridad en las transacciones. Implementa un sistema de recompensas basado en criptomonedas, permitiendo a los clientes obtener beneficios por sus compras.",
-            "largeDescription": "Aplicación de comercio electrónico enfocada en la venta de perfumes, utilizando la blockchain de TripChain para registrar transacciones de manera inmutable y proporcionar transparencia en los procesos de compra y distribución. Su integración con smart contracts permite la emisión de criptomonedas como incentivos para los clientes, generando un ecosistema de recompensas dentro de la plataforma.\nLa arquitectura de ParfumCol está compuesta por un backend en Nest.js que gestiona usuarios, pedidos y transacciones sobre la blockchain, y un frontend en Next.js optimizado para velocidad y experiencia de usuario. Utiliza Prisma como ORM para manejar datos en MongoDB, Docker para despliegue escalable y Google Cloud Platform para hosting y almacenamiento seguro.",
-            "cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756915677/Portafolio/banner_parfumcol_portafolio_rtk8xf.png",
-            "dark_cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756915678/Portafolio/banner_parfumcol_black_sy9q5e.png",
-            "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1756827546/TripCode/Logos/ace8f488-f7d5-4215-aa71-7050eeb34573_dkblzi_eajjzn.png",
-            "uriDocs": "https://parfumcol-docs.vercel.app/",
-            "stack": [
-                "React.js",
-                "typescript",
-                "Nextjs",
                 "Nest.js",
+                "Python",
+                "FastAPI",
+                "Rust",
                 "MongoDB",
                 "Prisma",
+                "Redis",
                 "Docker",
-                "Google Cloud Plattform",
-                "Vercel",
-                "Blockchain",
-                "Tailwind CSS"
-            ],
-            "repositories": [
-                {
-                    "id": "1",
-                    "name": "Backend API",
-                    "description": "Microservicio backend desarrollado en Nest.js con TypeScript, encargado de la autenticación de usuarios, gestión de pedidos y procesamiento de pagos. Utiliza Prisma como ORM para la manipulación de datos en MongoDB e integra la blockchain de TripChain para registrar todos los procesos críticos de la aplicación. Implementa smart contracts personalizados que gestionan la criptomoneda nativa de la plataforma, permitiendo la emisión y distribución de recompensas para los usuarios que realizan compras o pagan suscripciones. Expone una API RESTful segura con validación JWT, control de acceso basado en roles y protección contra ataques mediante rate limiting.",
-                    "status": "Planeando",
-                    "isPrivate": false,
-                    "uri": "https://github.com/teamTripCode/parfumcol-backend",
-                    "web": "https://parfumcol.vercel.app/"
-                },
-                {
-                    "id": "2",
-                    "name": "Frontend Web",
-                    "description": "Aplicación frontend desarrollada en Next.js con TypeScript y React, optimizada para rendimiento y SEO mediante Server-Side Rendering (SSR) y Static Site Generation (SSG). Proporciona una interfaz interactiva para la compra de perfumes y la gestión de recompensas en criptomonedas. Se comunica con la API backend para procesar pagos y registrar transacciones en la blockchain de TripChain. Implementa autenticación con JWT, manejo de estado con Zustand o Redux y diseño modular basado en componentes reutilizables.",
-                    "status": "Planeando",
-                    "isPrivate": false,
-                    "uri": "https://github.com/teamTripCode/parfumcol-frontend",
-                    "web": "https://parfumcol.vercel.app/"
-                }
-            ]
-        },
-        {
-            "id": "5",
-            "name": "Vexa",
-            "slug": "Plataforma integral de gestión empresarial y contabilidad dentro del ecosistema KodeChain",
-            "description": "Sistema multi-tenant de gestión empresarial que integra contabilidad, facturación, inventarios, nómina y reportes fiscales. Como vertical contable del ecosistema KodeChain, permite a las empresas gestionar sus operaciones mientras automatizan recompensas tokenizadas para clientes, empleados y proveedores, creando un círculo virtuoso de valor dentro de la economía digital.",
-            "largeDescription": "Vexa es la solución integral de gestión empresarial que revoluciona la administración tradicional al integrar funcionalidades contables avanzadas con la potencia del ecosistema KodeChain. La plataforma permite a empresas de cualquier tamaño gestionar su contabilidad, facturación electrónica, control de inventarios, nómina, y reportes fiscales desde una única interfaz multi-tenant.\n\nCada empresa tenant puede configurar su propio sistema de recompensas tokenizadas, emitiendo tokens automáticamente a clientes por compras recurrentes, a empleados por cumplimiento de metas, y a proveedores por entregas puntuales. Esta tokenización empresarial se integra naturalmente con otros verticales de KodeChain, permitiendo que los tokens generados en el contexto empresarial sean utilizables en comercios, servicios y proyectos inmobiliarios del ecosistema.\n\nLa arquitectura multi-tenant garantiza que cada empresa opere en un entorno completamente aislado y personalizado, mientras mantiene acceso a las ventajas colaborativas del ecosistema KodeChain. Los tokens empresariales pueden intercambiarse con otros sectores, creando una red de valor donde las decisiones de compra, trabajo y colaboración empresarial se ven recompensadas tangiblemente.\n\nVexa incluye módulos especializados para facturación electrónica con cumplimiento DIAN, gestión de inventarios en tiempo real, cálculo automático de nóminas, reportes fiscales automatizados, análisis financiero predictivo, y un motor de inteligencia artificial para optimización de flujos de caja. Todo esto potenciado por la transparencia blockchain y la interoperabilidad del ecosistema KodeChain.",
-            "cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1757002050/Portafolio/banner_vexa_fvku1q.png",
-            "dark_cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1757001947/Portafolio/banner_vexa_dark_ltfobn.png",
-            "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1757000011/TripCode/Logos/logo-vexa_m7uewn.png",
-            "logo_dark": "https://res.cloudinary.com/dqluumk10/image/upload/v1757000010/TripCode/Logos/logo_vexa_light_hyzw85.png",
-            "uriDocs": "https://vexa-docs.vercel.app/",
-            "stack": [
-                "React.js",
-                "TypeScript",
-                "Next.js",
-                "Nest.js",
-                "MongoDB",
-                "PostgreSQL",
-                "Prisma",
-                "Docker",
+                "Cloudflare",
                 "Google Cloud Platform",
-                "Vercel",
-                "KodeChain Blockchain",
-                "Smart Contracts",
-                "Web3.js",
                 "Tailwind CSS",
-                "Chart.js",
-                "PDF Generation"
+                "Socket.io",
+                "Online Payments"
             ],
             "repositories": [
                 {
                     "id": "1",
-                    "name": "Vexa SuperApp",
-                    "description": "Aplicación web multi-tenant desarrollada en Next.js para gestión empresarial integral. Incluye módulos de contabilidad con plan de cuentas personalizable, facturación electrónica DIAN, control de inventarios con códigos de barras, nómina automatizada, reportes fiscales y dashboard de tokens empresariales. Arquitectura modular que permite personalización por tenant y integración Web3 con KodeChain.",
+                    "name": "KodeTap SuperApp",
+                    "description": "La cara del sistema: panel por roles, tiendas públicas, catálogo con carrito, menú en mesa en tiempo real, pantallas de cocina, mesero y POS con impresión térmica, eventos, citas y pagos. Todo conectado de forma segura al core.",
                     "status": "En desarrollo",
-                    "isPrivate": false,
-                    "uri": "https://github.com/kodechain/vexa-frontend",
-                    "web": "https://vexa-platform.vercel.app/"
+                    "isPrivate": true,
+                    "uri": "",
+                    "web": "https://kodetap.site"
                 },
                 {
                     "id": "2",
-                    "name": "Vexa Core",
-                    "description": "API REST empresarial desarrollada en NestJS con arquitectura DDD y sistema multi-tenant. Gestiona contabilidad general, facturación electrónica, inventarios, nóminas, reportes fiscales e integración con entidades gubernamentales. Incluye motor de smart contracts para emisión de tokens empresariales, cálculos automáticos de impuestos y sincronización con el ecosistema KodeChain para intercambio de valor sectorial.",
-                    "status": "En desarrollo",
-                    "isPrivate": false,
-                    "uri": "https://github.com/kodechain/vexa-backend",
-                    "web": "https://vexa-api.vercel.app/"
-                },
-                {
-                    "id": "7",
-                    "name": "Vexa Documentation Hub",
-                    "description": "Centro de documentación integral construido con Docusaurus. Incluye guías de implementación multi-tenant, manuales de módulos contables, documentación de APIs, tutoriales de integración KodeChain, casos de uso empresariales, compliance fiscal colombiano, y manuales de tokenización empresarial. Disponible en español con soporte para expansión latinoamericana.",
-                    "status": "En desarrollo",
-                    "isPrivate": false,
-                    "uri": "https://github.com/kodechain/vexa-docs",
-                    "web": "https://vexa-docs.vercel.app/"
-                }
-            ]
-        },
-        {
-            "id": "6",
-            "name": "BlockEstate",
-            "slug": "Plataforma de inversión inmobiliaria tokenizada dentro del ecosistema KodeChain",
-            "description": "Plataforma que democratiza la inversión inmobiliaria a través de tokenización, permitiendo a inversionistas acceder a proyectos desde montos pequeños mientras recompensa a inquilinos puntuales. Opera como el vertical inmobiliario del ecosistema KodeChain, creando sinergia con múltiples sectores económicos a través de un sistema de recompensas y tokenización universal.",
-            "largeDescription": "BlockEstate representa la evolución natural de la inversión inmobiliaria tradicional, resolviendo tres problemas fundamentales del mercado colombiano: barreras de entrada prohibitivas para inversores pequeños, falta de incentivos para inquilinos puntuales, y desconexión entre propietarios de terrenos e inversionistas.\n\nLa plataforma tokeniza proyectos inmobiliarios distribuyendo automáticamente el 25% al propietario del terreno, el 60% al pool de construcción, el 3% al arquitecto ganador, el 8% a un fondo de mantenimiento perpetuo y el 4% como fees de plataforma. Un algoritmo de precios escalonados recompensa la inversión temprana, duplicando los precios conforme se acerca al objetivo de capitalización.\n\nUna vez construido el edificio, los inquilinos que pagan durante los primeros 5 días del mes reciben el 5% de su pago en tokens de recompensa, utilizables en cualquier comercio del ecosistema KodeChain. Esta interoperabilidad sectorial crea efectos de red exponenciales donde el valor se mantiene y multiplica dentro del ecosistema.\n\nLa integración con KodeChain permite que tokens generados por compras en panaderías, veterinarias, eventos o productos cosméticos puedan utilizarse como parte del pago de alquileres, creando una economía circular autosostenible con múltiples fuentes de ingresos.",
-            "cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1757001444/Portafolio/banner_blockstate_light_m17gy3.png",
-            "dark_cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1757001444/Portafolio/banner_blockstate_dark_aiitur.png",
-            "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1757000100/TripCode/Logos/logo_blockstate_bz2ixq.png",
-            "uriDocs": "https://blockestate-docs.vercel.app/",
-            "stack": [
-                "React.js",
-                "TypeScript",
-                "Next.js",
-                "Nest.js",
-                "MongoDB",
-                "Prisma",
-                "Docker",
-                "Google Cloud Platform",
-                "Vercel",
-                "KodeChain Blockchain",
-                "Smart Contracts",
-                "Tailwind CSS",
-                "Web3.js"
-            ],
-            "repositories": [
-                {
-                    "id": "1",
-                    "name": "BlockEstate SuperApp",
-                    "description": "Aplicación web desarrollada en Next.js para la gestión de inversiones inmobiliarias tokenizadas. Incluye dashboard para inversionistas, sistema de votación para administradores, calculadora de ROI con precios dinámicos, y portal de inquilinos con gestión de tokens de recompensa. Integrada con Web3 para interacciones blockchain y optimizada para SSR/SSG.",
+                    "name": "KodeTap Core",
+                    "description": "El cerebro del ERP: operación multi-sede, inventario, facturación electrónica DIAN automática, pagos y suscripciones, nómina, proveedores y módulo clínico. Todo el negocio en una sola base.",
                     "status": "En desarrollo",
                     "isPrivate": true,
-                    "uri": "https://github.com/kodechain/blockestate-frontend",
-                    "web": "https://blockestate-platform.vercel.app/"
+                    "uri": "",
+                    "web": ""
                 },
                 {
-                    "id": "2",
-                    "name": "BlockEstate Core",
-                    "description": "API REST desarrollada en NestJS con arquitectura DDD para la gestión de proyectos inmobiliarios tokenizados. Implementa autenticación JWT, valuación automatizada de terrenos, algoritmos de precios dinámicos, gestión de fondos de construcción y mantenimiento, e integración con KodeChain para distribución de tokens y procesamiento de pagos de alquileres.",
+                    "id": "3",
+                    "name": "KodeTap Agents",
+                    "description": "El empleado que nunca duerme: atiende el WhatsApp del negocio 24/7, responde dudas, toma pedidos, gestiona productos y stock para el dueño y rastrea pedidos para los clientes.",
                     "status": "En desarrollo",
                     "isPrivate": true,
-                    "uri": "https://github.com/kodechain/blockestate-backend",
-                    "web": "https://blockestate-api.vercel.app/"
+                    "uri": "",
+                    "web": ""
                 },
                 {
                     "id": "4",
-                    "name": "BlockEstate Documentation",
-                    "description": "Documentación técnica y comercial construida con Docusaurus. Incluye whitepaper del ecosistema KodeChain, guías de inversión, documentación de APIs, ejemplos de integración para desarrolladores, y manuales para propietarios de terrenos, inversionistas e inquilinos. Disponible en español e inglés para expansión latinoamericana.",
+                    "name": "KodeTap Oracle",
+                    "description": "El contador fiscal automático: genera, firma digitalmente y envía cada factura electrónica a la DIAN en segundos, sin que tengas que aprender de impuestos.",
                     "status": "En desarrollo",
                     "isPrivate": true,
-                    "uri": "https://github.com/kodechain/blockestate-docs",
-                    "web": "https://blockestate-docs.vercel.app/"
+                    "uri": "",
+                    "web": ""
                 }
-            ]
+            ],
+            "logo_dark": "https://res.cloudinary.com/dqluumk10/image/upload/v1789946683/TripCode/Logos/icon-512x512-Photoroom_avkbnw.png"
         }
     ],
     "Experience": [
         {
-            "position": "Lead Full Stack Developer",
-            "company": "Crédito Ya",
-            "logo": "/logos/credito_ya.png",
-            "type": "Freelancer",
-            "initialDate": "May 2024",
-            "endDate": "Nov 2024",
-            "Description": "Lideré el desarrollo de una aplicación web que digitaliza por completo el proceso de solicitud de préstamos, optimizando la experiencia del usuario y reduciendo fricciones. Implementé interfaces dinámicas en tiempo real para clientes y empleados, mejorando la transparencia y la eficiencia en la gestión de cada solicitud. También diseñé flujos de trabajo automatizados para la aprobación de créditos, reduciendo tiempos de respuesta y optimizando la administración de solicitudes."
-        },
-        {
-            "position": "Backend Developer",
-            "company": "Smart Talent",
-            "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1732945154/TripCode/Logos/cggalummkorqburvelfo.png",
-            "type": "Freelancer",
-            "initialDate": "May 2024",
-            "endDate": "Jul 2024",
-            "Description": "Desarrollé un sistema de gestión de feedback para que los administradores pudieran visualizar, gestionar y dar seguimiento a los reportes internos de la empresa. Implementé un flujo de estados para clasificar y resolver los feedbacks de manera eficiente, permitiendo un control más preciso sobre las solicitudes y mejorando la comunicación interna."
-        },
-        {
-            "position": "Lead Full Stack Developer",
-            "company": "Todo En Bicicleta",
-            "logo": "/logos/todo_en_bici.png",
-            "type": "Freelancer",
-            "initialDate": "Dec 2023",
-            "endDate": "Oct 2024",
-            "Description": "Desarrollé una aplicación de viajes con seguimiento de ubicación en tiempo real, permitiendo a los usuarios monitorear el recorrido del viajero en directo. Implementé una zona de streaming interactivo para que los usuarios puedan conectarse en vivo, gestionar interacciones y recibir comentarios en tiempo real. Además, diseñé un perfil completo del viajero, incluyendo biografía y una sección exclusiva para la visualización de ebooks. El acceso a los libros está protegido y solo disponible para quienes los hayan adquirido mediante PayPal, garantizando seguridad y exclusividad."
+            "position": "Fundador y CTO",
+            "company": "TripKode Corporation",
+            "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1729375887/TripCode/Logos/luc79qy6rewoqovhxwrz.png",
+            "type": "Tiempo completo",
+            "initialDate": "Jan 2021",
+            "endDate": "Presente",
+            "Description": "Fundador y CTO de TripKode Corporation, una empresa de desarrollo de software que crea productos como KodeTap y KodeChain desde el año 2021. Creamos software a la medida para múltiples clientes como CreditoYa, Valor Agregado y Colonia Composta, además de nuestro propio ecosistema de productos.",
+            "logo_dark": "https://res.cloudinary.com/dqluumk10/image/upload/v1775217056/TripCode/Logos/image_f8hm5f.png"
         }
     ],
     "Articles": [
@@ -380,45 +171,6 @@
             "type": "web3",
             "content": "# TripCodeChain: Democratizando la Tecnología Blockchain para Negocios\n\n## Una Nueva Revolución Tecnológica\n\nImagina un mundo donde cada pequeño negocio pueda crear su propia moneda digital, automatizar sus procesos críticos y operar con la misma seguridad y transparencia que las grandes corporaciones tecnológicas. Este es el sueño que TripChain está haciendo realidad.\n\n## ¿Qué Hace Único a TripCodeChain?\n\nTripChain no es solo otra plataforma blockchain. Es un ecosistema completo diseñado para democratizar la tecnología descentralizada, permitiendo que cualquier empresa, desde una pequeña tienda local hasta una corporación internacional, aproveche el poder de los smart contracts y las criptomonedas.\n\n## Tecnología Revolucionaria: Cómo Funciona\n\n### 1. Blockchain Descentralizada de Próxima Generación\n\nLa red de TripChain utiliza un innovador mecanismo de consenso híbrido que combina:\n\n- **Delegated Proof of Stake (DPoS)**: Para validaciones rápidas y eficientes\n- **Practical Byzantine Fault Tolerance (PBFT)**: Garantizando una seguridad inquebrantable\n\n### 2. Smart Contracts Inteligentes\n\nTripChain introduce un modelo único con dos tipos de smart contracts:\n\n#### Contrato de Transacciones y Recompensas\n\n- Registra pagos en tiempo real\n- Emite automáticamente criptomonedas como recompensa a clientes\n- Valida cada transacción con precisión milimétrica\n\n#### Contrato de Procesos Críticos\n\n- Almacena información empresarial sensible\n- Garantiza la inmutabilidad de registros importantes\n- Permite auditorías transparentes sin exponer datos confidenciales\n\n### 3. Criptomonedas Personalizadas\n\nCada negocio puede:\n\n- Crear su propia criptomoneda\n- Establecer reglas de emisión\n- Definir mecanismos de recompensa\n- Controlar la oferta y demanda de su token\n\n## Beneficios Revolucionarios\n\n### Para Negocios\n\n- Seguridad de nivel empresarial\n- Automatización de procesos\n- Transparencia total\n- Nuevas formas de generar valor\n\n### Para Clientes\n\n- Recompensas instantáneas\n- Trazabilidad de transacciones\n- Experiencias de compra mejoradas\n\n## Casos de Uso Reales\n\n### BlockScrum: Gestión de Proyectos Blockchain\n\nUna plataforma que registra cada sprint, tarea y asignación en una blockchain inmutable, eliminando disputas y mejorando la transparencia en equipos de desarrollo.\n\n### ParfumCol: Comercio Electrónico Descentralizado\n\nUn marketplace de perfumes donde cada compra genera tokens de recompensa, creando un ecosistema de fidelización basado en blockchain.\n\n### Inventario Descentralizado\n\nUna solución que permite a negocios de cualquier tamaño gestionar su inventario, emitir criptomonedas y automatizar procesos críticos.\n\n## El Futuro ya Está Aquí\n\nTripChain no es solo una tecnología. Es una revolución económica que democratiza el acceso a herramientas financieras avanzadas, permitiendo que incluso el negocio más pequeño pueda operar con la eficiencia de una corporación global.\n\n**La economía digital del futuro no será centralizada. Será descentralizada, transparente y accesible para todos.**\n\n🚀 Bienvenidos a la Era TripCodeChain.",
             "proyects": [
-                {
-                    "id": "1",
-                    "name": "BlockScrum",
-                    "slug": "SaaS enfocado en el seguimiento de proyectos Scrum",
-                    "description": "Plataforma de gestión ágil de proyectos basada en Scrum, que permite la planificación, monitoreo y optimización de tareas en equipos de desarrollo. Incorpora tecnología blockchain para registrar eventos críticos del proyecto de manera inmutable, asegurando transparencia y trazabilidad en cada sprint, tarea y asignación de equipo.",
-                    "largeDescription": "Aplicación diseñada para la gestión de proyectos bajo la metodología Scrum, proporcionando tableros interactivos para la planificación y seguimiento de sprints en tiempo real. Además de sus herramientas tradicionales de organización de tareas y roles, BlockScrum utiliza la blockchain de TripChain para registrar eventos clave dentro del proyecto, como asignaciones de tareas, cambios en sprints y entregas finales. Esto permite que los equipos cuenten con un historial inmutable de su progreso, garantizando la transparencia y facilitando auditorías de cumplimiento.\n\nGracias a su arquitectura modular y escalable, BlockScrum permite la automatización de flujos de trabajo mediante integración con APIs externas, gestión de permisos basada en roles y análisis de rendimiento de los equipos. Su integración con blockchain proporciona seguridad adicional en la validación de datos críticos del proyecto, asegurando que las decisiones tomadas en el desarrollo sean confiables y verificables.",
-                    "cover": "/backgrounds-projects/scrum_mosaic.jpg",
-                    "uriDocs": "",
-                    "stack": [
-                        "React.js",
-                        "typescript",
-                        "Nextjs",
-                        "MongoDB",
-                        "Prisma",
-                        "Vercel",
-                        "Blockchain",
-                        "Tailwind CSS"
-                    ],
-                    "repositories": [
-                        {
-                            "id": "1",
-                            "name": "Blockscrum-core",
-                            "isPrivate": true,
-                            "description": "BlockScrum es una plataforma integral para la gestión ágil de proyectos basada en la metodología Scrum. Permite la planificación, seguimiento y control de tareas en equipos de desarrollo.",
-                            "status": "En desarrollo",
-                            "uri": "https://github.com/teamTripCode/tc-scrum-app",
-                            "web": "https://blockscrum.vercel.app/"
-                        },
-                        {
-                            "id": "2",
-                            "name": "Documentación Web",
-                            "isPrivate": true,
-                            "description": "Repositorio destinado a la documentación oficial de BlockScrum, donde se detallan funcionalidades, guías de uso y mejores prácticas para optimizar la gestión de proyectos ágiles.",
-                            "status": "Planeando",
-                            "uri": "https://github.com/teamTripCode/tc-scrum-app",
-                            "web": "https://blockscrum.vercel.app/"
-                        }
-                    ]
-                },
                 {
                     "id": "2",
                     "name": "TripCode Chain",
@@ -492,48 +244,6 @@
                             "isPrivate": false,
                             "uri": "https://github.com/teamTripCode/tc-docs",
                             "web": "https://tripchain.vercel.app/docs"
-                        }
-                    ]
-                },
-                {
-                    "id": "3",
-                    "name": "ParfumCol",
-                    "slug": "DApp para el comercio de perfumes y recompensas",
-                    "description": "Plataforma de comercio electrónico especializada en perfumes, integrando tecnología blockchain para garantizar autenticidad, trazabilidad y seguridad en las transacciones. Implementa un sistema de recompensas basado en criptomonedas, permitiendo a los clientes obtener beneficios por sus compras.",
-                    "largeDescription": "Aplicación de comercio electrónico enfocada en la venta de perfumes, utilizando la blockchain de TripChain para registrar transacciones de manera inmutable y proporcionar transparencia en los procesos de compra y distribución. Su integración con smart contracts permite la emisión de criptomonedas como incentivos para los clientes, generando un ecosistema de recompensas dentro de la plataforma.\nLa arquitectura de ParfumCol está compuesta por un backend en Nest.js que gestiona usuarios, pedidos y transacciones sobre la blockchain, y un frontend en Next.js optimizado para velocidad y experiencia de usuario. Utiliza Prisma como ORM para manejar datos en MongoDB, Docker para despliegue escalable y Google Cloud Platform para hosting y almacenamiento seguro.",
-                    "cover": "/backgrounds-projects/blocks_mosaic.jpg",
-                    "uriDocs": "https://parfumcol-docs.vercel.app/",
-                    "stack": [
-                        "React.js",
-                        "typescript",
-                        "Nextjs",
-                        "Nest.js",
-                        "MongoDB",
-                        "Prisma",
-                        "Docker",
-                        "Google Cloud Plattform",
-                        "Vercel",
-                        "Blockchain",
-                        "Tailwind CSS"
-                    ],
-                    "repositories": [
-                        {
-                            "id": "1",
-                            "name": "Backend API",
-                            "description": "Microservicio backend desarrollado en Nest.js con TypeScript, encargado de la autenticación de usuarios, gestión de pedidos y procesamiento de pagos. Utiliza Prisma como ORM para la manipulación de datos en MongoDB e integra la blockchain de TripChain para registrar todos los procesos críticos de la aplicación. Implementa smart contracts personalizados que gestionan la criptomoneda nativa de la plataforma, permitiendo la emisión y distribución de recompensas para los usuarios que realizan compras o pagan suscripciones. Expone una API RESTful segura con validación JWT, control de acceso basado en roles y protección contra ataques mediante rate limiting.",
-                            "status": "Planeando",
-                            "isPrivate": false,
-                            "uri": "https://github.com/teamTripCode/parfumcol-backend",
-                            "web": "https://parfumcol.vercel.app/"
-                        },
-                        {
-                            "id": "2",
-                            "name": "Frontend Web",
-                            "description": "Aplicación frontend desarrollada en Next.js con TypeScript y React, optimizada para rendimiento y SEO mediante Server-Side Rendering (SSR) y Static Site Generation (SSG). Proporciona una interfaz interactiva para la compra de perfumes y la gestión de recompensas en criptomonedas. Se comunica con la API backend para procesar pagos y registrar transacciones en la blockchain de TripChain. Implementa autenticación con JWT, manejo de estado con Zustand o Redux y diseño modular basado en componentes reutilizables.",
-                            "status": "Planeando",
-                            "isPrivate": false,
-                            "uri": "https://github.com/teamTripCode/parfumcol-frontend",
-                            "web": "https://parfumcol.vercel.app/"
                         }
                     ]
                 },

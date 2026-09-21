@@ -109,7 +109,7 @@ function CardRepo({ repo }: { repo: Repository }) {
                     )}
                     {!repo.isPrivate && repo.uri && (
                         <a
-                            href={repo.web}
+                            href={repo.uri}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200 transition-colors duration-150"

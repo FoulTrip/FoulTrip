@@ -114,7 +114,7 @@ function Navbar() {
                                     width={16} 
                                     height={16} 
                                     alt={currentLang === 'en' ? "English" : "Español"} 
-                                    className="rounded-sm"
+                                    className="rounded-sm h-4 w-4"
                                 />
                                 <span className="hidden sm:inline">{currentLang.toUpperCase()}</span>
                                 <HiChevronDown className={`w-4 h-4 transition-transform duration-200 ${langMenuOpen ? 'rotate-180' : ''}`} />
@@ -129,7 +129,7 @@ function Navbar() {
                                             currentLang === 'es' ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400' : ''
                                         }`}
                                     >
-                                        <Image src={iconSpain} width={16} height={16} alt="Español" className="rounded-sm" />
+                                        <Image src={iconSpain} width={16} height={16} alt="Español" className="rounded-sm h-4 w-4" />
                                         <span>Español</span>
                                     </button>
                                     <button 
@@ -138,7 +138,7 @@ function Navbar() {
                                             currentLang === 'en' ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400' : ''
                                         }`}
                                     >
-                                        <Image src={iconEnglish} width={16} height={16} alt="English" className="rounded-sm" />
+                                        <Image src={iconEnglish} width={16} height={16} alt="English" className="rounded-sm h-4 w-4" />
                                         <span>English</span>
                                     </button>
                                 </div>

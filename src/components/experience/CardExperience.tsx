@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { Experience } from "./ListExperience";
+import { useDarkMode } from "@/context/DarkModeContext";
 import { MdWork } from "react-icons/md";
 import { FaBuilding } from "react-icons/fa6";
 
 function CardExperience({ experience }: { experience: Experience }) {
+  const { darkmode } = useDarkMode();
   return (
     <div className="group relative p-4 sm:p-6 bg-white dark:bg-gray-900 rounded-lg border border-gray-100 dark:border-gray-800 hover:border-gray-200 dark:hover:border-gray-700 hover:shadow-sm transition-all duration-200">
       
@@ -15,7 +17,7 @@ function CardExperience({ experience }: { experience: Experience }) {
           <div className="flex-shrink-0 mt-0.5">
             <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg border border-gray-100 dark:border-gray-800 overflow-hidden bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
               <Image
-                src={experience.logo}
+                src={darkmode && experience.logo_dark ? experience.logo_dark : experience.logo}
                 alt={experience.company}
                 width={40}
                 height={40}

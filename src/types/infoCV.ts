@@ -32,16 +32,27 @@ export type stackType =
     | "Docker"
     | "Kubernetes"
     | "Google Cloud Plattform"
+    | "Google Cloud Platform"
     | "Vercel"
     | "MongoDB"
     | "Prisma"
-    | "Blockchain";
+    | "Blockchain"
+    | "Go"
+    | "Cloudflare"
+    | "Tailwind CSS"
+    | "Python"
+    | "FastAPI"
+    | "Rust"
+    | "Redis"
+    | "Socket.io"
+    | "Online Payments";
 
 
 export interface Experience {
     position: string
     company: string
     logo: string
+    logo_dark?: string
     type: string
     initialDate: string
     endDate: string

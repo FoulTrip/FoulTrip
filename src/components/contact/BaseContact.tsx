@@ -13,7 +13,7 @@ function BaseContact() {
                         alt="Foto de perfil"
                         width={430}
                         height={430}
-                        className="drop-shadow-md"
+                        className="drop-shadow-md h-[430px] w-[430px]"
                     />
                 </div>
                 <div className="mt-5 space-y-2">

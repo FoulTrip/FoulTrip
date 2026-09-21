@@ -29,7 +29,7 @@ const SidebarBlog = () => {
                     alt={"blog"}
                     width={60}
                     height={60}
-                    className='drop-shadow-md dark:invert dark:brightness-0 dark:contrast-200 dark:saturate-0'
+                    className='drop-shadow-md h-[60px] w-[60px] dark:invert dark:brightness-0 dark:contrast-200 dark:saturate-0'
                 />
             </div>
             <p className="text-gray-600 dark:text-gray-300 mb-6 border border-transparent border-b-gray-300 dark:border-b-gray-700 pb-8 text-sm font-thin">
@@ -89,7 +89,7 @@ const BaseSideBarPage: React.FC<BaseSideBarPageProps> = ({ children }) => {
                                     alt={"blog"}
                                     width={60}
                                     height={60}
-                                    className='drop-shadow-md dark:invert dark:brightness-0 dark:contrast-200 dark:saturate-0'
+                                    className='drop-shadow-md h-[60px] w-[60px] dark:invert dark:brightness-0 dark:contrast-200 dark:saturate-0'
                                 />
                             </div>
                         </div>
