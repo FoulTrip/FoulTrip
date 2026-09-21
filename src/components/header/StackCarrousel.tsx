@@ -17,18 +17,18 @@ import svg11 from "@/assets/stacks/typescript.svg";
 import svg12 from "@/assets/stacks/tailwindcss.svg";
 
 const logos = [
-  svg1,
-  svg2,
-  svg3,
-  svg4,
-  svg5,
-  svg6,
-  svg7,
-  svg8,
-  svg9,
-  svg10,
-  svg11,
-  svg12,
+  { src: svg1, name: "React", invertOnDark: false },
+  { src: svg2, name: "Docker", invertOnDark: false },
+  { src: svg3, name: "JavaScript", invertOnDark: false },
+  { src: svg4, name: "Kubernetes", invertOnDark: false },
+  { src: svg5, name: "MongoDB", invertOnDark: false },
+  { src: svg6, name: "NestJS", invertOnDark: false },
+  { src: svg7, name: "Next.js", invertOnDark: true },
+  { src: svg8, name: "Node.js", invertOnDark: false },
+  { src: svg9, name: "Python", invertOnDark: false },
+  { src: svg10, name: "Solidity", invertOnDark: true },
+  { src: svg11, name: "TypeScript", invertOnDark: false },
+  { src: svg12, name: "Tailwind CSS", invertOnDark: false },
 ];
 
 const LogoCarousel: React.FC = () => {
@@ -71,7 +71,7 @@ const LogoCarousel: React.FC = () => {
         >
           {logos.map((logo, index) => (
             <li key={index}>
-              <Image src={logo} alt={`Logo ${index + 1}`} width={80} height={80} className="h-20 w-20" />
+              <Image src={logo.src} alt={`Logo ${logo.name}`} width={80} height={80} className={`h-20 w-20${logo.invertOnDark ? " dark:invert" : ""}`} />
             </li>
           ))}
         </ul>

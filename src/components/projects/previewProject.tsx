@@ -22,9 +22,11 @@ function PreviewProject({ project }: { project: Project }) {
 
             {/* Project Description */}
             <div className="prose prose-gray dark:prose-invert max-w-none">
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                    {project.largeDescription}
-                </p>
+                {project.largeDescription.split("\n\n").map((paragraph, i) => (
+                    <p key={i} className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4 last:mb-0">
+                        {paragraph}
+                    </p>
+                ))}
             </div>
 
             {/* Technologies Section */}

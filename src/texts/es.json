@@ -9,8 +9,11 @@
         "showMore": "Ver más",
         "showLess": "Ver menos",
         "backToProjects": "Volver a proyectos",
-        "titleTecs": "Tecnologias",
-        "titleRepositories": "Repositorios"
+        "titleTecs": "Tecnologías",
+        "titleRepositories": "Repositorios",
+        "docs": "Documentación",
+        "moreInfo": "Más información",
+        "privateCode": "Código privado"
     },
     "BaseHeader": {
         "headline": "Construyendo negocios\nimpulsados por la innovación.",
@@ -23,11 +26,11 @@
         {
             "id": "2",
             "name": "KodeChain",
-            "slug": "Red Blockchain descentralizada con criptografía post-cuántica y consenso híbrido",
+            "slug": "Red blockchain corporativa",
             "description": "Blockchain que implementa criptografía post-cuántica con ML-DSA-65, consenso híbrido dinámico (DPoS/PBFT), y arquitectura de doble capa. Elimina completamente el minado tradicional utilizando un sistema de staking moderno, procesa contratos inteligentes WASM en sandbox seguro, e integra un sistema experto nativo. Su economía deflacionaria automática y red P2P avanzada con libp2p proporcionan escalabilidad, seguridad cuántica-resistente y eficiencia energética superior.",
-            "largeDescription": "KodeChain representa mi contribución técnica más significativa al espacio blockchain, desarrollando una red de tercera generación que aborda las limitaciones fundamentales de blockchains tradicionales mediante innovaciones arquitectónicas avanzadas.\n\nImplementé una arquitectura de doble capa que separa la execution chain del procesamiento de transacciones y las beacon chains para gestión de consenso, permitiendo escalabilidad horizontal y flexibilidad operacional. El sistema utiliza consenso híbrido dinámico donde los nodos pueden alternar entre PBFT para máxima seguridad y finalidad, y DPoS para alto throughput, adaptándose automáticamente a las necesidades de la red.\n\nLa seguridad post-cuántica se logra mediante la implementación completa del algoritmo Dilithium3, certificado por NIST, garantizando resistencia contra futuros ataques de computación cuántica. Desarrollé un sistema de staking moderno que elimina completamente el minado energéticamente intensivo, donde los validadores requieren stake mínimo de 10 TKC y máximo de 100,000 TKC por validador, con período de bloqueo de 30 días.\n\nLos contratos inteligentes operan en un ambiente WASM sandboxed que permite ejecución de código TypeScript/AssemblyScript de forma segura y aislada, sin acceso a recursos del sistema. Integré un sistema experto nativo con motor de inferencia que evalúa reglas configurables, procesamiento de consultas estructuradas y generación automática de respuestas.\n\nLa red P2P implementa protocolos avanzados incluyendo libp2p para descubrimiento automático, GossipSub para difusión de mensajes, y DHT para tabla hash distribuida, asegurando comunicación eficiente entre nodos. El sistema económico deflacionario quema automáticamente el 20% de las comisiones de transacción, con distribución del 50% para validadores y 30% para desarrollo.\n\nKodeChain procesa transacciones con finalidad en segundos, consume mínima energía comparado con blockchains tradicionales, y proporciona transparencia completa mediante registro inmutable de todas las operaciones. Esta arquitectura establece las bases para aplicaciones descentralizadas de próxima generación que requieren seguridad enterprise, escalabilidad masiva y eficiencia operacional.",
-            "cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756904929/Portafolio/banner_kodechain_portafolio_sfz331.png",
-            "dark_cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1756907850/Portafolio/banner_kodechain_dark_portafolio_bv5evg.png",
+            "largeDescription": "KodeChain es una red blockchain de tercera generación que aborda las limitaciones fundamentales de las blockchains tradicionales mediante innovaciones arquitectónicas avanzadas.\n\nSu arquitectura de doble capa separa la execution chain del procesamiento de transacciones y las beacon chains para la gestión de consenso, permitiendo escalabilidad horizontal y flexibilidad operacional. El sistema utiliza consenso híbrido dinámico donde los nodos alternan entre PBFT para máxima seguridad y finalidad, y DPoS para alto throughput, adaptándose automáticamente a las necesidades de la red.\n\nLa seguridad post-cuántica se logra mediante la implementación completa del algoritmo Dilithium3, certificado por NIST, que garantiza resistencia frente a futuros ataques de computación cuántica. Su sistema de staking moderno elimina por completo el minado intensivo en energía: los validadores requieren un stake mínimo de 10 TKC y máximo de 100.000 TKC, con un período de bloqueo de 30 días.\n\nLos contratos inteligentes operan en un ambiente WASM aislado (sandboxed) que permite la ejecución segura de código TypeScript/AssemblyScript sin acceso a los recursos del sistema. Incluye además un sistema experto nativo con motor de inferencia que evalúa reglas configurables, procesa consultas estructuradas y genera respuestas automáticamente.\n\nLa red P2P implementa protocolos avanzados como libp2p para descubrimiento automático, GossipSub para difusión de mensajes y DHT como tabla hash distribuida, asegurando una comunicación eficiente entre nodos. Su modelo económico deflacionario quema automáticamente el 20% de las comisiones de transacción, distribuyendo el 50% a validadores y el 30% a desarrollo.\n\nKodeChain procesa transacciones con finalidad en segundos, consume mínima energía frente a blockchains tradicionales y ofrece transparencia total mediante el registro inmutable de todas las operaciones. Una base sólida para aplicaciones descentralizadas de próxima generación que exigen seguridad empresarial, escalabilidad masiva y eficiencia operacional.",
+            "cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1789951178/Portafolio/banner_kodechain_portafolio_yu93pw.png",
+            "dark_cover": "https://res.cloudinary.com/dqluumk10/image/upload/v1789951279/Portafolio/banner_kodechain_black_zqtatv.png",
             "logo": "https://res.cloudinary.com/dqluumk10/image/upload/v1756827546/TripCode/Logos/ace8f488-f7d5-4215-aa71-7050eeb34573_dkblzi_eajjzn.png",
             "uriDocs": "https://tripchaindocs.fly.dev/es/",
             "stack": [
@@ -77,12 +80,13 @@
                     "uri": "",
                     "web": ""
                 }
-            ]
+            ],
+            "logo_dark": "https://res.cloudinary.com/dqluumk10/image/upload/v1789951349/TripCode/Logos/image_azn5zy.png"
         },
         {
             "id": "3",
             "name": "KodeTap",
-            "slug": "Plataforma de gestión y operaciones para PYMEs colombianas",
+            "slug": "El ERP para PYMEs colombianas",
             "description": "KodeTap es el ERP para PYMEs colombianas que unifica todo el negocio en un solo sistema: tienda física y tienda en línea conectadas al instante, pagos que llegan directo a tu cuenta, facturación electrónica DIAN automática, inventarios, nómina y un asistente de IA que atiende por WhatsApp 24/7. Su roadmap apunta al ecosistema KodeChain: sistema propio de recompensas y pagos digitales directos.",
             "largeDescription": "KodeTap es el ERP que las PYMEs colombianas necesitan para dejar atrás los cuadernos, las hojas de cálculo y los cinco programas que no se hablan entre sí. Una sola caja, una sola web: lo que se vende en el local se refleja en internet al instante, el inventario nunca falla, el dinero de cada venta llega directo a la cuenta del negocio y la facturación electrónica obligatoria se genera sola con cada venta. Sin filas, sin plata retenida por días y sin clientes perdidos porque nadie respondió el WhatsApp un domingo.\n\nTodo el negocio vive en un solo lugar: perfil público digital, catálogo con carrito, menú en mesa con pedidos en tiempo real, tres pantallas operativas (cocina, mesero y punto de venta con impresión térmica), inventario multi-sede, eventos con boletería y check-in QR, citas agendables, red de afiliados y checkout con pagos directos. El dueño ve ventas, caja y comportamiento en tiempo real, y cada sede opera conectada bajo la misma fuente de verdad.\n\nPor dentro son cuatro piezas trabajando juntas: un SuperApp web con panel por roles, un core multi-sede que centraliza inventario, pagos, nómina, proveedores y facturación, agentes de IA que atienden el WhatsApp del negocio (responden dudas, toman pedidos y hasta gestionan productos y stock para el dueño), y un oráculo fiscal que firma y envía cada factura a la DIAN en segundos.\n\nY el roadmap mira al ecosistema KodeChain: tu propio sistema de recompensas donde cada compra devuelve saldo real al cliente para gastar en tu negocio (lealtad automática), y pagos digitales directos del celular del cliente al tuyo, sin pasar por los bancos tradicionales. KodeTap ordena tu negocio hoy y te prepara para la economía tokenizada del mañana.",
             "cover": "/kodetap/banner_kodetap_portafolio.png",

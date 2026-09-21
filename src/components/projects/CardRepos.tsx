@@ -4,9 +4,11 @@ import { GoRepo, GoRepoLocked } from "react-icons/go";
 import { LiaPencilRulerSolid } from "react-icons/lia";
 import { TbSettings, TbWorld } from "react-icons/tb";
 import { RiCheckboxCircleLine } from "react-icons/ri";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 function CardRepo({ repo }: { repo: Repository }) {
+    const t = useTranslations("Common");
     const statusConfig = {
         "Planeando": {
             bg: "bg-amber-50 dark:bg-amber-900/20",
@@ -48,6 +50,10 @@ function CardRepo({ repo }: { repo: Repository }) {
 
     const currentStatus = statusConfig[repo.status as keyof typeof statusConfig];
     const StatusIcon = currentStatus?.icon || TbSettings;
+    const hasWeb = !!repo.web && repo.web.length != 0;
+    const hasGithub = !repo.isPrivate && !!repo.uri;
+    const hasActions = hasWeb || hasGithub;
+    const showPrivateBadge = repo.isPrivate && !hasWeb && !repo.uri;
 
     return (
         <div className="group relative p-4 sm:p-5 bg-white dark:bg-gray-900 rounded-lg border border-gray-100 dark:border-gray-800 hover:border-gray-200 dark:hover:border-gray-700 hover:shadow-sm transition-all duration-200">
@@ -87,16 +93,25 @@ function CardRepo({ repo }: { repo: Repository }) {
             <div className="flex items-center justify-between gap-3">
 
                 {/* Status Badge */}
-                {currentStatus && (
-                    <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium ${currentStatus.bg} ${currentStatus.border} ${currentStatus.text} border`}>
-                        <StatusIcon className="w-3.5 h-3.5" />
-                        <span>{repo.status}</span>
-                    </div>
-                )}
+                <div className="flex items-center gap-2 flex-wrap">
+                    {currentStatus && (
+                        <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium ${currentStatus.bg} ${currentStatus.border} ${currentStatus.text} border`}>
+                            <StatusIcon className="w-3.5 h-3.5" />
+                            <span>{repo.status}</span>
+                        </div>
+                    )}
+                    {showPrivateBadge && (
+                        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium bg-gray-50 dark:bg-gray-800 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700">
+                            <GoRepoLocked className="w-3.5 h-3.5" />
+                            <span>{t("privateCode")}</span>
+                        </div>
+                    )}
+                </div>
 
                 {/* Actions */}
+                {hasActions && (
                 <div className="flex items-center gap-2">
-                    {repo.web && repo.web.length != 0 && (
+                    {hasWeb && (
                         <Link
                             href={repo.web}
                             target="_blank"
@@ -119,6 +134,7 @@ function CardRepo({ repo }: { repo: Repository }) {
                         </a>
                     )}
                 </div>
+                )}
             </div>
 
             {/* Privacy indicator */}

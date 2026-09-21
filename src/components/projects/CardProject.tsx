@@ -4,6 +4,7 @@ import { LuBookText } from "react-icons/lu";
 import { GoRepo } from "react-icons/go";
 import { HiArrowRight } from "react-icons/hi2";
 import { useDarkMode } from "@/context/DarkModeContext";
+import { useTranslations } from "next-intl";
 
 function CardProject({
     project,
@@ -14,6 +15,7 @@ function CardProject({
 }) {
 
     const { darkmode } = useDarkMode()
+    const t = useTranslations("Common")
     return (
         <div className="group relative p-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:border-gray-200 dark:hover:border-gray-700 hover:shadow-md transition-all duration-300">
 
@@ -73,7 +75,7 @@ function CardProject({
                                 rel="noopener noreferrer"
                             >
                                 <LuBookText className="w-4 h-4" />
-                                <span>Documentación</span>
+                                <span>{t("docs")}</span>
                             </a>
                         )}
 
@@ -81,7 +83,7 @@ function CardProject({
                             onClick={() => onSelect(project)}
                             className="inline-flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-150"
                         >
-                            <span>Más información</span>
+                            <span>{t("moreInfo")}</span>
                             <HiArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform duration-150" />
                         </button>
                     </div>
